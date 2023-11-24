@@ -48,16 +48,7 @@ public class TwoSidesMod {
 
         // Add the example block item to the building blocks tab
         private void addCreative(BuildCreativeModeTabContentsEvent event)
-        {
-            if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-                event.accept(ModItems.PURE_ROSE_QUARTZ);
-                event.accept(ModItems.IMPURE_ROSE_QUARTZ);
-            }
-            if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-                event.accept(ModBlocks.ROSE_QUARTZ_BLOCK);
-                event.accept(ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK);
-            }
-        }
+        {        }
 
         // You can use SubscribeEvent and let the Event Bus discover methods to call
         @SubscribeEvent
