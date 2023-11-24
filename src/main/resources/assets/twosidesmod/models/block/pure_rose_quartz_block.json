@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "twosidesmod:block/pure_rose_quartz_block"
+  }
+}

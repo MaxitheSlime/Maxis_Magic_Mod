@@ -1,6 +1,7 @@
 package net.maxitheslime.twosidesmod;
 
 import com.mojang.logging.LogUtils;
+import net.maxitheslime.twosidesmod.block.ModBlocks;
 import net.maxitheslime.twosidesmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -38,6 +39,8 @@ public class TwoSidesMod {
 
 
             ModItems.register(modEventBus);
+            ModBlocks.register(modEventBus);
+            ModCreativeModeTabs.register(modEventBus);
         }
 
         private void commonSetup(final FMLCommonSetupEvent event)
@@ -49,6 +52,10 @@ public class TwoSidesMod {
             if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
                 event.accept(ModItems.PURE_ROSE_QUARTZ);
                 event.accept(ModItems.IMPURE_ROSE_QUARTZ);
+            }
+            if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+                event.accept(ModBlocks.ROSE_QUARTZ_BLOCK);
+                event.accept(ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK);
             }
         }
 
