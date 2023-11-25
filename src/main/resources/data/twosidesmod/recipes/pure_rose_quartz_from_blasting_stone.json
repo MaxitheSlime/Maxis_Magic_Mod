@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "pure_rose_quartz",
+  "ingredient": {
+    "item": "twosidesmod:rose_quartz_ore"
+  },
+  "result": "twosidesmod:pure_rose_quartz"
+}
