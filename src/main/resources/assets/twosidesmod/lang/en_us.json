@@ -2,6 +2,9 @@
   "item.twosidesmod.pure_rose_quartz": "Purified Rose Quartz",
   "item.twosidesmod.impure_rose_quartz": "Impure Rose Quartz",
 
+  "item.twosidesmod.metal_detector": "Ore Detector",
+  "item.twosidesmod.metal_detector.no_valuables": "No Valuables Found!",
+
   "block.twosidesmod.pure_rose_quartz_block": "Block of Purified Rose Quartz",
   "block.twosidesmod.impure_rose_quartz_block": "Block of Impure Rose Quartz",
   "block.twosidesmod.rose_quartz_ore": "Rose Quartz Ore",
@@ -10,5 +13,6 @@
   "block.twosidesmod.nether_rose_quartz_ore": "Nether Rose Quartz Ore",
 
   "creativetab.two_sides_items": "2 Sides Items",
-  "creativetab.two_sides_blocks": "2 Sides Blocks"
+  "creativetab.two_sides_blocks": "2 Sides Blocks",
+  "creativetab.two_sides_tools": "2 Sides Tools"
 }

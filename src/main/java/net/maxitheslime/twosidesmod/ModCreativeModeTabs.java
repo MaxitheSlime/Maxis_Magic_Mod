@@ -21,6 +21,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.PURE_ROSE_QUARTZ.get());
                         pOutput.accept(ModItems.IMPURE_ROSE_QUARTZ.get());
                     }).build());
+    public static final RegistryObject<CreativeModeTab> TWO_SIDES_TOOLS = CREATIVE_MODE_TABS.register("two_sides_tools",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METAL_DETECTOR.get())).
+                    title(Component.translatable("creativetab.two_sides_items")).displayItems((pParameters, pOutput) ->
+                    {
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
+                    }).build());
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_BLOCKS = CREATIVE_MODE_TABS.register("two_sides_blocks",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ROSE_QUARTZ_BLOCK.get())).
                     title(Component.translatable("creativetab.two_sides_blocks")).displayItems((pParameters, pOutput) ->
