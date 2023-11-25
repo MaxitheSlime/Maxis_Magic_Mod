@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RRR",
+    "RNR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "twosidesmod:impure_rose_quartz"
+    },
+    "N": {
+      "item": "minecraft:note_block"
+    }
+  },
+  "result": {
+    "item": "twosidesmod:sound_block"
+  }
+}
