@@ -1,6 +1,8 @@
 package net.maxitheslime.twosidesmod.item;
 
+import net.maxitheslime.twosidesmod.ModFoodProperties;
 import net.maxitheslime.twosidesmod.TwoSidesMod;
+import net.maxitheslime.twosidesmod.item.custom.FuelItem;
 import net.maxitheslime.twosidesmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,9 +18,13 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> IMPURE_ROSE_QUARTZ = ITEMS.register("impure_rose_quartz",
             () -> new Item(new Item.Properties()));
-
+    public static final RegistryObject<Item> FIRE_QUARTZ = ITEMS.register("fire_quartz",
+            () -> new FuelItem(new Item.Properties(), 1800));
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(512)));
+
+    public static final RegistryObject<Item> LEMON = ITEMS.register("lemon",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BONSAI_LEMON)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

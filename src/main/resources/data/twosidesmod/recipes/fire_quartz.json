@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MMM",
+    "MRM",
+    "MMM"
+  ],
+  "key": {
+    "R": {
+      "item": "twosidesmod:pure_rose_quartz"
+    },
+    "M": {
+      "item": "minecraft:magma_cream"
+    }
+  },
+  "result": {
+    "item": "twosidesmod:fire_quartz"
+  }
+}

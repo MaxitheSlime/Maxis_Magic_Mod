@@ -1,6 +1,9 @@
 {
   "item.twosidesmod.pure_rose_quartz": "Purified Rose Quartz",
   "item.twosidesmod.impure_rose_quartz": "Impure Rose Quartz",
+  "item.twosidesmod.fire_quartz": "Fire Quartz",
+
+  "item.twosidesmod.lemon": "Baby Lemon",
 
   "item.twosidesmod.metal_detector": "Ore Detector",
   "item.twosidesmod.metal_detector.no_valuables": "No Valuables Found!",
@@ -15,5 +18,6 @@
 
   "creativetab.two_sides_items": "2 Sides Items",
   "creativetab.two_sides_blocks": "2 Sides Blocks",
-  "creativetab.two_sides_tools": "2 Sides Tools"
+  "creativetab.two_sides_tools": "2 Sides Tools",
+  "creativetab.two_sides_foods": "2 Sides Foods"
 }
