@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-27T16:59:34.1496331	Item Models: twosidesmod
+// 1.20.1	2023-11-27T17:52:51.6573377	Item Models: twosidesmod
 5959bb32510079900580146b9a54393dd9e2cfb2 assets/twosidesmod/models/item/fire_quartz.json
 2e4f84ef910c11449f6965cb96a685d8de2ce863 assets/twosidesmod/models/item/impure_rose_quartz.json
 750e940eee1c06b04fd54b6c5f62dbfc2b0bc118 assets/twosidesmod/models/item/lemon.json
@@ -8,6 +8,7 @@
 882b0a8d8d6cbdc1abdc8f48882a9974abf1667e assets/twosidesmod/models/item/rose_quartz_button.json
 f6e0ebfa4b0f11ca69c97e9d375ed179596fcabb assets/twosidesmod/models/item/rose_quartz_door.json
 dc15922c1ef2ab8053c6db28af5cd162f461690a assets/twosidesmod/models/item/rose_quartz_fence.json
+ec4d31584cc47057ee858b61f12a6f765142a792 assets/twosidesmod/models/item/rose_quartz_hammer.json
 3d37617ab09a3f226c595c8a121f8f16120171a5 assets/twosidesmod/models/item/rose_quartz_hoe.json
 0670fd46a56e431dcc0851c9e6468c0d78161a37 assets/twosidesmod/models/item/rose_quartz_paxel.json
 8196a9b0c6a48b23191d79c37175f07b438a34b6 assets/twosidesmod/models/item/rose_quartz_pickaxe.json

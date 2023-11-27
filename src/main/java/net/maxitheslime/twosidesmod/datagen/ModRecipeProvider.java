@@ -184,6 +184,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_netherite_pickaxe", inventoryTrigger(ItemPredicate.Builder.item().
                         of(Items.NETHERITE_PICKAXE).build()))
                 .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_HAMMER.get())
+                .pattern(" R ")
+                .pattern("PPP")
+                .pattern(" S ")
+                .define('R', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('P', ModItems.ROSE_QUARTZ_PICKAXE.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_netherite_pickaxe", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(Items.NETHERITE_PICKAXE).build()))
+                .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FIRE_QUARTZ.get())
                 .pattern("MMM")

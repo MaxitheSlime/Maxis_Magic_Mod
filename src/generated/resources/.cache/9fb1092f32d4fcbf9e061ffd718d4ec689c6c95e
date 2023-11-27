@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-27T16:59:34.1566309	Recipes
+// 1.20.1	2023-11-27T17:52:51.6643418	Recipes
 5b82694af35cb609521198ca1c51a9e0be07145d data/twosidesmod/advancements/recipes/misc/fire_quartz.json
 ebf6856dd7d9d8df90f490007bb5b17e14f44538 data/twosidesmod/advancements/recipes/misc/impure_rose_quartz.json
 7e220195fb2342bacc6f819e839c2d081719fc0f data/twosidesmod/advancements/recipes/misc/impure_rose_quartz_block.json
@@ -20,6 +20,7 @@ cda0d4fb380cd94250ba3fbb1284a3dd3b2cb83d data/twosidesmod/advancements/recipes/m
 8abdbc4cfe5e34de6f6fafecb224125908f7ce10 data/twosidesmod/advancements/recipes/misc/rose_quartz_door.json
 81c6a86a1cfd4f1b123166eeeee46252f839eda9 data/twosidesmod/advancements/recipes/misc/rose_quartz_fence.json
 d55b572ea497a715569889ab8919ace49935d35e data/twosidesmod/advancements/recipes/misc/rose_quartz_fence_gate.json
+09f475b9e6f09dadce293fd3a720203c2e66bd95 data/twosidesmod/advancements/recipes/misc/rose_quartz_hammer.json
 f2beeaea5f886906d56e383fcdd2c99818c25cd7 data/twosidesmod/advancements/recipes/misc/rose_quartz_hoe.json
 5b637655188b525ecda943c59e2dac10d46c4bba data/twosidesmod/advancements/recipes/misc/rose_quartz_paxel.json
 a4495850252c9068a8db62a9411570ef0ff8642c data/twosidesmod/advancements/recipes/misc/rose_quartz_pickaxe.json
@@ -52,6 +53,7 @@ ee7ab98554a9662a72ef71e7067e5323bd61ebff data/twosidesmod/recipes/pure_rose_quar
 593fb9742834aa1be6fc6309c07a0b55ee3eacb4 data/twosidesmod/recipes/rose_quartz_door.json
 f497926fd5b98323f7508133449b2c3886b1112c data/twosidesmod/recipes/rose_quartz_fence.json
 fd9330f695457df7cdbe70078f9afb35ccaee680 data/twosidesmod/recipes/rose_quartz_fence_gate.json
+219790e8543cc0582483ebe72b41eb581a1522d4 data/twosidesmod/recipes/rose_quartz_hammer.json
 708cfdaa02010c0d0ef0b5eff598c760bd519783 data/twosidesmod/recipes/rose_quartz_hoe.json
 e765308e90d8f46f57bce391e0bcaeab9d10ef4b data/twosidesmod/recipes/rose_quartz_paxel.json
 60351af49ebb73174c4261d3c07a09e1cdfd0a68 data/twosidesmod/recipes/rose_quartz_pickaxe.json

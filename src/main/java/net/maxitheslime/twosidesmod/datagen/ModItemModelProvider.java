@@ -39,6 +39,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ROSE_QUARTZ_AXE);
         handheldItem(ModItems.ROSE_QUARTZ_HOE);
         handheldItem(ModItems.ROSE_QUARTZ_PAXEL);
+        handheldItem(ModItems.ROSE_QUARTZ_HAMMER);
     }
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {

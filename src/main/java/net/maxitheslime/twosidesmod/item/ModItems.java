@@ -2,10 +2,8 @@ package net.maxitheslime.twosidesmod.item;
 
 import net.maxitheslime.twosidesmod.ModFoodProperties;
 import net.maxitheslime.twosidesmod.TwoSidesMod;
-import net.maxitheslime.twosidesmod.item.custom.FuelItem;
-import net.maxitheslime.twosidesmod.item.custom.MetalDetectorItem;
+import net.maxitheslime.twosidesmod.item.custom.*;
 import net.maxitheslime.twosidesmod.ModToolTiers;
-import net.maxitheslime.twosidesmod.item.custom.PaxelItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,7 +23,7 @@ public class ModItems {
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(512)));
     public static final RegistryObject<Item> ROSE_QUARTZ_SWORD = ITEMS.register("rose_quartz_sword",
-            () -> new SwordItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
+            () -> new SappingSwordItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_PICKAXE = ITEMS.register("rose_quartz_pickaxe",
             () -> new PickaxeItem(ModToolTiers.ROSE_QUARTZ, 1, 2, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_SHOVEL = ITEMS.register("rose_quartz_shovel",
@@ -37,6 +35,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> ROSE_QUARTZ_PAXEL = ITEMS.register("rose_quartz_paxel",
             () -> new PaxelItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_HAMMER = ITEMS.register("rose_quartz_hammer",
+            () -> new HammerItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> LEMON = ITEMS.register("lemon",
             () -> new Item(new Item.Properties().food(ModFoodProperties.BONSAI_LEMON)));

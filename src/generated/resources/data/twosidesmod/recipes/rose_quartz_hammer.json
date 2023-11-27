@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "twosidesmod:rose_quartz_pickaxe"
+    },
+    "R": {
+      "item": "twosidesmod:pure_rose_quartz"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " R ",
+    "PPP",
+    " S "
+  ],
+  "result": {
+    "item": "twosidesmod:rose_quartz_hammer"
+  },
+  "show_notification": true
+}
