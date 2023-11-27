@@ -38,7 +38,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceBlock((FenceBlock) ModBlocks.ROSE_QUARTZ_FENCE.get(), blockTexture(ModBlocks.ROSE_QUARTZ_BLOCK.get()));
         fenceGateBlock((FenceGateBlock) ModBlocks.ROSE_QUARTZ_FENCE_GATE.get(), blockTexture(ModBlocks.ROSE_QUARTZ_BLOCK.get()));
         wallBlock((WallBlock) ModBlocks.ROSE_QUARTZ_WALL.get(), blockTexture(ModBlocks.ROSE_QUARTZ_BLOCK.get()));
-        blockWithItem(ModBlocks.ROSE_QUARTZ_FENCE_GATE);
+        blockItem(ModBlocks.ROSE_QUARTZ_FENCE_GATE);
     }
 
     private void blockItem(RegistryObject<Block> blockRegistryObject) {

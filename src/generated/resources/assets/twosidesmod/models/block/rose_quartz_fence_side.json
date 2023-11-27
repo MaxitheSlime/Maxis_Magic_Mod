@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "twosidesmod:block/pure_rose_quartz_block"
+  }
+}

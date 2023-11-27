@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate_wall_open",
+  "textures": {
+    "texture": "twosidesmod:block/pure_rose_quartz_block"
+  }
+}

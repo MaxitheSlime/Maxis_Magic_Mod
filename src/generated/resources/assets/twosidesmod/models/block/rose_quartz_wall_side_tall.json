@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "twosidesmod:block/pure_rose_quartz_block"
+  }
+}
