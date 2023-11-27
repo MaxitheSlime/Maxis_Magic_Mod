@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "twosidesmod:block/pure_rose_quartz_block"
+  }
+}

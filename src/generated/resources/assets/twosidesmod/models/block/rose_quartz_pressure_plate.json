@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "twosidesmod:block/pure_rose_quartz_block"
+  }
+}

@@ -47,6 +47,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ROSE_QUARTZ_ORE.get(),
                         ModBlocks.ROSE_QUARTZ_STAIRS.get(),
                         ModBlocks.ROSE_QUARTZ_SLAB.get(),
+                        ModBlocks.ROSE_QUARTZ_PRESSURE_PLATE.get(),
+                        ModBlocks.ROSE_QUARTZ_BUTTON.get(),
                         ModBlocks.SOUND_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)

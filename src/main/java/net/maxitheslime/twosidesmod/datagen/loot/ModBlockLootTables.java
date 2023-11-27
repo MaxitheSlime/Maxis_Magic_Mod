@@ -31,6 +31,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ROSE_QUARTZ_STAIRS.get());
         this.add(ModBlocks.ROSE_QUARTZ_SLAB.get(),
                block -> createSlabItemTable(ModBlocks.ROSE_QUARTZ_SLAB.get()));
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_BUTTON.get());
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_PRESSURE_PLATE.get());
     }
 
     @Override

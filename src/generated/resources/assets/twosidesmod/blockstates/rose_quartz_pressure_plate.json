@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "twosidesmod:block/rose_quartz_pressure_plate"
+    },
+    "powered=true": {
+      "model": "twosidesmod:block/rose_quartz_pressure_plate_down"
+    }
+  }
+}

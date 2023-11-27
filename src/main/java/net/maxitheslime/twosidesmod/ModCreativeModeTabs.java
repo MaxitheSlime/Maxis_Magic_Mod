@@ -48,6 +48,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_STAIRS.get());
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_SLAB.get());
+                        pOutput.accept(ModBlocks.ROSE_QUARTZ_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.ROSE_QUARTZ_BUTTON.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

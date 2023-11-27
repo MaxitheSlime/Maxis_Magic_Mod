@@ -1,5 +1,5 @@
-// 1.20.1	2023-11-26T21:08:52.8715375	Block Tags
+// 1.20.1	2023-11-27T07:44:43.6876008	Block Tags
 24c81e8c9fc40f4440d72552e81f3abd0b74e93e data/minecraft/tags/blocks/mineable/pickaxe.json
 7a7af8655565234f928aa72fec1f84e8a756b8ac data/minecraft/tags/blocks/needs_diamond_tool.json
-c233af57c139d9ef5f8103aa8fbe3b12f53860cd data/minecraft/tags/blocks/needs_iron_tool.json
+b3e4ab4ee2b5811fac3b5c438ad8b69ff5c08d40 data/minecraft/tags/blocks/needs_iron_tool.json
 fb5b45a5c25c26fb971db9ba4cee8d6b4095bccf data/twosidesmod/tags/blocks/md_values.json
