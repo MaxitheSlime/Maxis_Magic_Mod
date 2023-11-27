@@ -3,19 +3,28 @@
   "category": "misc",
   "key": {
     "A": {
+      "item": "twosidesmod:rose_quartz_axe"
+    },
+    "P": {
+      "item": "twosidesmod:rose_quartz_pickaxe"
+    },
+    "R": {
       "item": "twosidesmod:pure_rose_quartz"
     },
     "S": {
       "item": "minecraft:stick"
+    },
+    "V": {
+      "item": "twosidesmod:rose_quartz_shovel"
     }
   },
   "pattern": [
-    "AA ",
-    " S ",
+    " P ",
+    "ARV",
     " S "
   ],
   "result": {
-    "item": "twosidesmod:rose_quartz_hoe"
+    "item": "twosidesmod:rose_quartz_paxel"
   },
   "show_notification": true
 }

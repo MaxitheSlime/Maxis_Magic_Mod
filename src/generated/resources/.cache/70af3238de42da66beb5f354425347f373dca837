@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-27T16:07:33.6329169	Block Tags
+// 1.20.1	2023-11-27T16:59:34.154633	Block Tags
 998740fd122ad3e4e8497ad16f66a8ad97a6787e data/minecraft/tags/blocks/doors.json
 af68db2746837fafc05ca36a6cffae05fa7f01a8 data/minecraft/tags/blocks/fences.json
 3b160f528d065913e1e2a2589e2515f0003e16df data/minecraft/tags/blocks/fence_gates.json
@@ -8,4 +8,5 @@ c3efa8328a5e006f7d2267dd54de5b994d0fff65 data/minecraft/tags/blocks/needs_iron_t
 e4481d3804e156b4581f3ea8041065844d409ebd data/minecraft/tags/blocks/trapdoors.json
 3505b618d61b79dc9ddc7b63bfc8ba0b16ebba2e data/minecraft/tags/blocks/walls.json
 fb5b45a5c25c26fb971db9ba4cee8d6b4095bccf data/twosidesmod/tags/blocks/md_values.json
+82362cfbd1836db13c7e9d36c8712821e795ac55 data/twosidesmod/tags/blocks/mineable/paxel.json
 131f24149f0bd966ce6040c22779862aaa469421 data/twosidesmod/tags/blocks/needs_rose_quartz_tool.json

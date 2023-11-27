@@ -128,7 +128,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" A ")
                 .pattern(" S ")
                 .define('A', ModItems.PURE_ROSE_QUARTZ.get())
-                .define('S', Items.MAGMA_CREAM)
+                .define('S', Items.STICK)
                 .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
@@ -138,7 +138,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AS ")
                 .pattern(" S ")
                 .define('A', ModItems.PURE_ROSE_QUARTZ.get())
-                .define('S', Items.MAGMA_CREAM)
+                .define('S', Items.STICK)
                 .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
@@ -148,7 +148,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .pattern(" S ")
                 .define('A', ModItems.PURE_ROSE_QUARTZ.get())
-                .define('S', Items.MAGMA_CREAM)
+                .define('S', Items.STICK)
                 .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
@@ -158,7 +158,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .pattern(" S ")
                 .define('A', ModItems.PURE_ROSE_QUARTZ.get())
-                .define('S', Items.MAGMA_CREAM)
+                .define('S', Items.STICK)
                 .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
@@ -168,9 +168,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .pattern(" S ")
                 .define('A', ModItems.PURE_ROSE_QUARTZ.get())
-                .define('S', Items.MAGMA_CREAM)
+                .define('S', Items.STICK)
                 .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_PAXEL.get())
+                .pattern(" P ")
+                .pattern("ARV")
+                .pattern(" S ")
+                .define('R', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('P', ModItems.ROSE_QUARTZ_PICKAXE.get())
+                .define('A', ModItems.ROSE_QUARTZ_AXE.get())
+                .define('V', ModItems.ROSE_QUARTZ_SHOVEL.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_netherite_pickaxe", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(Items.NETHERITE_PICKAXE).build()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FIRE_QUARTZ.get())

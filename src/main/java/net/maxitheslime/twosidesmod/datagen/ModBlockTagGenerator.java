@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 
 import javax.annotation.Nullable;
 import java.util.concurrent.CompletableFuture;
@@ -69,6 +70,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(ModTags.Blocks.NEEDS_ROSE_QUARTZ_TOOL)
                 .add(ModBlocks.NETHER_ROSE_QUARTZ_ORE.get())
                 .add(ModBlocks.END_ROSE_QUARTZ_ORE.get());
+
+        this.tag(ModTags.Blocks.PAXEL_MINEABLE)
+                .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .addTag(BlockTags.MINEABLE_WITH_AXE)
+                .addTag(BlockTags.MINEABLE_WITH_SHOVEL);
 
         this.tag(BlockTags.FENCES)
                 .add(ModBlocks.ROSE_QUARTZ_FENCE.get());
