@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:pure_rose_quartz"
+    },
+    "S": {
+      "item": "minecraft:magma_cream"
+    }
+  },
+  "pattern": [
+    "AAA",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "twosidesmod:rose_quartz_pickaxe"
+  },
+  "show_notification": true
+}

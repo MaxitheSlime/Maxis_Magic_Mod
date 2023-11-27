@@ -9,6 +9,11 @@
   "item.twosidesmod.metal_detector.no_valuables": "No Valuables Found!",
   "tooltip.twosidesmod.metal_detector.tooltip.shift": "Right-Click on blocks to find ores under them",
   "tooltip.twosidesmod.metal_detector.tooltip": "Press §eShift§r for more details",
+  "item.twosidesmod.rose_quartz_sword": "Rose Quartz Buster Blade",
+  "item.twosidesmod.rose_quartz_axe": "Rose Quartz Greataxe",
+  "item.twosidesmod.rose_quartz_shovel": "Rose Quartz Shovel",
+  "item.twosidesmod.rose_quartz_hoe": "Rose Quartz Ring-Sickle",
+  "item.twosidesmod.rose_quartz_pickaxe": "Rose Quartz War-Pick",
 
   "block.twosidesmod.pure_rose_quartz_block": "Block of Purified Rose Quartz",
   "block.twosidesmod.rose_quartz_stairs": "Purified Rose Quartz Stairs",

@@ -4,7 +4,8 @@ import net.maxitheslime.twosidesmod.ModFoodProperties;
 import net.maxitheslime.twosidesmod.TwoSidesMod;
 import net.maxitheslime.twosidesmod.item.custom.FuelItem;
 import net.maxitheslime.twosidesmod.item.custom.MetalDetectorItem;
-import net.minecraft.world.item.Item;
+import net.maxitheslime.twosidesmod.ModToolTiers;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -22,6 +23,16 @@ public class ModItems {
             () -> new FuelItem(new Item.Properties(), 1800));
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(512)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_SWORD = ITEMS.register("rose_quartz_sword",
+            () -> new SwordItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_PICKAXE = ITEMS.register("rose_quartz_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.ROSE_QUARTZ, 1, 2, new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_SHOVEL = ITEMS.register("rose_quartz_shovel",
+            () -> new ShovelItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_AXE = ITEMS.register("rose_quartz_axe",
+            () -> new AxeItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_HOE = ITEMS.register("rose_quartz_hoe",
+            () -> new HoeItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> LEMON = ITEMS.register("lemon",
             () -> new Item(new Item.Properties().food(ModFoodProperties.BONSAI_LEMON)));

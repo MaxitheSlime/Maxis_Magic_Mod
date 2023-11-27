@@ -20,6 +20,7 @@ public class ModTags {
 
     public static class Blocks {
         public static final TagKey<Block> METAL_DETECTOR_VALUABLES = tag("md_values");
+        public static final TagKey<Block> NEEDS_ROSE_QUARTZ_TOOL = tag("needs_rose_quartz_tool");
 
 
         private static TagKey<Block> tag(String name) {

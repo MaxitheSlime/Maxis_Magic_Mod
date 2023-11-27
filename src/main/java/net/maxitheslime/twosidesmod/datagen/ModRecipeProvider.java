@@ -33,7 +33,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AAA")
                 .pattern("AAA")
                 .define('A', ModItems.PURE_ROSE_QUARTZ.get())
-                .unlockedBy("has_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_QUARTZ_STAIRS.get(), 6)
@@ -41,7 +41,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AA ")
                 .pattern("AAA")
                 .define('A', ModBlocks.ROSE_QUARTZ_BLOCK.get())
-                .unlockedBy("has_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_QUARTZ_SLAB.get(), 6)
@@ -49,7 +49,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("   ")
                 .pattern("AAA")
                 .define('A', ModBlocks.ROSE_QUARTZ_BLOCK.get())
-                .unlockedBy("has_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_QUARTZ_PRESSURE_PLATE.get())
@@ -58,7 +58,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" A ")
                 .define('A', ModBlocks.ROSE_QUARTZ_BLOCK.get())
                 .define('S', Blocks.STONE_PRESSURE_PLATE)
-                .unlockedBy("has_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_QUARTZ_BUTTON.get())
@@ -67,7 +67,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("   ")
                 .define('A', ModBlocks.ROSE_QUARTZ_BLOCK.get())
                 .define('S', Blocks.STONE_BUTTON)
-                .unlockedBy("has_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_QUARTZ_FENCE.get(), 3)
@@ -76,7 +76,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SAS")
                 .define('A', ModBlocks.ROSE_QUARTZ_BLOCK.get())
                 .define('S', Items.STICK)
-                .unlockedBy("has_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_QUARTZ_FENCE_GATE.get())
@@ -85,7 +85,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("ASA")
                 .define('A', ModBlocks.ROSE_QUARTZ_BLOCK.get())
                 .define('S', Items.STICK)
-                .unlockedBy("has_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_QUARTZ_WALL.get(),6)
@@ -93,7 +93,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AAA")
                 .pattern("AAA")
                 .define('A', ModBlocks.ROSE_QUARTZ_BLOCK.get())
-                .unlockedBy("has_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_QUARTZ_DOOR.get(),3)
@@ -101,7 +101,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AA ")
                 .pattern("AA ")
                 .define('A', ModBlocks.ROSE_QUARTZ_BLOCK.get())
-                .unlockedBy("has_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_QUARTZ_TRAPDOOR.get())
@@ -109,7 +109,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AA ")
                 .pattern("AA ")
                 .define('A', ModBlocks.ROSE_QUARTZ_BLOCK.get())
-                .unlockedBy("has_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 
@@ -119,7 +119,57 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AAA")
                 .define('A', ModItems.PURE_ROSE_QUARTZ.get())
                 .define('N', Items.NOTE_BLOCK)
-                .unlockedBy("has_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_SWORD.get())
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" S ")
+                .define('A', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('S', Items.MAGMA_CREAM)
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_AXE.get())
+                .pattern("AA ")
+                .pattern("AS ")
+                .pattern(" S ")
+                .define('A', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('S', Items.MAGMA_CREAM)
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_PICKAXE.get())
+                .pattern("AAA")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('A', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('S', Items.MAGMA_CREAM)
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_SHOVEL.get())
+                .pattern(" A ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('A', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('S', Items.MAGMA_CREAM)
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_HOE.get())
+                .pattern("AA ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('A', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('S', Items.MAGMA_CREAM)
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 
@@ -141,7 +191,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.STICK)
                 .define('C', Items.COPPER_INGOT)
                 .define('I', Items.IRON_INGOT)
-                .unlockedBy("has_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                .unlockedBy("has_pure_rose_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 

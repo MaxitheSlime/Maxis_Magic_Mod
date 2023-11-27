@@ -32,6 +32,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.ROSE_QUARTZ_WALL, ModBlocks.ROSE_QUARTZ_BLOCK);
 
         simpleBlockItem(ModBlocks.ROSE_QUARTZ_DOOR);
+
+        handheldItem(ModItems.ROSE_QUARTZ_SWORD);
+        handheldItem(ModItems.ROSE_QUARTZ_PICKAXE);
+        handheldItem(ModItems.ROSE_QUARTZ_SHOVEL);
+        handheldItem(ModItems.ROSE_QUARTZ_AXE);
+        handheldItem(ModItems.ROSE_QUARTZ_HOE);
     }
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
@@ -47,6 +53,12 @@ public class ModItemModelProvider extends ItemModelProvider {
     public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
                 .texture("texture",  new ResourceLocation(TwoSidesMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(TwoSidesMod.MOD_ID,"item/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
