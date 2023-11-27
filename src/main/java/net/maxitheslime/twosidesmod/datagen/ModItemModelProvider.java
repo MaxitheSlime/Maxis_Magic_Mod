@@ -28,6 +28,18 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.FIRE_QUARTZ);
 
         buttonItem(ModBlocks.ROSE_QUARTZ_BUTTON, ModBlocks.ROSE_QUARTZ_BLOCK);
+        fenceItem(ModBlocks.ROSE_QUARTZ_FENCE, ModBlocks.ROSE_QUARTZ_BLOCK);
+        wallItem(ModBlocks.ROSE_QUARTZ_WALL, ModBlocks.ROSE_QUARTZ_BLOCK);
+    }
+
+    public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  new ResourceLocation(TwoSidesMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  new ResourceLocation(TwoSidesMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
     public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {

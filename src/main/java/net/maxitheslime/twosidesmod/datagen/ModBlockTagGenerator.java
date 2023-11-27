@@ -39,6 +39,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.NETHER_ROSE_QUARTZ_ORE.get(),
                         ModBlocks.ROSE_QUARTZ_STAIRS.get(),
                         ModBlocks.ROSE_QUARTZ_SLAB.get(),
+                        ModBlocks.ROSE_QUARTZ_BUTTON.get(),
+                        ModBlocks.ROSE_QUARTZ_PRESSURE_PLATE.get(),
+                        ModBlocks.ROSE_QUARTZ_FENCE.get(),
+                        ModBlocks.ROSE_QUARTZ_FENCE_GATE.get(),
+                        ModBlocks.ROSE_QUARTZ_WALL.get(),
                         ModBlocks.SOUND_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -49,12 +54,22 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ROSE_QUARTZ_SLAB.get(),
                         ModBlocks.ROSE_QUARTZ_PRESSURE_PLATE.get(),
                         ModBlocks.ROSE_QUARTZ_BUTTON.get(),
+                        ModBlocks.ROSE_QUARTZ_FENCE_GATE.get(),
+                        ModBlocks.ROSE_QUARTZ_FENCE.get(),
+                        ModBlocks.ROSE_QUARTZ_WALL.get(),
                         ModBlocks.SOUND_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get(),
                         ModBlocks.END_ROSE_QUARTZ_ORE.get(),
                         ModBlocks.NETHER_ROSE_QUARTZ_ORE.get());
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.ROSE_QUARTZ_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.ROSE_QUARTZ_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.ROSE_QUARTZ_WALL.get());
     }
 
     @Override

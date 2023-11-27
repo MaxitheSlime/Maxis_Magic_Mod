@@ -19,7 +19,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ROSE_QUARTZ_BLOCK.get());
         this.dropSelf(ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
-
         this.add(ModBlocks.ROSE_QUARTZ_ORE.get(),
                 block -> createOreDrop(ModBlocks.ROSE_QUARTZ_ORE.get(), ModItems.IMPURE_ROSE_QUARTZ.get()));
         this.add(ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get(),
@@ -33,6 +32,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                block -> createSlabItemTable(ModBlocks.ROSE_QUARTZ_SLAB.get()));
         this.dropSelf(ModBlocks.ROSE_QUARTZ_BUTTON.get());
         this.dropSelf(ModBlocks.ROSE_QUARTZ_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_FENCE.get());
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_WALL.get());
     }
 
     @Override

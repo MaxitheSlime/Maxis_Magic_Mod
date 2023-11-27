@@ -50,6 +50,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_SLAB.get());
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_PRESSURE_PLATE.get());
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_BUTTON.get());
+                        pOutput.accept(ModBlocks.ROSE_QUARTZ_FENCE.get());
+                        pOutput.accept(ModBlocks.ROSE_QUARTZ_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.ROSE_QUARTZ_WALL.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {
