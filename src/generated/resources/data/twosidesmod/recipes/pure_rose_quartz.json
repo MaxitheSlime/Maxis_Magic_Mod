@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "twosidesmod:pure_rose_quartz_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "twosidesmod:pure_rose_quartz"
+  }
+}

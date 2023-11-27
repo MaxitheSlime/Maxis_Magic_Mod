@@ -1,0 +1,25 @@
+{
+  "values": [
+    "twosidesmod:rose_quartz_ore",
+    "twosidesmod:deepslate_rose_quartz_ore",
+    "twosidesmod:end_rose_quartz_ore",
+    "twosidesmod:nether_rose_quartz_ore",
+    "twosidesmod:impure_rose_quartz_block",
+    "twosidesmod:pure_rose_quartz_block",
+    "minecraft:iron_block",
+    "minecraft:raw_iron_block",
+    "minecraft:gold_block",
+    "minecraft:raw_gold_block",
+    "minecraft:copper_block",
+    "minecraft:raw_copper_block",
+    "minecraft:redstone_block",
+    "minecraft:lapis_block",
+    "minecraft:coal_block",
+    "minecraft:diamond_block",
+    "minecraft:emerald_block",
+    "minecraft:amethyst_cluster",
+    "minecraft:budding_amethyst",
+    "minecraft:quartz_block",
+    "#forge:ores"
+  ]
+}

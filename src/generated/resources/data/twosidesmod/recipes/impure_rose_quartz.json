@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "pure_rose_quartz",
+  "key": {
+    "#": {
+      "item": "twosidesmod:impure_rose_quartz"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "twosidesmod:impure_rose_quartz_block"
+  },
+  "show_notification": true
+}

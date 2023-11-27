@@ -1,0 +1,8 @@
+// 1.20.1	2023-11-26T20:10:53.7565735	Loot Tables
+608e6ecd48aa5192b227f6a637e1b4e207380191 data/twosidesmod/loot_tables/blocks/deepslate_rose_quartz_ore.json
+97aa07f4ee894df0437a019341ea43f622b9929b data/twosidesmod/loot_tables/blocks/end_rose_quartz_ore.json
+404068aa12d1b3ec50cebd8fe3d309c84aaf4de6 data/twosidesmod/loot_tables/blocks/impure_rose_quartz_block.json
+2d00161a35f724d69e452cdb9d0da7adf9194aeb data/twosidesmod/loot_tables/blocks/nether_rose_quartz_ore.json
+24f04d0e5b5784537687b73a7544fd1801534ef7 data/twosidesmod/loot_tables/blocks/pure_rose_quartz_block.json
+3c2d169b36c4e5a3829be6caed4f8b7afb89cd3f data/twosidesmod/loot_tables/blocks/rose_quartz_ore.json
+d4907eb6df72d3382cb363f63eb9df7ce4ee517d data/twosidesmod/loot_tables/blocks/sound_block.json
