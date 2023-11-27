@@ -37,12 +37,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get(),
                         ModBlocks.END_ROSE_QUARTZ_ORE.get(),
                         ModBlocks.NETHER_ROSE_QUARTZ_ORE.get(),
+                        ModBlocks.ROSE_QUARTZ_STAIRS.get(),
+                        ModBlocks.ROSE_QUARTZ_SLAB.get(),
                         ModBlocks.SOUND_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ROSE_QUARTZ_BLOCK.get(),
                         ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK.get(),
                         ModBlocks.ROSE_QUARTZ_ORE.get(),
+                        ModBlocks.ROSE_QUARTZ_STAIRS.get(),
+                        ModBlocks.ROSE_QUARTZ_SLAB.get(),
                         ModBlocks.SOUND_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)

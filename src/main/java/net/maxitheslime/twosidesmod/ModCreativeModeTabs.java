@@ -46,6 +46,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.END_ROSE_QUARTZ_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_ROSE_QUARTZ_ORE.get());
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROSE_QUARTZ_STAIRS.get());
+                        pOutput.accept(ModBlocks.ROSE_QUARTZ_SLAB.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

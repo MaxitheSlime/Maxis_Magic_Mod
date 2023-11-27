@@ -28,7 +28,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.END_ROSE_QUARTZ_ORE.get(), ModItems.IMPURE_ROSE_QUARTZ.get()));
         this.add(ModBlocks.NETHER_ROSE_QUARTZ_ORE.get(),
                 block -> createOreDrop(ModBlocks.NETHER_ROSE_QUARTZ_ORE.get(), ModItems.IMPURE_ROSE_QUARTZ.get()));
-
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_STAIRS.get());
+        this.add(ModBlocks.ROSE_QUARTZ_SLAB.get(),
+               block -> createSlabItemTable(ModBlocks.ROSE_QUARTZ_SLAB.get()));
     }
 
     @Override

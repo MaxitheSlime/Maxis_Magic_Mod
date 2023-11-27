@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "twosidesmod:block/rose_quartz_slab"
+    },
+    "type=double": {
+      "model": "twosidesmod:block/pure_rose_quartz_block"
+    },
+    "type=top": {
+      "model": "twosidesmod:block/rose_quartz_slab_top"
+    }
+  }
+}
