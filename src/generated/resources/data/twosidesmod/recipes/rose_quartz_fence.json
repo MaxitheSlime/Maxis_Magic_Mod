@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:pure_rose_quartz_block"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "   ",
+    "SAS",
+    "SAS"
+  ],
+  "result": {
+    "count": 3,
+    "item": "twosidesmod:rose_quartz_fence"
+  },
+  "show_notification": true
+}

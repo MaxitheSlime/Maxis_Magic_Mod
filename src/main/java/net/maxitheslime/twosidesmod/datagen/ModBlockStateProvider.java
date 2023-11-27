@@ -39,8 +39,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceGateBlock((FenceGateBlock) ModBlocks.ROSE_QUARTZ_FENCE_GATE.get(), blockTexture(ModBlocks.ROSE_QUARTZ_BLOCK.get()));
         wallBlock((WallBlock) ModBlocks.ROSE_QUARTZ_WALL.get(), blockTexture(ModBlocks.ROSE_QUARTZ_BLOCK.get()));
         blockItem(ModBlocks.ROSE_QUARTZ_FENCE_GATE);
+
+        doorBlockWithRenderType((DoorBlock)ModBlocks.ROSE_QUARTZ_DOOR.get(), modLoc("block/rose_quartz_door_bottom"), modLoc("block/rose_quartz_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.ROSE_QUARTZ_TRAPDOOR.get(), modLoc("block/rose_quartz_trapdoor"), true, "cutout");
+        blockItem(ModBlocks.ROSE_QUARTZ_TRAPDOOR, "_bottom");
     }
 
+    private void blockItem(RegistryObject<Block> blockRegistryObject, String appendix) {
+        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("twosidesmod:block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath() + appendix));
+    }
     private void blockItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("twosidesmod:block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
     }

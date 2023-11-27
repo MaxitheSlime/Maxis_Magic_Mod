@@ -44,6 +44,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ROSE_QUARTZ_FENCE.get(),
                         ModBlocks.ROSE_QUARTZ_FENCE_GATE.get(),
                         ModBlocks.ROSE_QUARTZ_WALL.get(),
+                        ModBlocks.ROSE_QUARTZ_DOOR.get(),
+                        ModBlocks.ROSE_QUARTZ_TRAPDOOR.get(),
                         ModBlocks.SOUND_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -57,6 +59,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ROSE_QUARTZ_FENCE_GATE.get(),
                         ModBlocks.ROSE_QUARTZ_FENCE.get(),
                         ModBlocks.ROSE_QUARTZ_WALL.get(),
+                        ModBlocks.ROSE_QUARTZ_DOOR.get(),
+                        ModBlocks.ROSE_QUARTZ_TRAPDOOR.get(),
                         ModBlocks.SOUND_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
@@ -70,6 +74,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.ROSE_QUARTZ_FENCE_GATE.get());
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.ROSE_QUARTZ_WALL.get());
+        this.tag(BlockTags.DOORS)
+                .add(ModBlocks.ROSE_QUARTZ_DOOR.get());
+        this.tag(BlockTags.TRAPDOORS)
+                .add(ModBlocks.ROSE_QUARTZ_TRAPDOOR.get());
     }
 
     @Override

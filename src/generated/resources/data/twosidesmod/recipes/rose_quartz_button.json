@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:pure_rose_quartz_block"
+    },
+    "S": {
+      "item": "minecraft:stone_button"
+    }
+  },
+  "pattern": [
+    "   ",
+    "ASA",
+    "   "
+  ],
+  "result": {
+    "item": "twosidesmod:rose_quartz_button"
+  },
+  "show_notification": true
+}

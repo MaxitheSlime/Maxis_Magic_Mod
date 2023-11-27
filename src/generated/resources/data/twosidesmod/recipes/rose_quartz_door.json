@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:pure_rose_quartz_block"
+    }
+  },
+  "pattern": [
+    "AA ",
+    "AA ",
+    "AA "
+  ],
+  "result": {
+    "count": 3,
+    "item": "twosidesmod:rose_quartz_door"
+  },
+  "show_notification": true
+}

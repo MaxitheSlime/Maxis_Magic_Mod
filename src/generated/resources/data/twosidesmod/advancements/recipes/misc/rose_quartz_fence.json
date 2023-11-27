@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rose_quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:pure_rose_quartz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "twosidesmod:rose_quartz_fence"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_quartz",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "twosidesmod:rose_quartz_fence"
+    ]
+  },
+  "sends_telemetry_event": false
+}

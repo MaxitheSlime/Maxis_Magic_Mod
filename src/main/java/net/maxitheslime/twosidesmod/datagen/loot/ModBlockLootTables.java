@@ -35,6 +35,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ROSE_QUARTZ_FENCE.get());
         this.dropSelf(ModBlocks.ROSE_QUARTZ_FENCE_GATE.get());
         this.dropSelf(ModBlocks.ROSE_QUARTZ_WALL.get());
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_TRAPDOOR.get());
+        this.add(ModBlocks.ROSE_QUARTZ_DOOR.get(),
+                block -> createDoorTable(ModBlocks.ROSE_QUARTZ_DOOR.get()));
     }
 
     @Override

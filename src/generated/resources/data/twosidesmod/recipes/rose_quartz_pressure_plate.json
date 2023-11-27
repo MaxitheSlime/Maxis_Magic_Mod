@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:pure_rose_quartz_block"
+    },
+    "S": {
+      "item": "minecraft:stone_pressure_plate"
+    }
+  },
+  "pattern": [
+    " A ",
+    " S ",
+    " A "
+  ],
+  "result": {
+    "item": "twosidesmod:rose_quartz_pressure_plate"
+  },
+  "show_notification": true
+}

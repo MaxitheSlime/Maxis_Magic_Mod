@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:pure_rose_quartz_block"
+    }
+  },
+  "pattern": [
+    "   ",
+    "AA ",
+    "AA "
+  ],
+  "result": {
+    "item": "twosidesmod:rose_quartz_trapdoor"
+  },
+  "show_notification": true
+}
