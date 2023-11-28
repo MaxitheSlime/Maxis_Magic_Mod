@@ -1,9 +1,11 @@
 package net.maxitheslime.twosidesmod.datagen;
 
 import net.maxitheslime.twosidesmod.TwoSidesMod;
+import net.maxitheslime.twosidesmod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -19,7 +21,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         // Add Item Tags here
-
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.ROSE_QUARTZ_HELMET.get(),
+                        ModItems.ROSE_QUARTZ_CHESTPLATE.get(),
+                        ModItems.ROSE_QUARTZ_LEGGINGS.get(),
+                        ModItems.ROSE_QUARTZ_BOOTS.get());
     }
 
     @Override

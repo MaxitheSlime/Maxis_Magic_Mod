@@ -34,6 +34,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ROSE_QUARTZ_HOE.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_PAXEL.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_HAMMER.get());
+
+                        pOutput.accept(ModItems.ROSE_QUARTZ_HELMET.get());
+                        pOutput.accept(ModItems.ROSE_QUARTZ_CHESTPLATE.get());
+                        pOutput.accept(ModItems.ROSE_QUARTZ_LEGGINGS.get());
+                        pOutput.accept(ModItems.ROSE_QUARTZ_BOOTS.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_FOODS = CREATIVE_MODE_TABS.register("two_sides_foods",
