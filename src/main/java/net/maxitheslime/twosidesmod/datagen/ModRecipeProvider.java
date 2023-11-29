@@ -172,6 +172,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_PAXEL.get())
                 .pattern(" P ")
                 .pattern("ARV")
@@ -184,6 +185,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_netherite_pickaxe", inventoryTrigger(ItemPredicate.Builder.item().
                         of(Items.NETHERITE_PICKAXE).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_HAMMER.get())
                 .pattern(" R ")
                 .pattern("PPP")
@@ -193,6 +195,53 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.STICK)
                 .unlockedBy("has_netherite_pickaxe", inventoryTrigger(ItemPredicate.Builder.item().
                         of(Items.NETHERITE_PICKAXE).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_HORSE_ARMOR.get())
+                .pattern(" LR")
+                .pattern("RBR")
+                .pattern("RRR")
+                .define('R', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('B', Items.BLACK_WOOL)
+                .define('L', Items.LEAD)
+                .unlockedBy("has_saddle", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(Items.SADDLE).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_HELMET.get())
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("   ")
+                .define('R', ModItems.PURE_ROSE_QUARTZ.get())
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_CHESTPLATE.get())
+                .pattern("R R")
+                .pattern("RRR")
+                .pattern("RRR")
+                .define('R', ModItems.PURE_ROSE_QUARTZ.get())
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_LEGGINGS.get())
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("R R")
+                .define('R', ModItems.PURE_ROSE_QUARTZ.get())
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_BOOTS.get())
+                .pattern("R R")
+                .pattern("R R")
+                .pattern("   ")
+                .define('R', ModItems.PURE_ROSE_QUARTZ.get())
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FIRE_QUARTZ.get())

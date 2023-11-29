@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "twosidesmod:pure_rose_quartz"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "R R",
+    "   "
+  ],
+  "result": {
+    "item": "twosidesmod:rose_quartz_helmet"
+  },
+  "show_notification": true
+}

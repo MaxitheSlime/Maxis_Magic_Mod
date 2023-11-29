@@ -25,20 +25,20 @@ public class ModItems {
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(512)));
     public static final RegistryObject<Item> ROSE_QUARTZ_SWORD = ITEMS.register("rose_quartz_sword",
-            () -> new SappingSwordItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
+            () -> new SappingSwordItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_PICKAXE = ITEMS.register("rose_quartz_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.ROSE_QUARTZ, 1, 2, new Item.Properties().durability(256)));
+            () -> new PickaxeItem(ModToolTiers.ROSE_QUARTZ, 3, 2, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_SHOVEL = ITEMS.register("rose_quartz_shovel",
-            () -> new ShovelItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
+            () -> new ShovelItem(ModToolTiers.ROSE_QUARTZ, 3.5f, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_AXE = ITEMS.register("rose_quartz_axe",
-            () -> new AxeItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
+            () -> new AxeItem(ModToolTiers.ROSE_QUARTZ, 7, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_HOE = ITEMS.register("rose_quartz_hoe",
             () -> new HoeItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> ROSE_QUARTZ_PAXEL = ITEMS.register("rose_quartz_paxel",
-            () -> new PaxelItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
+            () -> new PaxelItem(ModToolTiers.ROSE_QUARTZ, 3, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_HAMMER = ITEMS.register("rose_quartz_hammer",
-            () -> new HammerItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
+            () -> new HammerItem(ModToolTiers.ROSE_QUARTZ, 8, 0, new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> ROSE_QUARTZ_HELMET = ITEMS.register("rose_quartz_helmet",
             () -> new ModArmorItem(ModArmorMaterials.ROSE_QUARTZ, ArmorItem.Type.HELMET, new Item.Properties()));
