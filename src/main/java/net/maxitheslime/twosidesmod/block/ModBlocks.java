@@ -1,6 +1,7 @@
 package net.maxitheslime.twosidesmod.block;
 
 import net.maxitheslime.twosidesmod.TwoSidesMod;
+import net.maxitheslime.twosidesmod.block.custom.RoseQuartzLampBlock;
 import net.maxitheslime.twosidesmod.block.custom.SoundBlock;
 import net.maxitheslime.twosidesmod.item.ModItems;
 import net.minecraft.sounds.SoundEvent;
@@ -54,6 +55,10 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
     public static final RegistryObject<Block> ROSE_QUARTZ_TRAPDOOR = registerBlock("rose_quartz_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_LAMP = registerBlock("rose_quartz_lamp",
+            () -> new RoseQuartzLampBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.GLASS)
+                    .lightLevel(state -> state.getValue(RoseQuartzLampBlock.CLICKED) ? 15 : 0)));
 
     public static final RegistryObject<Block> ROSE_QUARTZ_ORE = registerBlock("rose_quartz_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "twosidesmod:block/rose_quartz_lamp_off"
+    },
+    "clicked=true": {
+      "model": "twosidesmod:block/rose_quartz_lamp_on"
+    }
+  }
+}

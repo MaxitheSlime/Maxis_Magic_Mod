@@ -38,6 +38,7 @@
   "block.twosidesmod.deepslate_rose_quartz_ore": "Deepslate Rose Quartz Ore",
   "block.twosidesmod.end_rose_quartz_ore": "End Rose Quartz Ore",
   "block.twosidesmod.nether_rose_quartz_ore": "Nether Rose Quartz Ore",
+  "block.twosidesmod.rose_quartz_lamp": "Easy Toggle Lamp",
 
   "block.twosidesmod.sound_block": "Alert Block",
   "tooltip.twosidesmod.sound_block": "§eRightclick§r to play nice sounds\nWill create an alert when something steps on top",

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "twosidesmod:fire_quartz"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "R": {
+      "item": "twosidesmod:pure_rose_quartz"
+    },
+    "S": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "RGR",
+    "SFS",
+    "RGR"
+  ],
+  "result": {
+    "item": "twosidesmod:rose_quartz_lamp"
+  },
+  "show_notification": true
+}

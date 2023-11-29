@@ -68,6 +68,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_WALL.get());
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_DOOR.get());
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.ROSE_QUARTZ_LAMP.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

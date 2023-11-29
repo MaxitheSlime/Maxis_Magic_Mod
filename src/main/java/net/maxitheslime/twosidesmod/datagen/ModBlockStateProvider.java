@@ -2,9 +2,12 @@ package net.maxitheslime.twosidesmod.datagen;
 
 import net.maxitheslime.twosidesmod.TwoSidesMod;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
+import net.maxitheslime.twosidesmod.block.custom.RoseQuartzLampBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -43,6 +46,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType((DoorBlock)ModBlocks.ROSE_QUARTZ_DOOR.get(), modLoc("block/rose_quartz_door_bottom"), modLoc("block/rose_quartz_door_top"), "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.ROSE_QUARTZ_TRAPDOOR.get(), modLoc("block/rose_quartz_trapdoor"), true, "cutout");
         blockItem(ModBlocks.ROSE_QUARTZ_TRAPDOOR, "_bottom");
+
+        customLamp();
+    }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.ROSE_QUARTZ_LAMP.get()).forAllStates(state -> {
+            if (state.getValue(RoseQuartzLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("rose_quartz_lamp_on",
+                        new ResourceLocation(TwoSidesMod.MOD_ID, "block/" + "rose_quartz_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("rose_quartz_lamp_off",
+                        new ResourceLocation(TwoSidesMod.MOD_ID, "block/" + "rose_quartz_lamp_off")))};
+            }
+        });
+        simpleBlockItem(ModBlocks.ROSE_QUARTZ_LAMP.get(), models().cubeAll("rose_quartz_lamp_on",
+                new ResourceLocation(TwoSidesMod.MOD_ID, "block/" +"rose_quartz_lamp_on")));
     }
 
     private void blockItem(RegistryObject<Block> blockRegistryObject, String appendix) {
