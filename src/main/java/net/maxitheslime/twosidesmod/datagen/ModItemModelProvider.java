@@ -27,6 +27,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.FIRE_QUARTZ);
 
+        simpleItem(ModItems.ROSE_QUARTZ_HORSE_ARMOR);
+
         buttonItem(ModBlocks.ROSE_QUARTZ_BUTTON, ModBlocks.ROSE_QUARTZ_BLOCK);
         fenceItem(ModBlocks.ROSE_QUARTZ_FENCE, ModBlocks.ROSE_QUARTZ_BLOCK);
         wallItem(ModBlocks.ROSE_QUARTZ_WALL, ModBlocks.ROSE_QUARTZ_BLOCK);
