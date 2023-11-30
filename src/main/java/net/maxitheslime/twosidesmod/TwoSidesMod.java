@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
 import net.maxitheslime.twosidesmod.enchantment.ModEnchantments;
 import net.maxitheslime.twosidesmod.item.ModItems;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -45,7 +46,12 @@ public class TwoSidesMod {
         }
 
         private void commonSetup(final FMLCommonSetupEvent event)
-        {        }
+        {
+            event.enqueueWork(() -> {
+                    ComposterBlock.COMPOSTABLES.put(ModItems.LEMON.get(), 0.35f);
+                    ComposterBlock.COMPOSTABLES.put(ModItems.LEMON_SEEDS.get(), 0.20f);
+            });
+        }
 
         // Add the example block item to the building blocks tab
         private void addCreative(BuildCreativeModeTabContentsEvent event)
