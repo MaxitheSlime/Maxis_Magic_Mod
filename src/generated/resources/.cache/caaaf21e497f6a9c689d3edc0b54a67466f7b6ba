@@ -1,5 +1,6 @@
-// 1.20.1	2023-11-30T12:24:39.4942606	Block States: twosidesmod
+// 1.20.1	2023-11-30T16:28:13.8181288	Block States: twosidesmod
 0fa1ae036f78ccb60a5738efa8b5578e7de3fae7 assets/twosidesmod/blockstates/bonsai_lemon_crop.json
+8d49335b0fe6f6253a2727f044dac41fee365e7d assets/twosidesmod/blockstates/crystal_flower.json
 6dce7af4d16ca54fd9326e282b874893c399284c assets/twosidesmod/blockstates/deepslate_rose_quartz_ore.json
 860fb24141147bb4b740e3b02220cf1d08ff56b4 assets/twosidesmod/blockstates/end_rose_quartz_ore.json
 65b68bc6d90508d8ddce6f569331e397eda03838 assets/twosidesmod/blockstates/impure_rose_quartz_block.json
@@ -17,6 +18,7 @@ ddbaf816d25b905d839ddcfcbd0ac3b790b8a8a6 assets/twosidesmod/blockstates/rose_qua
 dce711fc93b26e030f2c718653cf1a8004dbfa47 assets/twosidesmod/blockstates/rose_quartz_trapdoor.json
 5666bbbd72d677cc015a35daf51f10c95f593ac0 assets/twosidesmod/blockstates/rose_quartz_wall.json
 9e464ca5cb1723c9a8d5808089a0848376ef2334 assets/twosidesmod/blockstates/sound_block.json
+db0bb229f5096ea51e61f4e94a31d42084c70dce assets/twosidesmod/models/block/crystal_flower.json
 2af22886700dc5f7898935ba2d51724ef8cd2e4b assets/twosidesmod/models/block/deepslate_rose_quartz_ore.json
 0e8e593fa9b9b5d39cf3a9a9d79790dabd09b384 assets/twosidesmod/models/block/end_rose_quartz_ore.json
 3caaf7202b2ee84c66733ee719c929c4c0d743d1 assets/twosidesmod/models/block/impure_rose_quartz_block.json

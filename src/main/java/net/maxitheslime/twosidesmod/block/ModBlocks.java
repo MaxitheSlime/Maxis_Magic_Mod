@@ -8,6 +8,7 @@ import net.maxitheslime.twosidesmod.item.ModItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -76,6 +77,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BONSAI_LEMON_CROP = BLOCKS.register("bonsai_lemon_crop",
             () -> new LemonBonsaiCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
+    public static final RegistryObject<Block> CRYSTALLIZED_FLOWER = registerBlock("crystal_flower",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
+    public static final RegistryObject<Block> POTTED_CRYSTALLIZED_FLOWER = BLOCKS.register("potted_crystal_flower",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), CRYSTALLIZED_FLOWER,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

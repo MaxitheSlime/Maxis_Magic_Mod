@@ -1,9 +1,11 @@
-// 1.20.1	2023-11-30T12:35:25.2020477	Loot Tables
+// 1.20.1	2023-11-30T16:28:13.8215346	Loot Tables
 e0c1e8b4aa0da09e62bf8152150468ec933c7d9b data/twosidesmod/loot_tables/blocks/bonsai_lemon_crop.json
+ef789d190e1a1bb63dfecfd47bff933c3e7115ac data/twosidesmod/loot_tables/blocks/crystal_flower.json
 608e6ecd48aa5192b227f6a637e1b4e207380191 data/twosidesmod/loot_tables/blocks/deepslate_rose_quartz_ore.json
 97aa07f4ee894df0437a019341ea43f622b9929b data/twosidesmod/loot_tables/blocks/end_rose_quartz_ore.json
 404068aa12d1b3ec50cebd8fe3d309c84aaf4de6 data/twosidesmod/loot_tables/blocks/impure_rose_quartz_block.json
 2d00161a35f724d69e452cdb9d0da7adf9194aeb data/twosidesmod/loot_tables/blocks/nether_rose_quartz_ore.json
+7b55597ef8fe03fb0bf05e4e4ac4b51febf32b77 data/twosidesmod/loot_tables/blocks/potted_crystal_flower.json
 24f04d0e5b5784537687b73a7544fd1801534ef7 data/twosidesmod/loot_tables/blocks/pure_rose_quartz_block.json
 040bfd0605eeb196506d8533423633feb19d7e27 data/twosidesmod/loot_tables/blocks/rose_quartz_button.json
 134fa519089bf7ee8fd74119d2fc16acc8e310ea data/twosidesmod/loot_tables/blocks/rose_quartz_door.json

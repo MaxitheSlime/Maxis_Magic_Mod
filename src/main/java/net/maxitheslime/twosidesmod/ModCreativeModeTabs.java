@@ -73,6 +73,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_LAMP.get());
                     }).build());
 
+    public static final RegistryObject<CreativeModeTab> TWO_SIDES_NATURE_BLOCKS = CREATIVE_MODE_TABS.register("two_sides_nature_blocks",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CRYSTALLIZED_FLOWER.get())).
+                    title(Component.translatable("creativetab.two_sides_nature_blocks")).displayItems((pParameters, pOutput) ->
+                    {
+                        pOutput.accept(ModBlocks.CRYSTALLIZED_FLOWER.get());
+                    }).build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

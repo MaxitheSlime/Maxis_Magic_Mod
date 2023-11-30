@@ -289,6 +289,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(Items.MAGMA_CREAM).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CRYSTALLIZED_FLOWER.get())
+                .pattern(" R ")
+                .pattern(" D ")
+                .pattern(" G ")
+                .define('R', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('D', Items.TORCHFLOWER_SEEDS)
+                .define('G', Blocks.ROOTED_DIRT)
+                .unlockedBy("has_torchflower_seeds", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(Items.TORCHFLOWER_SEEDS).build()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.METAL_DETECTOR.get())
                 .pattern(" S ")
                 .pattern(" C ")
@@ -305,6 +316,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.LEMON.get())
                 .unlockedBy("has_lemon", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.LEMON.get()).build()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.PINK_DYE, 3)
+                .requires(ModBlocks.CRYSTALLIZED_FLOWER.get())
+                .unlockedBy("has_crystal_flower", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.CRYSTALLIZED_FLOWER.get()).build()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PURE_ROSE_QUARTZ.get(), 9)

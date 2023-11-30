@@ -54,6 +54,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         customLamp();
 
         makeCrop(((LemonBonsaiCropBlock) ModBlocks.BONSAI_LEMON_CROP.get()), "lemon_stage", "lemon_stage");
+        simpleBlock(ModBlocks.CRYSTALLIZED_FLOWER.get(),
+                models().cross(blockTexture(ModBlocks.CRYSTALLIZED_FLOWER.get()).getPath(), blockTexture(ModBlocks.CRYSTALLIZED_FLOWER.get())).renderType("cutout"));
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {

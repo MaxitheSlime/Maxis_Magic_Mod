@@ -45,10 +45,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ROSE_QUARTZ_PAXEL);
         handheldItem(ModItems.ROSE_QUARTZ_HAMMER);
 
-        // simpleItem(ModItems.ALEXANDRITE_HELMET);
-        // simpleItem(ModItems.ALEXANDRITE_CHESTPLATE);
-        // simpleItem(ModItems.ALEXANDRITE_LEGGING);
-        // simpleItem(ModItems.ALEXANDRITE_BOOTS);
+        simpleBlockItem(ModBlocks.CRYSTALLIZED_FLOWER);
     }
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {

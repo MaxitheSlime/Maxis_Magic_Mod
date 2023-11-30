@@ -48,6 +48,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(LemonBonsaiCropBlock.AGE, 6));
         this.add(ModBlocks.BONSAI_LEMON_CROP.get(), this.createCropDrops(ModBlocks.BONSAI_LEMON_CROP.get(),
                 ModItems.LEMON_SEEDS.get(), ModItems.LEMON.get(), lootitemcondition$builder1));
+        this.dropSelf(ModBlocks.CRYSTALLIZED_FLOWER.get());
+        this.add(ModBlocks.POTTED_CRYSTALLIZED_FLOWER.get(), createPotFlowerItemTable(ModBlocks.CRYSTALLIZED_FLOWER.get()));
     }
 
     @Override

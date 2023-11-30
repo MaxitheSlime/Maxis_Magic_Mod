@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:torchflower_seeds"
+    },
+    "G": {
+      "item": "minecraft:rooted_dirt"
+    },
+    "R": {
+      "item": "twosidesmod:pure_rose_quartz"
+    }
+  },
+  "pattern": [
+    " R ",
+    " D ",
+    " G "
+  ],
+  "result": {
+    "item": "twosidesmod:crystal_flower"
+  },
+  "show_notification": true
+}
