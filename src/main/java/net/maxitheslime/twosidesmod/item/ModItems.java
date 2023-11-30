@@ -3,6 +3,7 @@ package net.maxitheslime.twosidesmod.item;
 import net.maxitheslime.twosidesmod.ModArmorMaterials;
 import net.maxitheslime.twosidesmod.ModFoodProperties;
 import net.maxitheslime.twosidesmod.TwoSidesMod;
+import net.maxitheslime.twosidesmod.block.ModBlocks;
 import net.maxitheslime.twosidesmod.item.custom.*;
 import net.maxitheslime.twosidesmod.ModToolTiers;
 import net.minecraft.resources.ResourceLocation;
@@ -57,6 +58,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> LEMON = ITEMS.register("lemon",
             () -> new Item(new Item.Properties().food(ModFoodProperties.BONSAI_LEMON)));
+    public static final RegistryObject<Item> LEMON_SEEDS = ITEMS.register("lemon_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.BONSAI_LEMON_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -48,6 +48,7 @@ public class ModCreativeModeTabs {
                     title(Component.translatable("creativetab.two_sides_foods")).displayItems((pParameters, pOutput) ->
                     {
                         pOutput.accept(ModItems.LEMON.get());
+                        pOutput.accept(ModItems.LEMON_SEEDS.get());
                     }).build());
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_BLOCKS = CREATIVE_MODE_TABS.register("two_sides_blocks",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ROSE_QUARTZ_BLOCK.get())).

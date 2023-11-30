@@ -301,6 +301,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.LEMON_SEEDS.get(), 3)
+                .requires(ModItems.LEMON.get())
+                .unlockedBy("has_lemon", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.LEMON.get()).build()))
+                .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PURE_ROSE_QUARTZ.get(), 9)
                 .requires(ModBlocks.ROSE_QUARTZ_BLOCK.get())
                 .unlockedBy("has_pure_rose_quartz_block", inventoryTrigger(ItemPredicate.Builder.item().

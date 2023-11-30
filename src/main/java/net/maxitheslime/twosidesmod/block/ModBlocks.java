@@ -1,6 +1,7 @@
 package net.maxitheslime.twosidesmod.block;
 
 import net.maxitheslime.twosidesmod.TwoSidesMod;
+import net.maxitheslime.twosidesmod.block.custom.LemonBonsaiCropBlock;
 import net.maxitheslime.twosidesmod.block.custom.RoseQuartzLampBlock;
 import net.maxitheslime.twosidesmod.block.custom.SoundBlock;
 import net.maxitheslime.twosidesmod.item.ModItems;
@@ -72,6 +73,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> NETHER_ROSE_QUARTZ_ORE = registerBlock("nether_rose_quartz_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
+
+    public static final RegistryObject<Block> BONSAI_LEMON_CROP = BLOCKS.register("bonsai_lemon_crop",
+            () -> new LemonBonsaiCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

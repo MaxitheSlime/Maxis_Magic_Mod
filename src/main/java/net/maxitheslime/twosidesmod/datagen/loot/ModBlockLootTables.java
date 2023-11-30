@@ -1,10 +1,14 @@
 package net.maxitheslime.twosidesmod.datagen.loot;
 
 import net.maxitheslime.twosidesmod.block.ModBlocks;
+import net.maxitheslime.twosidesmod.block.custom.LemonBonsaiCropBlock;
 import net.maxitheslime.twosidesmod.item.ModItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -39,6 +43,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.ROSE_QUARTZ_DOOR.get(),
                 block -> createDoorTable(ModBlocks.ROSE_QUARTZ_DOOR.get()));
         this.dropSelf(ModBlocks.ROSE_QUARTZ_LAMP.get());
+
+        LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.BONSAI_LEMON_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(LemonBonsaiCropBlock.AGE, 6));
+        this.add(ModBlocks.BONSAI_LEMON_CROP.get(), this.createCropDrops(ModBlocks.BONSAI_LEMON_CROP.get(),
+                ModItems.LEMON_SEEDS.get(), ModItems.LEMON.get(), lootitemcondition$builder1));
     }
 
     @Override

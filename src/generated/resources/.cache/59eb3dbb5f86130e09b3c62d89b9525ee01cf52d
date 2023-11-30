@@ -1,4 +1,5 @@
-// 1.20.1	2023-11-29T16:25:45.1626989	Loot Tables
+// 1.20.1	2023-11-30T12:35:25.2020477	Loot Tables
+e0c1e8b4aa0da09e62bf8152150468ec933c7d9b data/twosidesmod/loot_tables/blocks/bonsai_lemon_crop.json
 608e6ecd48aa5192b227f6a637e1b4e207380191 data/twosidesmod/loot_tables/blocks/deepslate_rose_quartz_ore.json
 97aa07f4ee894df0437a019341ea43f622b9929b data/twosidesmod/loot_tables/blocks/end_rose_quartz_ore.json
 404068aa12d1b3ec50cebd8fe3d309c84aaf4de6 data/twosidesmod/loot_tables/blocks/impure_rose_quartz_block.json
