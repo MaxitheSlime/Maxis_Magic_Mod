@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "twosidesmod:item/data_tablet_off"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "twosidesmod:on": 1
+      },
+      "model": "twosidesmod:item/data_tablet_on"
+    }
+  ]
+}

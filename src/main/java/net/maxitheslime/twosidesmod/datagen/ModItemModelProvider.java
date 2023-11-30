@@ -25,7 +25,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.LEMON);
         simpleItem(ModItems.METAL_DETECTOR);
-        simpleItem(ModItems.DATA_TABLET);
+        //simpleItem(ModItems.DATA_TABLET);
+
         simpleItem(ModItems.FIRE_QUARTZ);
 
         simpleItem(ModItems.ROSE_QUARTZ_HORSE_ARMOR);

@@ -62,7 +62,11 @@ public class TwoSidesMod {
         {
             @SubscribeEvent
             public static void onClientSetup(FMLClientSetupEvent event)
-            {          }
+            {
+                event.enqueueWork(() -> {
+                    ModItemProperties.addCustomItemProperties();
+                });
+            }
         }
 
 }
