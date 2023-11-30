@@ -154,6 +154,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DATA_TABLET.get())
+                .pattern("IPI")
+                .pattern("GAR")
+                .pattern("S S")
+                .define('A', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('S', Items.STICK)
+                .define('G', Items.GOLD_INGOT)
+                .define('R', Items.REDSTONE)
+                .define('I', Items.IRON_INGOT)
+                .define('P', Blocks.GLASS_PANE)
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_AXE.get())
                 .pattern("AA ")
                 .pattern("AS ")

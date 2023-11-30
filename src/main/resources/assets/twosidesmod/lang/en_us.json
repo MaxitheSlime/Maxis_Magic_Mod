@@ -6,6 +6,7 @@
   "item.twosidesmod.lemon": "Baby Lemon",
 
   "item.twosidesmod.metal_detector": "Ore Detector",
+  "item.twosidesmod.data_tablet": "Ore Locater Registry",
   "item.twosidesmod.metal_detector.no_valuables": "No Valuables Found!",
   "tooltip.twosidesmod.metal_detector.tooltip.shift": "Right-Click on blocks to find ores under them",
   "tooltip.twosidesmod.metal_detector.tooltip": "Press §eShift§r for more details",

@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
                     title(Component.translatable("creativetab.two_sides_tools")).displayItems((pParameters, pOutput) ->
                     {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModItems.DATA_TABLET.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_SWORD.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_PICKAXE.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_SHOVEL.get());
