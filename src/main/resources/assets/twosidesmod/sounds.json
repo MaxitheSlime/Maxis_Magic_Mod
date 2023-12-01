@@ -1,0 +1,46 @@
+{
+  "metal_detector_found_ore": {
+    "subtitle": "sounds.twosidesmod.metal_detector_found_ore",
+    "sounds": [
+      "twosidesmod:metal_detector_found_ore"
+    ]
+  },
+  "rose_quartz_lamp_break": {
+    "subtitle": "sounds.twosidesmod.rose_quartz_lamp_break",
+    "sounds": [
+      "twosidesmod:rose_quartz_lamp_break"
+    ]
+  },
+  "rose_quartz_lamp_place": {
+    "subtitle": "sounds.twosidesmod.rose_quartz_lamp_place",
+    "sounds": [
+      "twosidesmod:rose_quartz_lamp_place"
+    ]
+  },
+  "rose_quartz_lamp_fall": {
+    "subtitle": "sounds.twosidesmod.rose_quartz_lamp_fall",
+    "sounds": [
+      "twosidesmod:rose_quartz_lamp_fall"
+    ]
+  },
+  "rose_quartz_lamp_hit": {
+    "subtitle": "sounds.twosidesmod.rose_quartz_lamp_hit",
+    "sounds": [
+      "twosidesmod:rose_quartz_lamp_hit"
+    ]
+  },
+  "rose_quartz_lamp_step": {
+    "subtitle": "sounds.twosidesmod.rose_quartz_lamp_step",
+    "sounds": [
+      "twosidesmod:rose_quartz_lamp_step"
+    ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "twosidesmod:bar_brawl",
+        "stream": true
+      }
+    ]
+  }
+}

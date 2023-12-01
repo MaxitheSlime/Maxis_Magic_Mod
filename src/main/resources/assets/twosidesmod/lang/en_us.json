@@ -18,6 +18,9 @@
   "item.twosidesmod.rose_quartz_pickaxe": "Rose Quartz War-Pick",
   "item.twosidesmod.rose_quartz_paxel": "Rose Quartz Omni-Digger",
   "item.twosidesmod.rose_quartz_hammer": "Rose Quartz Impact Hammer",
+  "item.twosidesmod.bar_brawl_record": "Bar Brawl Music Disc",
+  "item.twosidesmod.rose_quartz_disk_piece": "Piece of a Rose Quartz Music Disc",
+  "item.twosidesmod.bar_brawl_record.desc": "Bryan Tech - Bar Brawl (CC0)",
 
   "item.twosidesmod.rose_quartz_helmet": "Rose Quartz Helm",
   "item.twosidesmod.rose_quartz_chestplate": "Rose Quartz Plate",
@@ -51,5 +54,12 @@
   "creativetab.two_sides_tools": "2 Sides Tools",
   "creativetab.two_sides_foods": "2 Sides Foods",
 
-  "enchantment.twosidesmod.lightning_striker": "Quartz-Infused Smite"
+  "enchantment.twosidesmod.lightning_striker": "Quartz-Infused Smite",
+
+  "sounds.twosidesmod.metal_detector_found_ore": "Ore Detector Found an Ore",
+  "sounds.twosidesmod.rose_quartz_lamp_break": "Rose Quartz Lamp was Broken",
+  "sounds.twosidesmod.rose_quartz_lamp_step": "Rose Quartz Lamp was Stepped On",
+  "sounds.twosidesmod.rose_quartz_lamp_place": "Rose Quartz Lamp was Placed",
+  "sounds.twosidesmod.rose_quartz_lamp_hit": "Rose Quartz Lamp was Hit",
+  "sounds.twosidesmod.rose_quartz_lamp_fall": "Rose Quartz Lamp was Fallen On"
 }

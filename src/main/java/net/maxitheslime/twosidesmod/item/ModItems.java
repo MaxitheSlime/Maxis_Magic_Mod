@@ -6,6 +6,7 @@ import net.maxitheslime.twosidesmod.TwoSidesMod;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
 import net.maxitheslime.twosidesmod.item.custom.*;
 import net.maxitheslime.twosidesmod.ModToolTiers;
+import net.maxitheslime.twosidesmod.sound.ModSounds;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -60,6 +61,12 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.BONSAI_LEMON)));
     public static final RegistryObject<Item> LEMON_SEEDS = ITEMS.register("lemon_seeds",
             () -> new ItemNameBlockItem(ModBlocks.BONSAI_LEMON_CROP.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> BAR_BRAWL_RECORD = ITEMS.register("bar_brawl_record",
+            () -> new RecordItem(4, ModSounds.BAR_BRAWL, new Item.Properties().stacksTo(1),
+                    2440));
+    public static final RegistryObject<Item> ROSE_QUARTZ_DISK_PIECE = ITEMS.register("rose_quartz_disk_piece",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

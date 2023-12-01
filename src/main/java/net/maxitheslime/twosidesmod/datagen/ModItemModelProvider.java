@@ -46,6 +46,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ROSE_QUARTZ_HAMMER);
 
         simpleBlockItem(ModBlocks.CRYSTALLIZED_FLOWER);
+
+        simpleItem(ModItems.BAR_BRAWL_RECORD);
+        simpleItem(ModItems.ROSE_QUARTZ_DISK_PIECE);
     }
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {

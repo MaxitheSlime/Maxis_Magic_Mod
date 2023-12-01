@@ -1,7 +1,8 @@
-// 1.20.1	2023-11-30T16:35:39.1556276	Recipes
+// 1.20.1	2023-12-01T15:20:10.0816166	Recipes
 a36bef6721ff64c070703056c19a9d42ebac2506 data/minecraft/advancements/recipes/misc/pink_dye.json
 2867a858605d75e3a2f9d049b99c65f66c1197fb data/minecraft/recipes/pink_dye.json
-316a049695749ef65ff4031f0ebc8e9b596eb8a3 data/twosidesmod/advancements/recipes/misc/crystal_flower.json
+967f5818ff095be7f4460027c0b4894459e0e2fd data/twosidesmod/advancements/recipes/misc/bar_brawl_record.json
+1386c9c70cce89821aab14973cb441a2cdc50dd5 data/twosidesmod/advancements/recipes/misc/crystal_flower.json
 736babca969ef181fad656347497df8617ccc38e data/twosidesmod/advancements/recipes/misc/data_tablet.json
 5b82694af35cb609521198ca1c51a9e0be07145d data/twosidesmod/advancements/recipes/misc/fire_quartz.json
 ebf6856dd7d9d8df90f490007bb5b17e14f44538 data/twosidesmod/advancements/recipes/misc/impure_rose_quartz.json
@@ -43,6 +44,7 @@ edf0dcd36c656a74284f308418d2351f11274656 data/twosidesmod/advancements/recipes/m
 c26673d91a5fe320a29a4090aa2c1cedf6dd6c0c data/twosidesmod/advancements/recipes/misc/rose_quartz_trapdoor.json
 cec4055eb2ce53bdcae6d716884585c3278cdc30 data/twosidesmod/advancements/recipes/misc/rose_quartz_wall.json
 5b246b5aa065451772c3828b4e57d3b21429d3ad data/twosidesmod/advancements/recipes/misc/sound_block.json
+b45e9ed626883e4e23d4c6804afcc5caa8609b30 data/twosidesmod/recipes/bar_brawl_record.json
 a205f8838853e4afe72f745b717c2e235b55b647 data/twosidesmod/recipes/crystal_flower.json
 749c03bc28b8f6306932d2e640c23216d6003cc0 data/twosidesmod/recipes/data_tablet.json
 d56317ff159a3bf8caf4fb980367007653c1c67f data/twosidesmod/recipes/fire_quartz.json

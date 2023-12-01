@@ -21,6 +21,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.PURE_ROSE_QUARTZ.get());
                         pOutput.accept(ModItems.IMPURE_ROSE_QUARTZ.get());
                         pOutput.accept(ModItems.FIRE_QUARTZ.get());
+                        pOutput.accept(ModItems.ROSE_QUARTZ_DISK_PIECE.get());
+                        pOutput.accept(ModItems.BAR_BRAWL_RECORD.get());
                     }).build());
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_TOOLS = CREATIVE_MODE_TABS.register("two_sides_tools",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METAL_DETECTOR.get())).

@@ -26,6 +26,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.ROSE_QUARTZ_CHESTPLATE.get(),
                         ModItems.ROSE_QUARTZ_LEGGINGS.get(),
                         ModItems.ROSE_QUARTZ_BOOTS.get());
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.BAR_BRAWL_RECORD.get());
     }
 
     @Override

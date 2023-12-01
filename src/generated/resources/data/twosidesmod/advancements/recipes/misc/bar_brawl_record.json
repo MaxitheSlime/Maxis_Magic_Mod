@@ -1,34 +1,34 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "twosidesmod:crystal_flower"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_torchflower_seeds": {
+    "has_rose_quartz_disk_piece": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:torchflower_seeds"
+              "twosidesmod:rose_quartz_disk_piece"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "twosidesmod:bar_brawl_record"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_torchflower_seeds",
+      "has_rose_quartz_disk_piece",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "twosidesmod:crystal_flower"
+      "twosidesmod:bar_brawl_record"
     ]
   },
   "sends_telemetry_event": false
