@@ -38,11 +38,14 @@ public class ModItems {
             () -> new AxeItem(ModToolTiers.ROSE_QUARTZ, 7, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_HOE = ITEMS.register("rose_quartz_hoe",
             () -> new HoeItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
-
     public static final RegistryObject<Item> ROSE_QUARTZ_PAXEL = ITEMS.register("rose_quartz_paxel",
             () -> new PaxelItem(ModToolTiers.ROSE_QUARTZ, 3, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_HAMMER = ITEMS.register("rose_quartz_hammer",
             () -> new HammerItem(ModToolTiers.ROSE_QUARTZ, 8, 0, new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_BOW = ITEMS.register("rose_quartz_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_SHIELD = ITEMS.register("rose_quartz_shield",
+            () -> new ShieldItem(new Item.Properties().durability(500)));
 
     public static final RegistryObject<Item> ROSE_QUARTZ_HELMET = ITEMS.register("rose_quartz_helmet",
             () -> new ModArmorItem(ModArmorMaterials.ROSE_QUARTZ, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -66,6 +69,9 @@ public class ModItems {
             () -> new RecordItem(4, ModSounds.BAR_BRAWL, new Item.Properties().stacksTo(1),
                     2440));
     public static final RegistryObject<Item> ROSE_QUARTZ_DISK_PIECE = ITEMS.register("rose_quartz_disk_piece",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> ROSE_QUARTZ_LIGHTBULB = ITEMS.register("rose_quartz_lightbulb",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

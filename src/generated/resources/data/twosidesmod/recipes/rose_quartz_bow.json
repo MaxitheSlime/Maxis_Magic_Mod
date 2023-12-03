@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bow"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "R": {
+      "item": "twosidesmod:pure_rose_quartz"
+    }
+  },
+  "pattern": [
+    " R ",
+    "LB ",
+    " R "
+  ],
+  "result": {
+    "item": "twosidesmod:rose_quartz_bow"
+  },
+  "show_notification": true
+}

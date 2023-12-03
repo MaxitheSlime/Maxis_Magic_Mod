@@ -2,6 +2,7 @@ package net.maxitheslime.twosidesmod.block;
 
 import net.maxitheslime.twosidesmod.TwoSidesMod;
 import net.maxitheslime.twosidesmod.block.custom.LemonBonsaiCropBlock;
+import net.maxitheslime.twosidesmod.block.custom.PurifyingTableBlock;
 import net.maxitheslime.twosidesmod.block.custom.RoseQuartzLampBlock;
 import net.maxitheslime.twosidesmod.block.custom.SoundBlock;
 import net.maxitheslime.twosidesmod.item.ModItems;
@@ -85,6 +86,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_CRYSTALLIZED_FLOWER = BLOCKS.register("potted_crystal_flower",
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), CRYSTALLIZED_FLOWER,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+
+    public static final RegistryObject<Block> PURIFICATION_TABLE = registerBlock("purification_table",
+            () -> new PurifyingTableBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

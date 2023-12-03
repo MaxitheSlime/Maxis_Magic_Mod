@@ -1,4 +1,4 @@
-// 1.20.1	2023-12-01T15:20:10.075572	Item Models: twosidesmod
+// 1.20.1	2023-12-01T22:13:05.1865855	Item Models: twosidesmod
 474ce6fcc32ff61796fe4fc40ccddacc407bd6b0 assets/twosidesmod/models/item/bar_brawl_record.json
 175e2d65f3006226d7e3c59f9b88aab713bb2f61 assets/twosidesmod/models/item/crystal_flower.json
 5959bb32510079900580146b9a54393dd9e2cfb2 assets/twosidesmod/models/item/fire_quartz.json
@@ -7,6 +7,7 @@
 e55d336256f2bb5593ed71cadf7d0e40e88c816e assets/twosidesmod/models/item/lemon_seeds.json
 921c373c8752a3bd04d02cdbdb1d405411aec310 assets/twosidesmod/models/item/metal_detector.json
 024ec46d5b0fc7c6ce8ff5c735b0904904dcce6d assets/twosidesmod/models/item/pure_rose_quartz.json
+af7d187e0dde7182050909b6bcd4e69ff850da5d assets/twosidesmod/models/item/purification_table.json
 774659ce541fc9fb525edf781340085ce0821441 assets/twosidesmod/models/item/rose_quartz_axe.json
 882b0a8d8d6cbdc1abdc8f48882a9974abf1667e assets/twosidesmod/models/item/rose_quartz_button.json
 15e5934f3bd4e9a8742f0ad069a06ab2d4ccb587 assets/twosidesmod/models/item/rose_quartz_disk_piece.json

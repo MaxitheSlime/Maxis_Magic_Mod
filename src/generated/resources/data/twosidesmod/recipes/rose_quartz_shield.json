@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "R": {
+      "item": "twosidesmod:pure_rose_quartz"
+    },
+    "W": {
+      "item": "twosidesmod:rose_quartz_wall"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "RGR",
+    "WWW"
+  ],
+  "result": {
+    "item": "twosidesmod:rose_quartz_shield"
+  },
+  "show_notification": true
+}

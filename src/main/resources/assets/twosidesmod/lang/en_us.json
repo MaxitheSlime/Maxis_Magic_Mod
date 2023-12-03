@@ -18,9 +18,12 @@
   "item.twosidesmod.rose_quartz_pickaxe": "Rose Quartz War-Pick",
   "item.twosidesmod.rose_quartz_paxel": "Rose Quartz Omni-Digger",
   "item.twosidesmod.rose_quartz_hammer": "Rose Quartz Impact Hammer",
+  "item.twosidesmod.rose_quartz_bow": "Rose Quartz Bow",
+  "item.twosidesmod.rose_quartz_shield": "Rose Quartz Sawtooth Shield",
   "item.twosidesmod.bar_brawl_record": "Bar Brawl Music Disc",
   "item.twosidesmod.rose_quartz_disk_piece": "Piece of a Rose Quartz Music Disc",
   "item.twosidesmod.bar_brawl_record.desc": "Bryan Tech - Bar Brawl (CC0)",
+  "item.twosidesmod.rose_quartz_lightbulb": "Rose Lightbulb",
 
   "item.twosidesmod.rose_quartz_helmet": "Rose Quartz Helm",
   "item.twosidesmod.rose_quartz_chestplate": "Rose Quartz Plate",
@@ -47,6 +50,7 @@
   "block.twosidesmod.sound_block": "Alert Block",
   "tooltip.twosidesmod.sound_block": "§eRightclick§r to play nice sounds\nWill create an alert when something steps on top",
   "block.twosidesmod.crystal_flower": "Crystallized Flower",
+  "block.twosidesmod.purification_table": "Purification Station",
 
   "creativetab.two_sides_items": "2 Sides Items",
   "creativetab.two_sides_blocks": "2 Sides Blocks",

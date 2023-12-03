@@ -1,0 +1,6 @@
+{
+  "parent": "twosidesmod:item/rose_quartz_bow",
+  "textures": {
+    "layer0": "twosidesmod:item/rose_quartz_bow_pulling_0"
+  }
+}

@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.FIRE_QUARTZ.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_DISK_PIECE.get());
                         pOutput.accept(ModItems.BAR_BRAWL_RECORD.get());
+                        pOutput.accept(ModItems.ROSE_QUARTZ_LIGHTBULB.get());
                     }).build());
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_TOOLS = CREATIVE_MODE_TABS.register("two_sides_tools",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METAL_DETECTOR.get())).
@@ -37,11 +38,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ROSE_QUARTZ_HOE.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_PAXEL.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_HAMMER.get());
+                        pOutput.accept(ModItems.ROSE_QUARTZ_BOW.get());
 
                         pOutput.accept(ModItems.ROSE_QUARTZ_HELMET.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_CHESTPLATE.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_LEGGINGS.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_BOOTS.get());
+                        pOutput.accept(ModItems.ROSE_QUARTZ_SHIELD.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_HORSE_ARMOR.get());
                     }).build());
 
@@ -73,6 +76,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_DOOR.get());
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_TRAPDOOR.get());
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_LAMP.get());
+                        pOutput.accept(ModBlocks.PURIFICATION_TABLE.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_NATURE_BLOCKS = CREATIVE_MODE_TABS.register("two_sides_nature_blocks",

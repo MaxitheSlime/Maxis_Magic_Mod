@@ -49,6 +49,13 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.BAR_BRAWL_RECORD);
         simpleItem(ModItems.ROSE_QUARTZ_DISK_PIECE);
+
+        complexBlock(ModBlocks.PURIFICATION_TABLE.get());
+    }
+
+    private ItemModelBuilder complexBlock(Block block) {
+        return withExistingParent(ForgeRegistries.BLOCKS.getKey(block).getPath(), new ResourceLocation(TwoSidesMod.MOD_ID,
+                "block/" + ForgeRegistries.BLOCKS.getKey(block).getPath()));
     }
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {

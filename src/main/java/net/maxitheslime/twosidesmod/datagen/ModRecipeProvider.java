@@ -37,6 +37,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PURIFICATION_TABLE.get())
+                .pattern("ABA")
+                .pattern("RGR")
+                .pattern("ISI")
+                .define('A', Items.AMETHYST_SHARD)
+                .define('B', Items.IRON_BARS)
+                .define('R', Items.BLAZE_ROD)
+                .define('G', Items.GOLD_NUGGET)
+                .define('I', Items.IRON_INGOT)
+                .define('S', Items.SMOOTH_STONE_SLAB)
+                .unlockedBy("has_iron_ingot", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(Items.IRON_INGOT).build()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_QUARTZ_LAMP.get())
                 .pattern("RGR")
                 .pattern("SFS")
@@ -168,6 +182,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_LIGHTBULB.get())
+                .pattern(" G ")
+                .pattern("RCR")
+                .pattern(" I ")
+                .define('R', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('G', Items.GLASS_PANE)
+                .define('C', Items.COPPER_INGOT)
+                .define('I', Items.IRON_INGOT)
+                .unlockedBy("has_glass", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(Blocks.GLASS).build()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_AXE.get())
                 .pattern("AA ")
                 .pattern("AS ")
@@ -176,6 +202,28 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.STICK)
                 .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_BOW.get())
+                .pattern(" R ")
+                .pattern("LB ")
+                .pattern(" R ")
+                .define('R', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('L', Items.LEATHER)
+                .define('B', Items.BOW)
+                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_SHIELD.get())
+                .pattern("WWW")
+                .pattern("RGR")
+                .pattern("WWW")
+                .define('R', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('W', ModBlocks.ROSE_QUARTZ_WALL.get())
+                .define('G', Items.GOLD_INGOT)
+                .unlockedBy("has_rose_quartz_wall", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ROSE_QUARTZ_WALL.get()).build()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_PICKAXE.get())

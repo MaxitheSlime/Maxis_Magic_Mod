@@ -50,6 +50,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 ModItems.LEMON_SEEDS.get(), ModItems.LEMON.get(), lootitemcondition$builder1));
         this.dropSelf(ModBlocks.CRYSTALLIZED_FLOWER.get());
         this.add(ModBlocks.POTTED_CRYSTALLIZED_FLOWER.get(), createPotFlowerItemTable(ModBlocks.CRYSTALLIZED_FLOWER.get()));
+
+        this.dropSelf(ModBlocks.PURIFICATION_TABLE.get());
     }
 
     @Override
