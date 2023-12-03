@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "twosidesmod:saw_them",
+      "required": false
+    },
+    {
+      "id": "twosidesmod:shrimp",
+      "required": false
+    },
+    {
+      "id": "twosidesmod:world",
+      "required": false
+    }
+  ]
+}

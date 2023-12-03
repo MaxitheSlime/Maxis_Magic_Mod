@@ -5,6 +5,7 @@ import net.maxitheslime.twosidesmod.block.ModBlocks;
 import net.maxitheslime.twosidesmod.enchantment.ModEnchantments;
 import net.maxitheslime.twosidesmod.item.ModItems;
 import net.maxitheslime.twosidesmod.loot.ModLootModifiers;
+import net.maxitheslime.twosidesmod.painting.ModPaintings;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
@@ -49,6 +50,7 @@ public class TwoSidesMod {
             ModEnchantments.register(modEventBus);
             ModSounds.register(modEventBus);
             ModLootModifiers.register(modEventBus);
+            ModPaintings.register(modEventBus);
         }
 
         private void commonSetup(final FMLCommonSetupEvent event)

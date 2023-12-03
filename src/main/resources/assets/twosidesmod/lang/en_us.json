@@ -65,5 +65,12 @@
   "sounds.twosidesmod.rose_quartz_lamp_step": "Rose Quartz Lamp was Stepped On",
   "sounds.twosidesmod.rose_quartz_lamp_place": "Rose Quartz Lamp was Placed",
   "sounds.twosidesmod.rose_quartz_lamp_hit": "Rose Quartz Lamp was Hit",
-  "sounds.twosidesmod.rose_quartz_lamp_fall": "Rose Quartz Lamp was Fallen On"
+  "sounds.twosidesmod.rose_quartz_lamp_fall": "Rose Quartz Lamp was Fallen On",
+
+  "painting.mccourse.world.title": "World",
+  "painting.mccourse.world.author": "NanoAttack",
+  "painting.mccourse.shrimp.title": "Shrimp",
+  "painting.mccourse.shrimp.author": "NanoAttack",
+  "painting.mccourse.saw_them.title": "Saw Them",
+  "painting.mccourse.saw_them.author": "NanoAttack"
 }
