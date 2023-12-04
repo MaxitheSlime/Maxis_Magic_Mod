@@ -22,8 +22,9 @@ public class SlimeyEffect extends MobEffect {
 
         super.applyEffectTick(pLivingEntity, pAmplifier);
     }
+
     @Override
-    public boolean isDurationEffectTick(int pDuration, int pAmplifier) {
+    public boolean m_6584_(int p_19455_, int p_19456_) {
         return true;
     }
 }

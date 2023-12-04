@@ -41,10 +41,6 @@ public class TwoSidesMod {
             modEventBus.addListener(this::commonSetup);
             modEventBus.addListener(this::addCreative);
 
-            // Register ourselves for server and other game events we are interested in
-            MinecraftForge.EVENT_BUS.register(this);
-
-
             ModItems.register(modEventBus);
             ModBlocks.register(modEventBus);
             ModCreativeModeTabs.register(modEventBus);
@@ -53,6 +49,9 @@ public class TwoSidesMod {
             ModLootModifiers.register(modEventBus);
             ModPaintings.register(modEventBus);
             ModEffects.register(modEventBus);
+
+            // Register ourselves for server and other game events we are interested in
+            MinecraftForge.EVENT_BUS.register(this);
         }
 
         private void commonSetup(final FMLCommonSetupEvent event)
