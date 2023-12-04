@@ -7,12 +7,17 @@ import net.maxitheslime.twosidesmod.enchantment.ModEnchantments;
 import net.maxitheslime.twosidesmod.item.ModItems;
 import net.maxitheslime.twosidesmod.loot.ModLootModifiers;
 import net.maxitheslime.twosidesmod.painting.ModPaintings;
+import net.maxitheslime.twosidesmod.potion.BetterBrewingRecipe;
+import net.maxitheslime.twosidesmod.potion.ModPotions;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -49,6 +54,7 @@ public class TwoSidesMod {
             ModLootModifiers.register(modEventBus);
             ModPaintings.register(modEventBus);
             ModEffects.register(modEventBus);
+            ModPotions.register(modEventBus);
 
             // Register ourselves for server and other game events we are interested in
             MinecraftForge.EVENT_BUS.register(this);
@@ -61,6 +67,8 @@ public class TwoSidesMod {
                     ComposterBlock.COMPOSTABLES.put(ModItems.LEMON_SEEDS.get(), 0.20f);
 
                 ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CRYSTALLIZED_FLOWER.getId(), ModBlocks.POTTED_CRYSTALLIZED_FLOWER);
+
+                BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.THICK, ModItems.PURE_ROSE_QUARTZ.get(), ModPotions.SLIMEY_POTION.get()));
             });
         }
 

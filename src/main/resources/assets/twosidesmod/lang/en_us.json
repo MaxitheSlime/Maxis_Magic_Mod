@@ -74,5 +74,9 @@
   "painting.mccourse.saw_them.title": "Saw Them",
   "painting.mccourse.saw_them.author": "NanoAttack",
 
-  "effect.twosidesmod.gravitated": "Gravitated"
+  "effect.twosidesmod.gravitated": "Localized Gravity",
+  "item.minecraft.potion.effect.suction_potion": "Localized Gravity Potion",
+  "item.minecraft.splash_potion.effect.suction_potion": "Localized Gravity Splash Potion",
+  "item.minecraft.lingering_potion.effect.suction_potion": "Localized Gravity Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.suction_potion": "Arrow of Localized Gravity"
 }
