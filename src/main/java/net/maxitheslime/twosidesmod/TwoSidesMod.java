@@ -2,6 +2,7 @@ package net.maxitheslime.twosidesmod;
 
 import com.mojang.logging.LogUtils;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
+import net.maxitheslime.twosidesmod.effect.ModEffects;
 import net.maxitheslime.twosidesmod.enchantment.ModEnchantments;
 import net.maxitheslime.twosidesmod.item.ModItems;
 import net.maxitheslime.twosidesmod.loot.ModLootModifiers;
@@ -51,6 +52,7 @@ public class TwoSidesMod {
             ModSounds.register(modEventBus);
             ModLootModifiers.register(modEventBus);
             ModPaintings.register(modEventBus);
+            ModEffects.register(modEventBus);
         }
 
         private void commonSetup(final FMLCommonSetupEvent event)
