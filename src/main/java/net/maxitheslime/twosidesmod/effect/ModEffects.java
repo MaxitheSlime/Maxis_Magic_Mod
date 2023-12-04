@@ -15,8 +15,8 @@ public class ModEffects {
             DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, TwoSidesMod.MOD_ID);
 
     public static final RegistryObject<MobEffect> SUCTION_EFFECT = MOB_EFFECTS.register("gravitated",
-            () -> new SlimeyEffect(MobEffectCategory.BENEFICIAL, 0x36ebab).addAttributeModifier(Attributes.MOVEMENT_SPEED,
-                    "7107DE5E-7CE8-4030-940E-514C1F160891", -0.25f, AttributeModifier.Operation.MULTIPLY_TOTAL));
+            () -> new SuctionEffect(MobEffectCategory.BENEFICIAL, 0x115c58).addAttributeModifier(Attributes.MOVEMENT_SPEED,
+                    "7107DE5E-7CE8-4030-940E-514C1F160890", -0.25f, AttributeModifier.Operation.MULTIPLY_TOTAL));
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);

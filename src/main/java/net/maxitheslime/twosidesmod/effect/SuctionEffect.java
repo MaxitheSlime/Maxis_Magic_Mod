@@ -7,8 +7,8 @@ import net.minecraft.world.phys.Vec3;
 
 // Climbing Effect by SameDifferent: https://github.com/samedifferent/TrickOrTreat/blob/master/LICENSE
 // Distributed under MIT
-public class SlimeyEffect extends MobEffect {
-    public SlimeyEffect(MobEffectCategory pCategory, int pColor) {
+public class SuctionEffect extends MobEffect {
+    public SuctionEffect(MobEffectCategory pCategory, int pColor) {
         super(pCategory, pColor);
     }
 
