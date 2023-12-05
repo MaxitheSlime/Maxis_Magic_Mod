@@ -10,6 +10,7 @@ import net.maxitheslime.twosidesmod.painting.ModPaintings;
 import net.maxitheslime.twosidesmod.potion.BetterBrewingRecipe;
 import net.maxitheslime.twosidesmod.potion.ModPotions;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
+import net.maxitheslime.twosidesmod.villager.ModVillagers;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
@@ -55,6 +56,7 @@ public class TwoSidesMod {
             ModPaintings.register(modEventBus);
             ModEffects.register(modEventBus);
             ModPotions.register(modEventBus);
+            ModVillagers.register(modEventBus);
 
             // Register ourselves for server and other game events we are interested in
             MinecraftForge.EVENT_BUS.register(this);

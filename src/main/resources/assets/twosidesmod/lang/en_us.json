@@ -49,6 +49,7 @@
   "block.twosidesmod.rose_quartz_lamp": "Easy Toggle Lamp",
   "block.twosidesmod.sound_block": "Alert Block",
   "tooltip.twosidesmod.sound_block": "§eRightclick§r to play nice sounds\nWill create an alert when something steps on top",
+  "entity.minecraft.villager.twosidesmod.soundmaster": "Soundmaster",
   "block.twosidesmod.crystal_flower": "Crystallized Flower",
   "block.twosidesmod.purification_table": "Purification Station",
 
