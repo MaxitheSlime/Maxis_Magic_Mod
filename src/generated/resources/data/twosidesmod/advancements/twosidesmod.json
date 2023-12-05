@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "has_impure_rose_quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:impure_rose_quartz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "twosidesmod:textures/block/rose_quartz_ore.png",
+    "description": {
+      "text": "Magic at Your Fingertips!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:pure_rose_quartz"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "2 Sides Mod"
+    }
+  },
+  "requirements": [
+    [
+      "has_impure_rose_quartz"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
