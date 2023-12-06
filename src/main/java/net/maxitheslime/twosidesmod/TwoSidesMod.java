@@ -2,6 +2,9 @@ package net.maxitheslime.twosidesmod;
 
 import com.mojang.logging.LogUtils;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
+import net.maxitheslime.twosidesmod.block.entity.ModBlockEntites;
+import net.maxitheslime.twosidesmod.block.screen.ModMenuTypes;
+import net.maxitheslime.twosidesmod.block.screen.PurificationTableScreen;
 import net.maxitheslime.twosidesmod.effect.ModEffects;
 import net.maxitheslime.twosidesmod.enchantment.ModEnchantments;
 import net.maxitheslime.twosidesmod.fluid.ModFluidTypes;
@@ -12,11 +15,12 @@ import net.maxitheslime.twosidesmod.painting.ModPaintings;
 import net.maxitheslime.twosidesmod.particle.ModParticles;
 import net.maxitheslime.twosidesmod.potion.BetterBrewingRecipe;
 import net.maxitheslime.twosidesmod.potion.ModPotions;
+import net.maxitheslime.twosidesmod.recipe.ModRecipes;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
 import net.maxitheslime.twosidesmod.villager.ModVillagers;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
@@ -65,6 +69,9 @@ public class TwoSidesMod {
             ModParticles.register(modEventBus);
             ModFluidTypes.register(modEventBus);
             ModFluids.register(modEventBus);
+            ModBlockEntites.register(modEventBus);
+            ModMenuTypes.register(modEventBus);
+            ModRecipes.register(modEventBus);
 
             // Register ourselves for server and other game events we are interested in
             MinecraftForge.EVENT_BUS.register(this);
@@ -73,8 +80,8 @@ public class TwoSidesMod {
         private void commonSetup(final FMLCommonSetupEvent event)
         {
             event.enqueueWork(() -> {
-                    ComposterBlock.COMPOSTABLES.put(ModItems.LEMON.get(), 0.35f);
-                    ComposterBlock.COMPOSTABLES.put(ModItems.LEMON_SEEDS.get(), 0.20f);
+                ComposterBlock.COMPOSTABLES.put(ModItems.LEMON.get(), 0.35f);
+                ComposterBlock.COMPOSTABLES.put(ModItems.LEMON_SEEDS.get(), 0.20f);
 
                 ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CRYSTALLIZED_FLOWER.getId(), ModBlocks.POTTED_CRYSTALLIZED_FLOWER);
 
@@ -82,6 +89,8 @@ public class TwoSidesMod {
 
                 ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_LEMON_JUICE.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_LEMON_JUICE.get(), RenderType.translucent());
+
+                MenuScreens.register(ModMenuTypes.PURIFICATION_MENU.get(), PurificationTableScreen::new);
             });
         }
 

@@ -2,6 +2,7 @@ package net.maxitheslime.twosidesmod.datagen;
 
 import net.maxitheslime.twosidesmod.TwoSidesMod;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
+import net.maxitheslime.twosidesmod.datagen.custom.PurificationRecipeProvider;
 import net.maxitheslime.twosidesmod.item.ModItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
@@ -28,6 +29,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
+
+        new PurificationRecipeProvider(ModItems.IMPURE_ROSE_QUARTZ.get(), ModItems.PURE_ROSE_QUARTZ.get(), 3)
+                .unlockedBy("has_impure_rose_quartz", has(ModItems.IMPURE_ROSE_QUARTZ.get())).save(pWriter);
+
+        new PurificationRecipeProvider(Items.COAL, Items.DIAMOND, 7)
+                .unlockedBy("has_diamond", has(Items.DIAMOND)).save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_QUARTZ_BLOCK.get())
                 .pattern("AAA")
                 .pattern("AAA")

@@ -27,7 +27,35 @@ public class LightningStrikerEnchantment extends Enchantment {
             } else if (pLevel == 2) {
                 EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
                         MobSpawnType.TRIGGERED, true, true);
-
+                EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
+                        MobSpawnType.TRIGGERED, true, true);
+            } else if (pLevel == 3) {
+                EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
+                        MobSpawnType.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
+                        MobSpawnType.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
+                        MobSpawnType.TRIGGERED, true, true);
+            }
+            else if (pLevel == 4) {
+                EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
+                        MobSpawnType.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
+                        MobSpawnType.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
+                        MobSpawnType.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
+                        MobSpawnType.TRIGGERED, true, true);
+            }
+            else if (pLevel == 5) {
+                EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
+                        MobSpawnType.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
+                        MobSpawnType.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
+                        MobSpawnType.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
+                        MobSpawnType.TRIGGERED, true, true);
                 EntityType.LIGHTNING_BOLT.spawn(level, null, (Player) null, position,
                         MobSpawnType.TRIGGERED, true, true);
             }

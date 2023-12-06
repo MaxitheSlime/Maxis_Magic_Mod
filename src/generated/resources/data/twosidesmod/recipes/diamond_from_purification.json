@@ -1,0 +1,12 @@
+{
+  "type": "twosidesmod:purification",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "output": {
+    "count": 7,
+    "item": "minecraft:diamond"
+  }
+}

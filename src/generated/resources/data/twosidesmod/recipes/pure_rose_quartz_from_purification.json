@@ -1,0 +1,12 @@
+{
+  "type": "twosidesmod:purification",
+  "ingredients": [
+    {
+      "item": "twosidesmod:impure_rose_quartz"
+    }
+  ],
+  "output": {
+    "count": 3,
+    "item": "twosidesmod:pure_rose_quartz"
+  }
+}
