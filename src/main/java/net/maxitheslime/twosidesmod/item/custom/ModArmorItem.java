@@ -1,14 +1,12 @@
 package net.maxitheslime.twosidesmod.item.custom;
 
 import com.google.common.collect.ImmutableMap;
-import net.maxitheslime.twosidesmod.ModArmorMaterials;
+import net.maxitheslime.twosidesmod.item.ModArmorMaterials;
 import net.maxitheslime.twosidesmod.effect.ModEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 

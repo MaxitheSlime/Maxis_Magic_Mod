@@ -1,5 +1,6 @@
-package net.maxitheslime.twosidesmod;
+package net.maxitheslime.twosidesmod.item;
 
+import net.maxitheslime.twosidesmod.TwoSidesMod;
 import net.maxitheslime.twosidesmod.item.ModItems;
 import net.maxitheslime.twosidesmod.util.ModTags;
 import net.minecraft.resources.ResourceLocation;

@@ -1,4 +1,4 @@
-package net.maxitheslime.twosidesmod;
+package net.maxitheslime.twosidesmod.item;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

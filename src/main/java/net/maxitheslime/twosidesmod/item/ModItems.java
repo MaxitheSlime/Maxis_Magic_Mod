@@ -1,12 +1,9 @@
 package net.maxitheslime.twosidesmod.item;
 
-import net.maxitheslime.twosidesmod.ModArmorMaterials;
-import net.maxitheslime.twosidesmod.ModFoodProperties;
 import net.maxitheslime.twosidesmod.TwoSidesMod;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
 import net.maxitheslime.twosidesmod.fluid.ModFluids;
 import net.maxitheslime.twosidesmod.item.custom.*;
-import net.maxitheslime.twosidesmod.ModToolTiers;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;

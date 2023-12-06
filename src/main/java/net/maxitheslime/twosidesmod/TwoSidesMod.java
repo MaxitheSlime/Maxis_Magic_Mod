@@ -9,6 +9,7 @@ import net.maxitheslime.twosidesmod.effect.ModEffects;
 import net.maxitheslime.twosidesmod.enchantment.ModEnchantments;
 import net.maxitheslime.twosidesmod.fluid.ModFluidTypes;
 import net.maxitheslime.twosidesmod.fluid.ModFluids;
+import net.maxitheslime.twosidesmod.item.ModItemProperties;
 import net.maxitheslime.twosidesmod.item.ModItems;
 import net.maxitheslime.twosidesmod.loot.ModLootModifiers;
 import net.maxitheslime.twosidesmod.painting.ModPaintings;
