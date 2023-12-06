@@ -24,7 +24,7 @@ public class SuctionEffect extends MobEffect {
     }
 
     @Override
-    public boolean isDurationEffectTick(int pDuration, int pAmplifier) {
+    public boolean m_6584_(int pDuration, int pAmplifier) {
         return true;
     }
 }

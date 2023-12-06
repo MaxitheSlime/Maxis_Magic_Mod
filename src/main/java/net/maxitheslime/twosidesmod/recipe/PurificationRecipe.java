@@ -54,9 +54,10 @@ public class PurificationRecipe implements Recipe<SimpleContainer> {
     }
 
     @Override
-    public ResourceLocation getId() {
+    public ResourceLocation m_6423_() {
         return id;
     }
+
     @Override
     public RecipeSerializer<?> getSerializer() {
         return Serializer.INSTANCE;
@@ -79,14 +80,14 @@ public class PurificationRecipe implements Recipe<SimpleContainer> {
                 new ResourceLocation(TwoSidesMod.MOD_ID,"purification");
 
         @Override
-        public PurificationRecipe fromJson(ResourceLocation id, JsonObject json) {
-            ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "output"));
+        public PurificationRecipe m_6729_(ResourceLocation id, JsonObject json) {
+            ItemStack output = ShapedRecipe.m_151274_(GsonHelper.getAsJsonObject(json, "output"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(json, "ingredients");
             NonNullList<Ingredient> inputs = NonNullList.withSize(1, Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++) {
-                inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
+                inputs.set(i, Ingredient.m_43917_(ingredients.get(i)));
             }
 
             return new PurificationRecipe(id, output, inputs);

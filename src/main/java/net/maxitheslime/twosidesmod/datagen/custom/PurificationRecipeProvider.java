@@ -51,7 +51,7 @@ public class PurificationRecipeProvider implements RecipeBuilder {
         this.advancement.parent(new ResourceLocation("recipes/root"))
                 .addCriterion("has_the_recipe", new Criterion(RecipeUnlockedTrigger.unlocked(pRecipeId)))
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId))
-                .requirements(RequirementsStrategy.OR); //LOOK AT ME
+                .requirements(RequirementsStrategy.f_15978_); //LOOK AT ME
 
         pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.ingredient,
                 this.advancement, new ResourceLocation(pRecipeId.getNamespace(), "recipes/"
@@ -93,25 +93,25 @@ public class PurificationRecipeProvider implements RecipeBuilder {
         }
 
         @Override
-        public ResourceLocation getId() {
+        public ResourceLocation m_6445_() {
             return new ResourceLocation(TwoSidesMod.MOD_ID,
                     ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_purification");
         }
 
         @Override
-        public RecipeSerializer<?> getType() {
+        public RecipeSerializer<?> m_6637_() {
             return PurificationRecipe.Serializer.INSTANCE;
         }
 
-        @javax.annotation.Nullable
+        @org.jetbrains.annotations.Nullable
         @Override
-        public JsonObject serializeAdvancement() {
-                return this.advancement.serializeToJson();
+        public JsonObject m_5860_() {
+                return this.advancement.m_138400_();
         }
 
-        @javax.annotation.Nullable
+        @org.jetbrains.annotations.Nullable
         @Override
-        public ResourceLocation getAdvancementId() {
+        public ResourceLocation m_6448_() {
             return this.advancementId;
         }
     }
