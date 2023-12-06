@@ -5,6 +5,7 @@ import net.maxitheslime.twosidesmod.block.custom.LemonBonsaiCropBlock;
 import net.maxitheslime.twosidesmod.block.custom.PurifyingTableBlock;
 import net.maxitheslime.twosidesmod.block.custom.RoseQuartzLampBlock;
 import net.maxitheslime.twosidesmod.block.custom.SoundBlock;
+import net.maxitheslime.twosidesmod.fluid.ModFluids;
 import net.maxitheslime.twosidesmod.item.ModItems;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
 import net.minecraft.sounds.SoundEvent;
@@ -89,6 +90,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PURIFICATION_TABLE = registerBlock("purification_table",
             () -> new PurifyingTableBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    public static final RegistryObject<LiquidBlock> LEMON_JUICE_BLOCK = BLOCKS.register("lemon_juice_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_LEMON_JUICE, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

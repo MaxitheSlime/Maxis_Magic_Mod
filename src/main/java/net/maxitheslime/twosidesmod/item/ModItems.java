@@ -4,6 +4,7 @@ import net.maxitheslime.twosidesmod.ModArmorMaterials;
 import net.maxitheslime.twosidesmod.ModFoodProperties;
 import net.maxitheslime.twosidesmod.TwoSidesMod;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
+import net.maxitheslime.twosidesmod.fluid.ModFluids;
 import net.maxitheslime.twosidesmod.item.custom.*;
 import net.maxitheslime.twosidesmod.ModToolTiers;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
@@ -73,6 +74,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> ROSE_QUARTZ_LIGHTBULB = ITEMS.register("rose_quartz_lightbulb",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> LEMON_JUICE_BUCKET = ITEMS.register("lemon_juice_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_LEMON_JUICE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

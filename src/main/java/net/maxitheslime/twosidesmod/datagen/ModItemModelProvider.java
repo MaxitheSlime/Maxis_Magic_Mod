@@ -51,6 +51,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ROSE_QUARTZ_DISK_PIECE);
 
         complexBlock(ModBlocks.PURIFICATION_TABLE.get());
+
+
+        simpleItem(ModItems.LEMON_JUICE_BUCKET);
     }
 
     private ItemModelBuilder complexBlock(Block block) {
