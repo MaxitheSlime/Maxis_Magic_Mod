@@ -29,7 +29,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(Blocks.IRON_BLOCK).add(Blocks.RAW_IRON_BLOCK).add(Blocks.GOLD_BLOCK).add(Blocks.RAW_GOLD_BLOCK)
                 .add(Blocks.COPPER_BLOCK).add(Blocks.RAW_COPPER_BLOCK).add(Blocks.REDSTONE_BLOCK).add(Blocks.LAPIS_BLOCK)
                 .add(Blocks.COAL_BLOCK).add(Blocks.DIAMOND_BLOCK).add(Blocks.EMERALD_BLOCK).add(Blocks.AMETHYST_CLUSTER)
-                .add(Blocks.BUDDING_AMETHYST).add(Blocks.QUARTZ_BLOCK).addTag(Tags.Blocks.ORES);
+                .add(Blocks.BUDDING_AMETHYST).add(Blocks.QUARTZ_BLOCK).add(Blocks.ANCIENT_DEBRIS)
+                .add(Blocks.NETHERITE_BLOCK).addTag(Tags.Blocks.ORES);
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ROSE_QUARTZ_BLOCK.get(),
