@@ -89,11 +89,6 @@ public class TwoSidesMod {
                 ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CRYSTALLIZED_FLOWER.getId(), ModBlocks.POTTED_CRYSTALLIZED_FLOWER);
 
                 BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.THICK, ModItems.PURE_ROSE_QUARTZ.get(), ModPotions.SLIMEY_POTION.get()));
-
-                ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_LEMON_JUICE.get(), RenderType.translucent());
-                ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_LEMON_JUICE.get(), RenderType.translucent());
-
-                MenuScreens.register(ModMenuTypes.PURIFICATION_MENU.get(), PurificationTableScreen::new);
             });
         }
 
@@ -114,9 +109,15 @@ public class TwoSidesMod {
             public static void onClientSetup(FMLClientSetupEvent event)
             {
                 event.enqueueWork(() -> {
+                    Sheets.addWoodType(ModWoodTypes.ENERGY);
+
                     ModItemProperties.addCustomItemProperties();
 
-                    Sheets.addWoodType(ModWoodTypes.ENERGY);
+                    ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_LEMON_JUICE.get(), RenderType.translucent());
+                    ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_LEMON_JUICE.get(), RenderType.translucent());
+
+                    MenuScreens.register(ModMenuTypes.PURIFICATION_MENU.get(), PurificationTableScreen::new);
+
                 });
             }
         }

@@ -5,5 +5,5 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 
 public class ModWoodTypes {
-    public static final WoodType ENERGY = WoodType.register(new WoodType(TwoSidesMod.MOD_ID + ":hanging", BlockSetType.OAK));
+    public static final WoodType ENERGY = WoodType.register(new WoodType(TwoSidesMod.MOD_ID + ":energy", BlockSetType.OAK));
 }

@@ -24,7 +24,7 @@ public class ModConfiguredFeatures {
 
         register(context, ENERGY_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.ENERGY_LOG.get()),
-                new StraightTrunkPlacer(5, 4, 3),
+                new StraightTrunkPlacer(3, 2, 1),
                 BlockStateProvider.simple(ModBlocks.ENERGY_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
