@@ -405,6 +405,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEMON_JUICE_BUCKET.get())
+                .pattern("LLL")
+                .pattern("LLL")
+                .pattern("LBL")
+                .define('L', ModItems.LEMON.get())
+                .define('B', Items.BUCKET)
+                .unlockedBy("has_bucket", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(Items.BUCKET).build()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BAR_BRAWL_RECORD.get())
                 .pattern("DDD")
                 .pattern("R R")

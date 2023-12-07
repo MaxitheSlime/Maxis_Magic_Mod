@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "L": {
+      "item": "twosidesmod:lemon"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LLL",
+    "LBL"
+  ],
+  "result": {
+    "item": "twosidesmod:lemon_juice_bucket"
+  },
+  "show_notification": true
+}
