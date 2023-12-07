@@ -50,7 +50,6 @@
   "block.twosidesmod.rose_quartz_lamp": "Easy Toggle Lamp",
   "block.twosidesmod.sound_block": "Alert Block",
   "tooltip.twosidesmod.sound_block": "§eRightclick§r to play nice sounds\nWill create an alert when something steps on top",
-  "entity.minecraft.villager.twosidesmod.soundmaster": "Soundmaster",
   "block.twosidesmod.crystal_flower": "Crystallized Flower",
   "block.twosidesmod.purification_table": "Purification Station",
 
@@ -81,5 +80,12 @@
   "item.minecraft.potion.effect.suction_potion": "Localized Gravity Potion",
   "item.minecraft.splash_potion.effect.suction_potion": "Localized Gravity Splash Potion",
   "item.minecraft.lingering_potion.effect.suction_potion": "Localized Gravity Lingering Potion",
-  "item.minecraft.tipped_arrow.effect.suction_potion": "Arrow of Localized Gravity"
+  "item.minecraft.tipped_arrow.effect.suction_potion": "Arrow of Localized Gravity",
+
+  "entity.minecraft.villager.twosidesmod.soundmaster": "Soundmaster",
+
+  "twosidesmod.tooltip.liquid.amount.with.capacity": "%s / %s mB",
+  "twosidesmod.tooltip.liquid.amount": "%s mB",
+
+  "fluid_type.twosidesmod.lemon_juice_fluid" : "Lemon Juice"
 }
