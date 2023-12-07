@@ -75,6 +75,12 @@ public class ModItems {
     public static final RegistryObject<Item> LEMON_JUICE_BUCKET = ITEMS.register("lemon_juice_bucket",
             () -> new BucketItem(ModFluids.SOURCE_LEMON_JUICE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
+    public static final RegistryObject<Item> ENERGY_SIGN = ITEMS.register("energy_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ENERGY_SIGN.get(), ModBlocks.ENERGY_WALL_SIGN.get()));
+    public static final RegistryObject<Item> ENERGY_HANGING_SIGN = ITEMS.register("energy_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.ENERGY_HANGING_SIGN.get(), ModBlocks.ENERGY_WALL_HANGING_SIGN.get(),
+                    new Item.Properties().stacksTo(16)));
+    
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

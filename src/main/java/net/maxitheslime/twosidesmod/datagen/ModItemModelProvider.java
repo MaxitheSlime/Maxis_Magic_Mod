@@ -52,8 +52,18 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         complexBlock(ModBlocks.PURIFICATION_TABLE.get());
 
-
         simpleItem(ModItems.LEMON_JUICE_BUCKET);
+
+        saplingItem(ModBlocks.ENERGY_SAPLING);
+
+        simpleItem(ModItems.ENERGY_SIGN);
+        simpleItem(ModItems.ENERGY_HANGING_SIGN);
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(TwoSidesMod.MOD_ID,"block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder complexBlock(Block block) {

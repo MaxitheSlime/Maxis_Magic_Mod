@@ -1,0 +1,4 @@
+// 1.20.1	2023-12-06T23:09:02.0196642	Registries
+c42dfad9627e0659e93b1ddc556c35e76a49cb3c data/twosidesmod/forge/biome_modifier/add_tree_energy.json
+2545220eba1e0ea2f2c7ce2137d92aa3658c49ec data/twosidesmod/worldgen/configured_feature/energy.json
+126dcef9d9d1597aac9f04a350fe20eb5e6eb2cc data/twosidesmod/worldgen/placed_feature/energy_placed.json

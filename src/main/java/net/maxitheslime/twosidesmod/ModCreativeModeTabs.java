@@ -84,12 +84,21 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_TRAPDOOR.get());
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_LAMP.get());
                         pOutput.accept(ModBlocks.PURIFICATION_TABLE.get());
+                        pOutput.accept(ModBlocks.ENERGY_PLANKS.get());
+                        pOutput.accept(ModItems.ENERGY_SIGN.get());
+                        pOutput.accept(ModItems.ENERGY_HANGING_SIGN.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_NATURE_BLOCKS = CREATIVE_MODE_TABS.register("two_sides_nature_blocks",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CRYSTALLIZED_FLOWER.get())).
                     title(Component.translatable("creativetab.two_sides_nature_blocks")).displayItems((pParameters, pOutput) ->
                     {
+                        pOutput.accept(ModBlocks.ENERGY_LOG.get());
+                        pOutput.accept(ModBlocks.ENERGY_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_ENERGY_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_ENERGY_WOOD.get());
+                        pOutput.accept(ModBlocks.ENERGY_LEAVES.get());
+                        pOutput.accept(ModBlocks.ENERGY_SAPLING.get());
                         pOutput.accept(ModBlocks.CRYSTALLIZED_FLOWER.get());
                     }).build());
 

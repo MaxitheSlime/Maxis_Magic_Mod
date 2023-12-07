@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "twosidesmod:block/energy_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "twosidesmod:block/energy_wood"
+    },
+    "axis=z": {
+      "model": "twosidesmod:block/energy_wood_horizontal",
+      "x": 90
+    }
+  }
+}

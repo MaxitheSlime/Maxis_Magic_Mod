@@ -239,7 +239,7 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
     protected void saveAdditional(CompoundTag pTag) {
         pTag.put("inventory", itemHandler.serializeNBT());
         pTag.putInt("purification_table.progress", progress);
-        pTag.putInt("energy", ENERGY_STORAGE.getEnergyStored());
+        pTag.putInt("hanging", ENERGY_STORAGE.getEnergyStored());
         pTag = FLUID_TANK.writeToNBT(pTag);
 
         super.saveAdditional(pTag);
@@ -250,12 +250,12 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
         super.load(pTag);
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
         progress = pTag.getInt("purification_table.progress");
-        ENERGY_STORAGE.setEnergy(pTag.getInt("energy"));
+        ENERGY_STORAGE.setEnergy(pTag.getInt("hanging"));
         FLUID_TANK.readFromNBT(pTag);
     }
 
     public void tick(Level level, BlockPos pPos, BlockState pState) {
-        fillUpOnEnergy(); // This is a "placeholder" for getting energy through wires or similar
+        fillUpOnEnergy(); // This is a "placeholder" for getting hanging through wires or similar
         fillUpOnFluid();
 
         if (isOutputSlotEmptyOrReceivable() && hasRecipe()) {

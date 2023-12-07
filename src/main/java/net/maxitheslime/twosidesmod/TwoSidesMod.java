@@ -18,10 +18,12 @@ import net.maxitheslime.twosidesmod.potion.BetterBrewingRecipe;
 import net.maxitheslime.twosidesmod.potion.ModPotions;
 import net.maxitheslime.twosidesmod.recipe.ModRecipes;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
+import net.maxitheslime.twosidesmod.util.ModWoodTypes;
 import net.maxitheslime.twosidesmod.villager.ModVillagers;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
@@ -113,6 +115,8 @@ public class TwoSidesMod {
             {
                 event.enqueueWork(() -> {
                     ModItemProperties.addCustomItemProperties();
+
+                    Sheets.addWoodType(ModWoodTypes.ENERGY);
                 });
             }
         }

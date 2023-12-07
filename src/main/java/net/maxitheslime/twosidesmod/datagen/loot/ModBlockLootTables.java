@@ -52,6 +52,26 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.POTTED_CRYSTALLIZED_FLOWER.get(), createPotFlowerItemTable(ModBlocks.CRYSTALLIZED_FLOWER.get()));
 
         this.dropSelf(ModBlocks.PURIFICATION_TABLE.get());
+
+        this.dropSelf(ModBlocks.ENERGY_LOG.get());
+        this.dropSelf(ModBlocks.ENERGY_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_ENERGY_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_ENERGY_WOOD.get());
+        this.dropSelf(ModBlocks.ENERGY_PLANKS.get());
+        this.dropSelf(ModBlocks.ENERGY_SAPLING.get());
+
+        this.add(ModBlocks.ENERGY_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.ENERGY_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(ModBlocks.ENERGY_SIGN.get(), block ->
+                createSingleItemTable(ModItems.ENERGY_SIGN.get()));
+        this.add(ModBlocks.ENERGY_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.ENERGY_SIGN.get()));
+        this.add(ModBlocks.ENERGY_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.ENERGY_HANGING_SIGN.get()));
+        this.add(ModBlocks.ENERGY_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.ENERGY_HANGING_SIGN.get()));
+        
     }
 
     @Override

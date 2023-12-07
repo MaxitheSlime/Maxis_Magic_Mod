@@ -1,6 +1,9 @@
-// 1.20.1	2023-12-05T21:31:16.7906754	Item Models: twosidesmod
+// 1.20.1	2023-12-06T22:58:29.1093026	Item Models: twosidesmod
 474ce6fcc32ff61796fe4fc40ccddacc407bd6b0 assets/twosidesmod/models/item/bar_brawl_record.json
 175e2d65f3006226d7e3c59f9b88aab713bb2f61 assets/twosidesmod/models/item/crystal_flower.json
+f2de98455c6085a7bb882b327b476fe846e41473 assets/twosidesmod/models/item/energy_hanging_sign.json
+bf385ce96cedb8ee95c778ca98b211f4b87b145d assets/twosidesmod/models/item/energy_sapling.json
+39ebc277e774afb27318f8059ce9ff06b4da8fa7 assets/twosidesmod/models/item/energy_sign.json
 5959bb32510079900580146b9a54393dd9e2cfb2 assets/twosidesmod/models/item/fire_quartz.json
 2e4f84ef910c11449f6965cb96a685d8de2ce863 assets/twosidesmod/models/item/impure_rose_quartz.json
 750e940eee1c06b04fd54b6c5f62dbfc2b0bc118 assets/twosidesmod/models/item/lemon.json

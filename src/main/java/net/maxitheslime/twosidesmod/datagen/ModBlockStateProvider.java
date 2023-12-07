@@ -59,6 +59,58 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         horizontalBlock(ModBlocks.PURIFICATION_TABLE.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/purification_table")));
+
+        logBlock(((RotatedPillarBlock) ModBlocks.ENERGY_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.ENERGY_WOOD.get()), blockTexture(ModBlocks.ENERGY_LOG.get()), blockTexture(ModBlocks.ENERGY_LOG.get()));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_ENERGY_LOG.get(), new ResourceLocation(TwoSidesMod.MOD_ID, "block/stripped_energy_log"),
+                new ResourceLocation(TwoSidesMod.MOD_ID, "block/stripped_energy_log_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_ENERGY_WOOD.get(), new ResourceLocation(TwoSidesMod.MOD_ID, "block/stripped_energy_log"),
+                new ResourceLocation(TwoSidesMod.MOD_ID, "block/stripped_energy_log"));
+
+        blockItem(ModBlocks.ENERGY_LOG);
+        blockItem(ModBlocks.ENERGY_WOOD);
+        blockItem(ModBlocks.STRIPPED_ENERGY_LOG);
+        blockItem(ModBlocks.STRIPPED_ENERGY_WOOD);
+
+        blockWithItem(ModBlocks.ENERGY_PLANKS);
+
+        leavesBlock(ModBlocks.ENERGY_LEAVES);
+        saplingBlock(ModBlocks.ENERGY_SAPLING);
+
+        signBlock(((StandingSignBlock) ModBlocks.ENERGY_SIGN.get()), ((WallSignBlock) ModBlocks.ENERGY_WALL_SIGN.get()),
+                blockTexture(ModBlocks.ENERGY_PLANKS.get()));
+
+        hangingSignBlock(ModBlocks.ENERGY_HANGING_SIGN.get(), ModBlocks.ENERGY_WALL_HANGING_SIGN.get(),
+                blockTexture(ModBlocks.ENERGY_PLANKS.get()));
+
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
+        ModelFile sign = models().sign(name(signBlock), texture);
+        hangingSignBlock(signBlock, wallSignBlock, sign);
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
+        simpleBlock(signBlock, sign);
+        simpleBlock(wallSignBlock, sign);
+    }
+
+    private String name(Block block) {
+        return key(block).getPath();
+    }
+
+    private ResourceLocation key(Block block) {
+        return ForgeRegistries.BLOCKS.getKey(block);
+    }
+
+    private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().cubeAll(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {

@@ -1,6 +1,7 @@
 package net.maxitheslime.twosidesmod.datagen;
 
 import net.maxitheslime.twosidesmod.TwoSidesMod;
+import net.maxitheslime.twosidesmod.block.ModBlocks;
 import net.maxitheslime.twosidesmod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -28,6 +29,15 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.ROSE_QUARTZ_BOOTS.get());
         this.tag(ItemTags.MUSIC_DISCS)
                 .add(ModItems.BAR_BRAWL_RECORD.get());
+
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ENERGY_LOG.get().asItem())
+                .add(ModBlocks.ENERGY_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_ENERGY_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_ENERGY_WOOD.get().asItem());
+
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.ENERGY_PLANKS.get().asItem());
     }
 
     @Override

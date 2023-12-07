@@ -87,6 +87,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.ROSE_QUARTZ_DOOR.get());
         this.tag(BlockTags.TRAPDOORS)
                 .add(ModBlocks.ROSE_QUARTZ_TRAPDOOR.get());
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ENERGY_LOG.get())
+                .add(ModBlocks.ENERGY_WOOD.get())
+                .add(ModBlocks.STRIPPED_ENERGY_LOG.get())
+                .add(ModBlocks.STRIPPED_ENERGY_WOOD.get());
+
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.ENERGY_PLANKS.get());
     }
 
     @Override
