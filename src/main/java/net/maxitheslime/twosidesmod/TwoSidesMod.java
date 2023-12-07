@@ -2,7 +2,7 @@ package net.maxitheslime.twosidesmod;
 
 import com.mojang.logging.LogUtils;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
-import net.maxitheslime.twosidesmod.block.entity.ModBlockEntites;
+import net.maxitheslime.twosidesmod.block.entity.ModBlockEntities;
 import net.maxitheslime.twosidesmod.block.screen.ModMenuTypes;
 import net.maxitheslime.twosidesmod.block.screen.PurificationTableScreen;
 import net.maxitheslime.twosidesmod.effect.ModEffects;
@@ -70,7 +70,7 @@ public class TwoSidesMod {
             ModParticles.register(modEventBus);
             ModFluidTypes.register(modEventBus);
             ModFluids.register(modEventBus);
-            ModBlockEntites.register(modEventBus);
+            ModBlockEntities.register(modEventBus);
             ModMenuTypes.register(modEventBus);
             ModRecipes.register(modEventBus);
 

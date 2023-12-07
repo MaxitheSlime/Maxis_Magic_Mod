@@ -1,6 +1,6 @@
 package net.maxitheslime.twosidesmod.block.custom;
 
-import net.maxitheslime.twosidesmod.block.entity.ModBlockEntites;
+import net.maxitheslime.twosidesmod.block.entity.ModBlockEntities;
 import net.maxitheslime.twosidesmod.block.entity.PurificationTableEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
@@ -101,7 +101,7 @@ public class PurifyingTableBlock extends BaseEntityBlock {
             return null;
         }
 
-        return createTickerHelper(pBlockEntityType, ModBlockEntites.PURIFICATION_TABLE_BE.get(),
+        return createTickerHelper(pBlockEntityType, ModBlockEntities.PURIFICATION_TABLE_BE.get(),
                 (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
     }
 }

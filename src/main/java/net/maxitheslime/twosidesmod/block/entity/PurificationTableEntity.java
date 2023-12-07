@@ -3,7 +3,6 @@ package net.maxitheslime.twosidesmod.block.entity;
 import net.maxitheslime.twosidesmod.block.custom.PurifyingTableBlock;
 import net.maxitheslime.twosidesmod.block.screen.PurificationTableMenu;
 import net.maxitheslime.twosidesmod.fluid.ModFluids;
-import net.maxitheslime.twosidesmod.item.ModItems;
 import net.maxitheslime.twosidesmod.recipe.PurificationRecipe;
 import net.maxitheslime.twosidesmod.util.InventoryDirectionEntry;
 import net.maxitheslime.twosidesmod.util.InventoryDirectionWrapper;
@@ -30,7 +29,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
@@ -50,7 +48,11 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
     private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
         @Override
         protected void onContentsChanged(int slot) {
+
             setChanged();
+            if(!level.isClientSide()) {
+                level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
+            }
         }
 
         @Override
@@ -94,6 +96,7 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
             @Override
             protected void onContentsChanged() {
                 setChanged();
+
                 if(!level.isClientSide()) {
                     level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
                 }
@@ -116,8 +119,19 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
         };
     }
 
+    public ItemStack getRenderStack() {
+        ItemStack stack = itemHandler.getStackInSlot(OUTPUT_SLOT);
+
+        if(stack.isEmpty()) {
+            stack = itemHandler.getStackInSlot(INPUT_SLOT);
+        }
+
+        return stack;
+    }
+
+
     public PurificationTableEntity(BlockPos pPos, BlockState pBlockState) {
-        super(ModBlockEntites.PURIFICATION_TABLE_BE.get(), pPos, pBlockState);
+        super(ModBlockEntities.PURIFICATION_TABLE_BE.get(), pPos, pBlockState);
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {
