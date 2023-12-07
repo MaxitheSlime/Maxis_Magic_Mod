@@ -356,6 +356,43 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(Items.TORCHFLOWER_SEEDS).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ENERGY_SIGN.get(), 3)
+                .pattern("EEE")
+                .pattern("EEE")
+                .pattern(" S ")
+                .define('E', ModBlocks.ENERGY_PLANKS.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_energy_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_PLANKS.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ENERGY_HANGING_SIGN.get(), 3)
+                .pattern("C C")
+                .pattern("EEE")
+                .pattern("EEE")
+                .define('E', ModBlocks.ENERGY_PLANKS.get())
+                .define('C', Items.CHAIN)
+                .unlockedBy("has_energy_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_PLANKS.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_ENERGY_WOOD.get(),4)
+                .pattern("EE ")
+                .pattern("EE ")
+                .pattern("   ")
+                .define('E', ModBlocks.STRIPPED_ENERGY_LOG.get())
+                .unlockedBy("has_stripped_energy_log", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.STRIPPED_ENERGY_LOG.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENERGY_WOOD.get(),4)
+                .pattern("EE ")
+                .pattern("EE ")
+                .pattern("   ")
+                .define('E', ModBlocks.ENERGY_LOG.get())
+                .unlockedBy("has_energy_log", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_LOG.get()).build()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.METAL_DETECTOR.get())
                 .pattern(" S ")
                 .pattern(" C ")
@@ -394,6 +431,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.ROSE_QUARTZ_BLOCK.get())
                 .unlockedBy("has_pure_rose_quartz_block", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModBlocks.ROSE_QUARTZ_BLOCK.get()).build()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ENERGY_PLANKS.get(), 4)
+                .requires(ModBlocks.ENERGY_LOG.get())
+                .unlockedBy("has_energy_log", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_LOG.get()).build()))
                 .save(pWriter);
 
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.IMPURE_ROSE_QUARTZ.get(), RecipeCategory.MISC, ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK.get(),

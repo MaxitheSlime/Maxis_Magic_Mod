@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "E": {
+      "item": "twosidesmod:energy_planks"
+    }
+  },
+  "pattern": [
+    "C C",
+    "EEE",
+    "EEE"
+  ],
+  "result": {
+    "count": 3,
+    "item": "twosidesmod:energy_hanging_sign"
+  },
+  "show_notification": true
+}

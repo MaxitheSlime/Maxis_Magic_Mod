@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "twosidesmod:stripped_energy_log"
+    }
+  },
+  "pattern": [
+    "EE ",
+    "EE ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "twosidesmod:stripped_energy_wood"
+  },
+  "show_notification": true
+}

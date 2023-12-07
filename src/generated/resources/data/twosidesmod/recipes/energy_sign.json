@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "twosidesmod:energy_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "EEE",
+    " S "
+  ],
+  "result": {
+    "count": 3,
+    "item": "twosidesmod:energy_sign"
+  },
+  "show_notification": true
+}
