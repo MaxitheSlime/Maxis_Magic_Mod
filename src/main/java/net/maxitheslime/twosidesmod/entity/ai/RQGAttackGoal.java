@@ -20,8 +20,8 @@ public class RQGAttackGoal extends MeleeAttackGoal {
     @Override
     public void start() {
         super.start();
-        attackDelay = 40;
-        ticksUntilNextAttack = 40;
+        attackDelay = 10;
+        ticksUntilNextAttack = 10;
     }
 
     @Override
