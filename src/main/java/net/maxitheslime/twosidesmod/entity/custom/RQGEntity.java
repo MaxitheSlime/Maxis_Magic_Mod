@@ -71,7 +71,7 @@ public class RQGEntity extends Animal {
             --this.idleAnimationTimeout;
         }
         if(this.isAttacking() && attackAnimationTimeout <= 0) {
-            attackAnimationTimeout = 80; // Length in ticks of your animation
+            attackAnimationTimeout = 20; // Length in ticks of your animation
             attackAnimationState.start(this.tickCount);
         } else {
             --this.attackAnimationTimeout;
