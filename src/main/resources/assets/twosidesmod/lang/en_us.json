@@ -95,6 +95,7 @@
   "item.minecraft.tipped_arrow.effect.suction_potion": "Arrow of Localized Gravity",
 
   "entity.minecraft.villager.twosidesmod.soundmaster": "Soundmaster",
+  "entity.twosidesmod.rqg" : "Rose Quartz Golem",
 
   "twosidesmod.tooltip.liquid.amount.with.capacity": "%s / %s mB",
   "twosidesmod.tooltip.liquid.amount": "%s mB",
