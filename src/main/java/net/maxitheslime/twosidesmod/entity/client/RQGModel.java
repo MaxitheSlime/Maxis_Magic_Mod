@@ -1,6 +1,4 @@
-package net.maxitheslime.twosidesmod.entity.client;
-
-// Made with Blockbench 4.9.1
+package net.maxitheslime.twosidesmod.entity.client;// Made with Blockbench 4.9.1
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
@@ -14,26 +12,25 @@ import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 
 public class RQGModel<T extends RQGEntity> extends HierarchicalModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "rqgmodel"), "main");
-	private final ModelPart Total;
+	private final ModelPart total;
 	private final ModelPart head;
+
 	public RQGModel(ModelPart root) {
-		this.Total = root.getChild("Total");
-		this.head = Total.getChild("Total").getChild("body").getChild("head");
+		this.total = root.getChild("total");
+		this.head = total.getChild("body").getChild("head");
 	}
 
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition Total = partdefinition.addOrReplaceChild("Total", CubeListBuilder.create(), PartPose.offset(0.0F, 5.0F, 0.0F));
+		PartDefinition total = partdefinition.addOrReplaceChild("total", CubeListBuilder.create(), PartPose.offset(0.0F, 5.0F, 0.0F));
 
-		PartDefinition body = Total.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 11.0F, 0.0F));
+		PartDefinition body = total.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 11.0F, 0.0F));
 
 		PartDefinition main = body.addOrReplaceChild("main", CubeListBuilder.create().texOffs(65, 23).addBox(-6.0F, -25.0F, -6.0F, 12.0F, 12.0F, 12.0F, new CubeDeformation(0.0F))
 		.texOffs(37, 48).addBox(6.0F, -25.0F, -8.0F, 2.0F, 12.0F, 16.0F, new CubeDeformation(0.0F))
@@ -106,11 +103,11 @@ public class RQGModel<T extends RQGEntity> extends HierarchicalModel<T> {
 
 	@Override
 	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-		Total.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+		total.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 
 	@Override
 	public ModelPart root() {
-		return Total;
+		return total;
 	}
 }

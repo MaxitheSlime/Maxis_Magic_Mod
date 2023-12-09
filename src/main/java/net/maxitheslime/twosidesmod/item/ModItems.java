@@ -2,11 +2,13 @@ package net.maxitheslime.twosidesmod.item;
 
 import net.maxitheslime.twosidesmod.TwoSidesMod;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
+import net.maxitheslime.twosidesmod.entity.ModEntities;
 import net.maxitheslime.twosidesmod.fluid.ModFluids;
 import net.maxitheslime.twosidesmod.item.custom.*;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -80,6 +82,10 @@ public class ModItems {
     public static final RegistryObject<Item> ENERGY_HANGING_SIGN = ITEMS.register("energy_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ENERGY_HANGING_SIGN.get(), ModBlocks.ENERGY_WALL_HANGING_SIGN.get(),
                     new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> RQG_SPAWN_EGG = ITEMS.register("rqg_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.RQG, 0x50ba11, 0xff7d7d,
+                    new Item.Properties()));
     
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

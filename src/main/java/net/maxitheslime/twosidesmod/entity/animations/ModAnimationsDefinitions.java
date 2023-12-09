@@ -7,7 +7,7 @@ import net.minecraft.client.animation.KeyframeAnimations;
 
 public class ModAnimationsDefinitions {
     public static final AnimationDefinition RQG_IDLE = AnimationDefinition.Builder.withLength(2f).looping()
-            .addAnimation("Total",
+            .addAnimation("total",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
                             new Keyframe(0f, KeyframeAnimations.posVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR),
@@ -16,7 +16,7 @@ public class ModAnimationsDefinitions {
                             new Keyframe(2f, KeyframeAnimations.posVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR))).build();
     public static final AnimationDefinition RQG_WALK = AnimationDefinition.Builder.withLength(2f).looping()
-            .addAnimation("Total",
+            .addAnimation("total",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
                             new Keyframe(0f, KeyframeAnimations.posVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR),
@@ -24,12 +24,12 @@ public class ModAnimationsDefinitions {
                                     AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(2f, KeyframeAnimations.posVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR)))
-            .addAnimation("Total",
+            .addAnimation("total",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
                             new Keyframe(0f, KeyframeAnimations.degreeVec(15f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR))).build();
     public static final AnimationDefinition RQG_ATTACK = AnimationDefinition.Builder.withLength(1f)
-            .addAnimation("Total",
+            .addAnimation("total",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
                             new Keyframe(0f, KeyframeAnimations.posVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR),
@@ -54,7 +54,7 @@ public class ModAnimationsDefinitions {
                             new Keyframe(1f, KeyframeAnimations.degreeVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR))).build();
     public static final AnimationDefinition RQG_SIT = AnimationDefinition.Builder.withLength(1f).looping()
-            .addAnimation("Total",
+            .addAnimation("total",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
                             new Keyframe(0f, KeyframeAnimations.posVec(0f, -7f, 0f),
                                     AnimationChannel.Interpolations.LINEAR)))

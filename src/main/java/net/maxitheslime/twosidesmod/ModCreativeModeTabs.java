@@ -56,6 +56,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.LEMON_SEEDS.get());
                     }).build());
 
+    public static final RegistryObject<CreativeModeTab> TWO_SIDES_MOBS = CREATIVE_MODE_TABS.register("two_sides_mobs",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RQG_SPAWN_EGG.get())).
+                    title(Component.translatable("creativetab.two_sides_mobs")).displayItems((pParameters, pOutput) ->
+                    {
+                        pOutput.accept(ModItems.RQG_SPAWN_EGG.get());
+                    }).build());
+
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_FLUIDS = CREATIVE_MODE_TABS.register("two_sides_fluids",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LEMON_JUICE_BUCKET.get())).
                     title(Component.translatable("creativetab.two_sides_fluids")).displayItems((pParameters, pOutput) ->

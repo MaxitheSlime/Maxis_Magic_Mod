@@ -1,4 +1,4 @@
-// 1.20.1	2023-12-07T01:04:41.9137902	Recipes
+// 1.20.1	2023-12-09T00:36:28.6426466	Recipes
 8eafd34008f7989bc4d2a29466872374765e7835 data/minecraft/advancements/recipes/diamond.json
 a36bef6721ff64c070703056c19a9d42ebac2506 data/minecraft/advancements/recipes/misc/pink_dye.json
 2867a858605d75e3a2f9d049b99c65f66c1197fb data/minecraft/recipes/pink_dye.json
@@ -53,6 +53,7 @@ edf0dcd36c656a74284f308418d2351f11274656 data/twosidesmod/advancements/recipes/m
 8b1463d474a8abd01ebc18f0b4bc6b741b15ecb9 data/twosidesmod/advancements/recipes/misc/rose_quartz_sword.json
 c26673d91a5fe320a29a4090aa2c1cedf6dd6c0c data/twosidesmod/advancements/recipes/misc/rose_quartz_trapdoor.json
 cec4055eb2ce53bdcae6d716884585c3278cdc30 data/twosidesmod/advancements/recipes/misc/rose_quartz_wall.json
+79b6967d877e195f17435131fb7272f9ddb0df35 data/twosidesmod/advancements/recipes/misc/rqg_spawn_egg.json
 5b246b5aa065451772c3828b4e57d3b21429d3ad data/twosidesmod/advancements/recipes/misc/sound_block.json
 b38e62043436341641ca8bccb5f450797393ac2b data/twosidesmod/advancements/recipes/misc/stripped_energy_wood.json
 a9b6c3ab6749394b7084b27422985a12e43375f8 data/twosidesmod/advancements/recipes/pure_rose_quartz.json
@@ -109,5 +110,6 @@ be74f440478cbbb32122b3c3db0c7f304df9ecc6 data/twosidesmod/recipes/rose_quartz_sh
 62d71e749a6a113c5ed9dc3851abf758252ff1f2 data/twosidesmod/recipes/rose_quartz_sword.json
 4c600dcf791a83a2fe9912bdb7b7f07f313c1a00 data/twosidesmod/recipes/rose_quartz_trapdoor.json
 44eadeb009d7daa9d0cf6e8b2fbeb83d1f09fd10 data/twosidesmod/recipes/rose_quartz_wall.json
+4969b4b9953b40313d157f5b58bb4fb72144d036 data/twosidesmod/recipes/rqg_spawn_egg.json
 9b6c5d6f3e46e3de7679be8756eac97a827c8609 data/twosidesmod/recipes/sound_block.json
 54b3435c1d1ca5a003def4b40bcb5801409d429d data/twosidesmod/recipes/stripped_energy_wood.json

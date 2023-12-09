@@ -1,4 +1,4 @@
-// 1.20.1	2023-12-06T22:58:29.1093026	Item Models: twosidesmod
+// 1.20.1	2023-12-09T00:00:44.2643888	Item Models: twosidesmod
 474ce6fcc32ff61796fe4fc40ccddacc407bd6b0 assets/twosidesmod/models/item/bar_brawl_record.json
 175e2d65f3006226d7e3c59f9b88aab713bb2f61 assets/twosidesmod/models/item/crystal_flower.json
 f2de98455c6085a7bb882b327b476fe846e41473 assets/twosidesmod/models/item/energy_hanging_sign.json
@@ -25,3 +25,4 @@ ec4d31584cc47057ee858b61f12a6f765142a792 assets/twosidesmod/models/item/rose_qua
 9b737794d9be45b40d5c71a5b550103ebb233d9c assets/twosidesmod/models/item/rose_quartz_shovel.json
 260dd1bfab026dab1f83d0496cb31ad0844d46a2 assets/twosidesmod/models/item/rose_quartz_sword.json
 8643cde4b8f19dec0313d3fbd3bab746a311cb97 assets/twosidesmod/models/item/rose_quartz_wall.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/twosidesmod/models/item/rqg_spawn_egg.json

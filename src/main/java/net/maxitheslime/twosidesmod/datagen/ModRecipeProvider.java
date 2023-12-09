@@ -166,6 +166,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RQG_SPAWN_EGG.get(), 2)
+                .pattern("RPR")
+                .pattern("PEP")
+                .pattern("RPR")
+                .define('R', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('P', ModBlocks.ENERGY_PLANKS.get())
+                .define('E', Items.EGG)
+                .unlockedBy("has_energy_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_PLANKS.get()).build()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_SWORD.get())
                 .pattern(" A ")
                 .pattern(" A ")

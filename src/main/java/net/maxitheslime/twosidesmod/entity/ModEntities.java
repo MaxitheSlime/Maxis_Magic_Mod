@@ -14,8 +14,8 @@ public class ModEntities {
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, TwoSidesMod.MOD_ID);
 
     public static final RegistryObject<EntityType<RQGEntity>> RQG =
-            ENTITY_TYPES.register("rhino", () -> EntityType.Builder.of(RQGEntity::new, MobCategory.CREATURE)
-                    .sized(1f, 1f).build("rose_quartz_golem"));
+            ENTITY_TYPES.register("total", () -> EntityType.Builder.of(RQGEntity::new, MobCategory.CREATURE)
+                    .sized(1f, 1f).build("total"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

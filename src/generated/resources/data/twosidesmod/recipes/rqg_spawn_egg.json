@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:egg"
+    },
+    "P": {
+      "item": "twosidesmod:energy_planks"
+    },
+    "R": {
+      "item": "twosidesmod:pure_rose_quartz"
+    }
+  },
+  "pattern": [
+    "RPR",
+    "PEP",
+    "RPR"
+  ],
+  "result": {
+    "count": 2,
+    "item": "twosidesmod:rqg_spawn_egg"
+  },
+  "show_notification": true
+}
