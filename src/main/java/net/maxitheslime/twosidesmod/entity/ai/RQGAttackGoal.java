@@ -8,8 +8,8 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 
 public class RQGAttackGoal extends MeleeAttackGoal {
     private final RQGEntity entity;
-    private int attackDelay = 40;
-    private int ticksUntilNextAttack = 40;
+    private int attackDelay = 10;
+    private int ticksUntilNextAttack = 10;
     private boolean shouldCountTillNextAttack = false;
 
     public RQGAttackGoal(PathfinderMob pMob, double pSpeedModifier, boolean pFollowingTargetEvenIfNotSeen) {
