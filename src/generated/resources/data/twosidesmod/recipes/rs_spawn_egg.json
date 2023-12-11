@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "minecraft:egg"
+    },
+    "R": {
+      "item": "twosidesmod:pure_rose_quartz"
+    },
+    "S": {
+      "item": "minecraft:diamond_sword"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    },
+    "s": {
+      "item": "minecraft:shield"
+    }
+  },
+  "pattern": [
+    "SDr",
+    "RER",
+    "sDr"
+  ],
+  "result": {
+    "item": "twosidesmod:rs_spawn_egg"
+  },
+  "show_notification": true
+}

@@ -9,6 +9,7 @@ import net.maxitheslime.twosidesmod.effect.ModEffects;
 import net.maxitheslime.twosidesmod.enchantment.ModEnchantments;
 import net.maxitheslime.twosidesmod.entity.ModEntities;
 import net.maxitheslime.twosidesmod.entity.client.RQGRenderer;
+import net.maxitheslime.twosidesmod.entity.client.RubyStatueRenderer;
 import net.maxitheslime.twosidesmod.fluid.ModFluidTypes;
 import net.maxitheslime.twosidesmod.fluid.ModFluids;
 import net.maxitheslime.twosidesmod.item.ModItemProperties;
@@ -123,6 +124,7 @@ public class TwoSidesMod {
                     MenuScreens.register(ModMenuTypes.PURIFICATION_MENU.get(), PurificationTableScreen::new);
 
                     EntityRenderers.register(ModEntities.RQG.get(), RQGRenderer::new);
+                    EntityRenderers.register(ModEntities.RUBY_STATUE.get(), RubyStatueRenderer::new);
 
                 });
             }

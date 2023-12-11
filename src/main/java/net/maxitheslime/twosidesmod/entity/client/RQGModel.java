@@ -92,6 +92,7 @@ public class RQGModel<T extends RQGEntity> extends HierarchicalModel<T> {
 		this.animateWalk(ModAnimationsDefinitions.RQG_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
 		this.animate(entity.idleAnimationState, ModAnimationsDefinitions.RQG_IDLE, ageInTicks, 1f);
 		this.animate(entity.attackAnimationState, ModAnimationsDefinitions.RQG_ATTACK, ageInTicks, 1f);
+		this.animate(entity.sitAnimationState, ModAnimationsDefinitions.RQG_SIT, ageInTicks, 1f);
 	}
 
 	private void applyHeadRotation(RQGEntity pEntity, float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {

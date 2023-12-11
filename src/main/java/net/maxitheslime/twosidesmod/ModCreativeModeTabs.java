@@ -46,6 +46,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ROSE_QUARTZ_BOOTS.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_SHIELD.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_HORSE_ARMOR.get());
+
+                        pOutput.accept(ModItems.REMOTE_CONTROL.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_FOODS = CREATIVE_MODE_TABS.register("two_sides_foods",
@@ -61,6 +63,7 @@ public class ModCreativeModeTabs {
                     title(Component.translatable("creativetab.two_sides_mobs")).displayItems((pParameters, pOutput) ->
                     {
                         pOutput.accept(ModItems.RQG_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.RS_SPAWN_EGG.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_FLUIDS = CREATIVE_MODE_TABS.register("two_sides_fluids",

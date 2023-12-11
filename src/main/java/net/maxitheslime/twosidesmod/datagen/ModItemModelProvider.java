@@ -60,6 +60,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ENERGY_HANGING_SIGN);
 
         withExistingParent(ModItems.RQG_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        simpleItem(ModItems.RS_SPAWN_EGG);
+
+        simpleItem(ModItems.REMOTE_CONTROL);
 
     }
 

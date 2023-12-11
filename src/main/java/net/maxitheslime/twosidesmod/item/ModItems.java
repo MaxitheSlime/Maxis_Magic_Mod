@@ -83,8 +83,14 @@ public class ModItems {
             () -> new HangingSignItem(ModBlocks.ENERGY_HANGING_SIGN.get(), ModBlocks.ENERGY_WALL_HANGING_SIGN.get(),
                     new Item.Properties().stacksTo(16)));
 
+    public static final RegistryObject<Item> REMOTE_CONTROL = ITEMS.register("remote_control",
+            () -> new Item(new Item.Properties().stacksTo(16)));
+
     public static final RegistryObject<Item> RQG_SPAWN_EGG = ITEMS.register("rqg_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.RQG, 0x50ba11, 0xff7d7d,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> RS_SPAWN_EGG = ITEMS.register("rs_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.RUBY_STATUE, 0xff0000, 0xff0000,
                     new Item.Properties()));
     
     public static void register(IEventBus eventBus) {

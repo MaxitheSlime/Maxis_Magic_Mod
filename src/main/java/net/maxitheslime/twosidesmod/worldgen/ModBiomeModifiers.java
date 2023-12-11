@@ -1,17 +1,21 @@
 package net.maxitheslime.twosidesmod.worldgen;
 
 import net.maxitheslime.twosidesmod.TwoSidesMod;
+import net.maxitheslime.twosidesmod.entity.ModEntities;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
+import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import java.util.List;
 
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_TREE_ENERGY = registerKey("add_tree_energy");
@@ -19,7 +23,7 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_ROSE_QUARTZ_ORE = registerKey("add_rose_quartz_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_ROSE_QUARTZ_ORE = registerKey("add_nether_rose_quartz_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_ROSE_QUARTZ_ORE = registerKey("add_end_rose_quartz_ore");
-
+    public static final ResourceKey<BiomeModifier> SPAWN_RQG = registerKey("spawn_rqg");
 
     public static final ResourceKey<BiomeModifier> ADD_CRYSTALLIZED_FLOWER = registerKey("add_crystallized_flower");
     
@@ -51,6 +55,10 @@ public class ModBiomeModifiers {
                 biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CRYSTALLIZED_FLOWER_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(SPAWN_RQG, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_DRY_OVERWORLD),
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.RQG.get(), 20, 1, 3))));
 
     }
 

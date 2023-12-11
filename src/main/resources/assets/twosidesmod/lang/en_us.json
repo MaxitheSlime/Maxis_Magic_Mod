@@ -2,10 +2,8 @@
   "item.twosidesmod.pure_rose_quartz": "Purified Rose Quartz",
   "item.twosidesmod.impure_rose_quartz": "Impure Rose Quartz",
   "item.twosidesmod.fire_quartz": "Fire Quartz",
-
   "item.twosidesmod.lemon": "Baby Lemon",
   "item.twosidesmod.lemon_seeds": "Bonsai Lemon Tree Seeds",
-
   "item.twosidesmod.metal_detector": "Ore Detector",
   "item.twosidesmod.data_tablet": "Ore Locater Registry",
   "item.twosidesmod.metal_detector.no_valuables": "No Valuables Found!",
@@ -24,15 +22,15 @@
   "item.twosidesmod.rose_quartz_disk_piece": "Piece of a Rose Quartz Music Disc",
   "item.twosidesmod.bar_brawl_record.desc": "Bryan Tech - Bar Brawl (CC0)",
   "item.twosidesmod.rose_quartz_lightbulb": "Rose Lightbulb",
-
   "item.twosidesmod.rose_quartz_helmet": "Rose Quartz Helm",
   "item.twosidesmod.rose_quartz_chestplate": "Rose Quartz Plate",
   "item.twosidesmod.rose_quartz_leggings": "Rose Quartz Pants",
   "item.twosidesmod.rose_quartz_boots": "Rose Quartz Boots",
   "item.twosidesmod.rose_quartz_horse_armor": "Rose Quartz Horse Armor",
   "item.twosidesmod.lemon_juice_bucket": "Lemon Juice Bucket",
-
+  "item.twosidesmod.remote_control": "RQG Control Stick",
   "item.twosidesmod.rqg_spawn_egg": "Rose Quartz Golem Spawn Egg",
+  "item.twosidesmod.rs_spawn_egg": "Ruby Statue Boss Summoner",
 
   "block.twosidesmod.pure_rose_quartz_block": "Block of Purified Rose Quartz",
   "block.twosidesmod.rose_quartz_stairs": "Purified Rose Quartz Stairs",
@@ -96,6 +94,7 @@
 
   "entity.minecraft.villager.twosidesmod.soundmaster": "Soundmaster",
   "entity.twosidesmod.rqg" : "Rose Quartz Golem",
+  "entity.twosidesmod.ruby_statue" : "Ruby Statue",
 
   "twosidesmod.tooltip.liquid.amount.with.capacity": "%s / %s mB",
   "twosidesmod.tooltip.liquid.amount": "%s mB",

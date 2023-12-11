@@ -177,6 +177,33 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModBlocks.ENERGY_PLANKS.get()).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RS_SPAWN_EGG.get())
+                .pattern("SDr")
+                .pattern("RER")
+                .pattern("sDr")
+                .define('R', ModItems.PURE_ROSE_QUARTZ.get())
+                .define('E', Items.EGG)
+                .define('D', Items.DIAMOND)
+                .define('S', Items.DIAMOND_SWORD)
+                .define('s', Items.SHIELD)
+                .define('r', Items.REDSTONE)
+                .unlockedBy("has_dragon_egg", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(Blocks.DRAGON_EGG).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.REMOTE_CONTROL.get(), 2)
+                .pattern("IgI")
+                .pattern("IRI")
+                .pattern("IGI")
+                .define('I', Items.IRON_NUGGET)
+                .define('G', Items.GOLD_NUGGET)
+                .define('R', Items.REDSTONE)
+                .define('g', Items.GLASS_PANE)
+                .unlockedBy("has_rqg_spawn_egg", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.RQG_SPAWN_EGG.get()).build()))
+                .save(pWriter);
+
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_SWORD.get())
                 .pattern(" A ")
                 .pattern(" A ")
