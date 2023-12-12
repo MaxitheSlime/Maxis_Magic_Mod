@@ -154,6 +154,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ENERGY_SAPLING = registerBlock("energy_sapling",
             () -> new SaplingBlock(new EnergyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+    public static final RegistryObject<Block> DICE_BLOCK = BLOCKS.register("dice_block",
+            () -> new DiceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(6f)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

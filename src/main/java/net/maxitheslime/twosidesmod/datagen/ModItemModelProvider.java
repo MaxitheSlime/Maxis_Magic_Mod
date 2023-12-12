@@ -64,6 +64,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.REMOTE_CONTROL);
 
+        simpleItem(ModItems.DICE);
+
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

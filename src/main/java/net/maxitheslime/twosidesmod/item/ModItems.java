@@ -72,7 +72,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ROSE_QUARTZ_LIGHTBULB = ITEMS.register("rose_quartz_lightbulb",
-            () -> new Item(new Item.Properties()));
+            () -> new RQBulbItem(new Item.Properties().durability(1024)));
 
     public static final RegistryObject<Item> LEMON_JUICE_BUCKET = ITEMS.register("lemon_juice_bucket",
             () -> new BucketItem(ModFluids.SOURCE_LEMON_JUICE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
@@ -92,6 +92,9 @@ public class ModItems {
     public static final RegistryObject<Item> RS_SPAWN_EGG = ITEMS.register("rs_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.RUBY_STATUE, 0xff0000, 0xff0000,
                     new Item.Properties()));
+
+    public static final RegistryObject<Item> DICE = ITEMS.register("dice",
+            () -> new DiceItem(new Item.Properties()));
     
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

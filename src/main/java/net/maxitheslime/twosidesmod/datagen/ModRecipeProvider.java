@@ -166,6 +166,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DICE.get())
+                .pattern("qbq")
+                .pattern("bSb")
+                .pattern("qbq")
+                .define('S', Blocks.COBBLESTONE)
+                .define('q', Items.QUARTZ)
+                .define('b', Items.BLACK_DYE)
+                .unlockedBy("has_cobblestone", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(Blocks.COBBLESTONE).build()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RQG_SPAWN_EGG.get(), 2)
                 .pattern("RPR")
                 .pattern("PEP")

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "number=up": {
+      "model": "twosidesmod:block/dice_1"
+    },
+    "number=north": {
+      "model": "twosidesmod:block/dice_2"
+    },
+    "number=east": {
+      "model": "twosidesmod:block/dice_3"
+    },
+    "number=south": {
+      "model": "twosidesmod:block/dice_5"
+    },
+    "number=west": {
+      "model": "twosidesmod:block/dice_4"
+    },
+    "number=down": {
+      "model": "twosidesmod:block/dice_6"
+    }
+  }
+}

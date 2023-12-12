@@ -15,6 +15,7 @@
     "twosidesmod:rose_quartz_wall",
     "twosidesmod:rose_quartz_door",
     "twosidesmod:rose_quartz_trapdoor",
-    "twosidesmod:sound_block"
+    "twosidesmod:sound_block",
+    "twosidesmod:dice_block"
   ]
 }

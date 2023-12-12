@@ -48,7 +48,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ROSE_QUARTZ_WALL.get(),
                         ModBlocks.ROSE_QUARTZ_DOOR.get(),
                         ModBlocks.ROSE_QUARTZ_TRAPDOOR.get(),
-                        ModBlocks.SOUND_BLOCK.get());
+                        ModBlocks.SOUND_BLOCK.get(),
+                        ModBlocks.DICE_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ROSE_QUARTZ_BLOCK.get(),

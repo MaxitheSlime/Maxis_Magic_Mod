@@ -71,7 +71,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.ENERGY_HANGING_SIGN.get()));
         this.add(ModBlocks.ENERGY_WALL_HANGING_SIGN.get(), block ->
                 createSingleItemTable(ModItems.ENERGY_HANGING_SIGN.get()));
-        
+
+        this.add(ModBlocks.DICE_BLOCK.get(), block ->
+                createSingleItemTable(ModItems.DICE.get()));
     }
 
     @Override

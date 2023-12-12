@@ -8,6 +8,7 @@ import net.maxitheslime.twosidesmod.block.screen.PurificationTableScreen;
 import net.maxitheslime.twosidesmod.effect.ModEffects;
 import net.maxitheslime.twosidesmod.enchantment.ModEnchantments;
 import net.maxitheslime.twosidesmod.entity.ModEntities;
+import net.maxitheslime.twosidesmod.entity.client.MagicMissileRenderer;
 import net.maxitheslime.twosidesmod.entity.client.RQGRenderer;
 import net.maxitheslime.twosidesmod.entity.client.RubyStatueRenderer;
 import net.maxitheslime.twosidesmod.fluid.ModFluidTypes;
@@ -28,6 +29,7 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
@@ -125,7 +127,8 @@ public class TwoSidesMod {
 
                     EntityRenderers.register(ModEntities.RQG.get(), RQGRenderer::new);
                     EntityRenderers.register(ModEntities.RUBY_STATUE.get(), RubyStatueRenderer::new);
-
+                    EntityRenderers.register(ModEntities.DICE_PROJECTILE.get(), ThrownItemRenderer::new);
+                    EntityRenderers.register(ModEntities.MAGIC_MISSILE_PROJECTILE.get(), MagicMissileRenderer::new);
                 });
             }
         }

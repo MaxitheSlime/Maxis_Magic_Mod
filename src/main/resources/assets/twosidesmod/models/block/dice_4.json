@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "twosidesmod:block/dice_4",
+    "down": "twosidesmod:block/dice_3",
+    "north": "twosidesmod:block/dice_1",
+    "east": "twosidesmod:block/dice_5",
+    "south": "twosidesmod:block/dice_6",
+    "west": "twosidesmod:block/dice_2",
+    "particle": "twosidesmod:block/dice_4"
+  }
+}
