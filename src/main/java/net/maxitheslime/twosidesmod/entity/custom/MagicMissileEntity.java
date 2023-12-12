@@ -27,7 +27,6 @@ import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.network.NetworkHooks;
 
 public class MagicMissileEntity extends Projectile {
-
     private static final EntityDataAccessor<Boolean> HIT =
             SynchedEntityData.defineId(MagicMissileEntity.class, EntityDataSerializers.BOOLEAN);
     private int counter = 0;
@@ -36,64 +35,14 @@ public class MagicMissileEntity extends Projectile {
         super(pEntityType, pLevel);
     }
 
-    public MagicMissileEntity (Level level, Player player){
-        super(ModEntities.MAGIC_MISSILE_PROJECTILE.get(), level);
+    public MagicMissileEntity(Level pLevel, Player player) {
+        super(ModEntities.MAGIC_MISSILE_PROJECTILE.get(), pLevel);
         setOwner(player);
-        BlockPos blockPos = player.blockPosition();
-        double d0 = (double) blockPos.getX() + 0.5D;
-        double d1 = (double) blockPos.getY() + 1.5D;
-        double d2 = (double) blockPos.getZ() + 0.5D;
+        BlockPos blockpos = player.blockPosition();
+        double d0 = (double)blockpos.getX() + 0.5D;
+        double d1 = (double)blockpos.getY() + 1.75D;
+        double d2 = (double)blockpos.getZ() + 0.5D;
         this.moveTo(d0, d1, d2, this.getYRot(), this.getXRot());
-    }
-
-    @Override
-    protected void onHitEntity(EntityHitResult hitResult) {
-        super.onHitEntity(hitResult);
-        Entity hitEntity = hitResult.getEntity();
-        Entity owner = this.getOwner();
-
-        if(hitEntity == owner && this.level().isClientSide()) {
-            return;
-        }
-
-        this.level().playSound(null, this.getX(), this.getY(), this.getZ(), ModSounds.METAL_DETECTOR_FOUND_ORE.get(), SoundSource.NEUTRAL,
-                2F, 1F);
-
-        LivingEntity livingentity = owner instanceof LivingEntity ? (LivingEntity)owner : null;
-        float damage = 2f;
-        boolean hurt = hitEntity.hurt(this.damageSources().mobProjectile(this, livingentity), damage);
-        if (hurt) {
-            if(hitEntity instanceof LivingEntity livingHitEntity) {
-                livingHitEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 1), owner);
-            }
-        }
-    }
-
-    @Override
-    protected void onHit(HitResult hitResult) {
-        super.onHit(hitResult);
-        for(int x = 0; x < 18; ++x) {
-            for(int y = 0; y < 18; ++y) {
-                this.level().addParticle(ModParticles.ROSE_QUARTZ_PARTICLES.get(), this.getX(), this.getY(), this.getZ(),
-                        Math.cos(x*20) * 0.15d, Math.cos(y*20) * 0.15d, Math.sin(x*20) * 0.15d);
-            }
-        }
-
-        if(this.level().isClientSide()) {
-            return;
-        }
-
-        if(hitResult.getType() == HitResult.Type.ENTITY && hitResult instanceof EntityHitResult entityHitResult) {
-            Entity hit = entityHitResult.getEntity();
-            Entity owner = this.getOwner();
-            if(owner != hit) {
-                this.entityData.set(HIT, true);
-                counter = this.tickCount + 5;
-            }
-        } else {
-            this.entityData.set(HIT, true);
-            counter = this.tickCount + 5;
-        }
     }
 
     @Override
@@ -124,7 +73,7 @@ public class MagicMissileEntity extends Projectile {
         double d7 = vec3.z;
 
         for(int i = 1; i < 5; ++i) {
-            this.level().addParticle(ModParticles.ROSE_QUARTZ_PARTICLES.get(), d0-(d5*2), d1-(d6*2)+0.1, d2-(d7*2),
+            this.level().addParticle(ModParticles.ROSE_QUARTZ_PARTICLES.get(), d0-(d5*2), d1-(d6*2), d2-(d7*2),
                     -d5, -d6 - 0.1D, -d7);
         }
 
@@ -135,6 +84,56 @@ public class MagicMissileEntity extends Projectile {
         } else {
             this.setDeltaMovement(vec3.scale(0.99F));
             this.setPos(d0, d1, d2);
+        }
+    }
+
+    @Override
+    protected void onHitEntity(EntityHitResult hitResult) {
+        super.onHitEntity(hitResult);
+        Entity hitEntity = hitResult.getEntity();
+        Entity owner = this.getOwner();
+
+        if(hitEntity == owner && this.level().isClientSide()) {
+            return;
+        }
+
+        this.level().playSound(null, this.getX(), this.getY(), this.getZ(), ModSounds.METAL_DETECTOR_FOUND_ORE.get(), SoundSource.NEUTRAL,
+                2F, 1F);
+
+        LivingEntity livingentity = owner instanceof LivingEntity ? (LivingEntity)owner : null;
+        float damage = 2f;
+        boolean hurt = hitEntity.hurt(this.damageSources().mobProjectile(this, livingentity), damage);
+        if (hurt) {
+            if(hitEntity instanceof LivingEntity livingHitEntity) {
+                livingHitEntity.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 1), owner);
+            }
+        }
+    }
+
+    @Override
+    protected void onHit(HitResult hitResult) {
+        super.onHit(hitResult);
+        for(int x = 0; x < 18; ++x) {
+            for(int y = 0; y < 18; ++y) {
+                this.level().addParticle(ModParticles.ROSE_QUARTZ_PARTICLES.get(), this.getX(), this.getY(), this.getZ(),
+                        Math.cos(x*20) * 0.15d, Math.cos(y*20) * 0.15d, Math.sin(x*20) * 0.15d);
+            }
+        }
+
+        if(this.level().isClientSide()) {
+            return;
+        }
+
+        if(hitResult.getType() == HitResult.Type.ENTITY && hitResult instanceof EntityHitResult entityHitResult) {
+            Entity hit = entityHitResult.getEntity();
+            Entity owner = this.getOwner();
+            if(owner != hit) {
+                this.entityData.set(HIT, true);
+                counter = this.tickCount + 5;
+            }
+        } else {
+            this.entityData.set(HIT, true);
+            counter = this.tickCount + 5;
         }
     }
 
