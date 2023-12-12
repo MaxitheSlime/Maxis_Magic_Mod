@@ -50,6 +50,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.REMOTE_CONTROL.get());
 
                         pOutput.accept(ModItems.DICE.get());
+
+                        pOutput.accept(ModItems.ENERGY_BOAT.get());
+                        pOutput.accept(ModItems.ENERGY_CHEST_BOAT.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_FOODS = CREATIVE_MODE_TABS.register("two_sides_foods",

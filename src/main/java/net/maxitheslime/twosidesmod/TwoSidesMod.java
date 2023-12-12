@@ -9,8 +9,10 @@ import net.maxitheslime.twosidesmod.effect.ModEffects;
 import net.maxitheslime.twosidesmod.enchantment.ModEnchantments;
 import net.maxitheslime.twosidesmod.entity.ModEntities;
 import net.maxitheslime.twosidesmod.entity.client.MagicMissileRenderer;
+import net.maxitheslime.twosidesmod.entity.client.ModBoatRenderer;
 import net.maxitheslime.twosidesmod.entity.client.RQGRenderer;
 import net.maxitheslime.twosidesmod.entity.client.RubyStatueRenderer;
+import net.maxitheslime.twosidesmod.entity.layers.ModModelLayers;
 import net.maxitheslime.twosidesmod.fluid.ModFluidTypes;
 import net.maxitheslime.twosidesmod.fluid.ModFluids;
 import net.maxitheslime.twosidesmod.item.ModItemProperties;
@@ -25,6 +27,8 @@ import net.maxitheslime.twosidesmod.sound.ModSounds;
 import net.maxitheslime.twosidesmod.util.ModWoodTypes;
 import net.maxitheslime.twosidesmod.villager.ModVillagers;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.model.BoatModel;
+import net.minecraft.client.model.ChestBoatModel;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
@@ -129,6 +133,9 @@ public class TwoSidesMod {
                     EntityRenderers.register(ModEntities.RUBY_STATUE.get(), RubyStatueRenderer::new);
                     EntityRenderers.register(ModEntities.DICE_PROJECTILE.get(), ThrownItemRenderer::new);
                     EntityRenderers.register(ModEntities.MAGIC_MISSILE_PROJECTILE.get(), MagicMissileRenderer::new);
+                    EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+                    EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
+
                 });
             }
         }

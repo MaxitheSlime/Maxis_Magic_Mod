@@ -3,6 +3,7 @@ package net.maxitheslime.twosidesmod.item;
 import net.maxitheslime.twosidesmod.TwoSidesMod;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
 import net.maxitheslime.twosidesmod.entity.ModEntities;
+import net.maxitheslime.twosidesmod.entity.custom.ModBoatEntity;
 import net.maxitheslime.twosidesmod.fluid.ModFluids;
 import net.maxitheslime.twosidesmod.item.custom.*;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
@@ -92,6 +93,11 @@ public class ModItems {
     public static final RegistryObject<Item> RS_SPAWN_EGG = ITEMS.register("rs_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.RUBY_STATUE, 0xff0000, 0xff0000,
                     new Item.Properties()));
+
+    public static final RegistryObject<Item> ENERGY_BOAT = ITEMS.register("energy_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.ENERGY, new Item.Properties()));
+    public static final RegistryObject<Item> ENERGY_CHEST_BOAT = ITEMS.register("energy_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.ENERGY, new Item.Properties()));
 
     public static final RegistryObject<Item> DICE = ITEMS.register("dice",
             () -> new DiceItem(new Item.Properties()));

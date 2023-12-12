@@ -8,6 +8,8 @@ import net.maxitheslime.twosidesmod.entity.client.RubyStatueModel;
 import net.maxitheslime.twosidesmod.entity.custom.RQGEntity;
 import net.maxitheslime.twosidesmod.entity.custom.RSEntity;
 import net.maxitheslime.twosidesmod.entity.layers.ModModelLayers;
+import net.minecraft.client.model.BoatModel;
+import net.minecraft.client.model.ChestBoatModel;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -24,6 +26,9 @@ public class ModEventBusEvents {
         event.registerLayerDefinition(ModModelLayers.RQG_LAYER, RQGModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.RS_LAYER, RubyStatueModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.MAGIC_MISSILE_LAYER, MagicMissileModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.ENERGY_BOAT_LAYER, BoatModel::createBodyModel);
+        event.registerLayerDefinition(ModModelLayers.ENERGY_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
+
     }
 
     @SubscribeEvent

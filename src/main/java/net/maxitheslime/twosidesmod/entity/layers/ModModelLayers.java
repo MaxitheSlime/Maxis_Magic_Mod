@@ -14,4 +14,9 @@ public class ModModelLayers {
     public static final ModelLayerLocation MAGIC_MISSILE_LAYER = new ModelLayerLocation(
             new ResourceLocation(TwoSidesMod.MOD_ID, "magic_missile_layer"), "magic_missile_layer");
 
+    public static final ModelLayerLocation ENERGY_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(TwoSidesMod.MOD_ID, "boat/energy"), "main");
+    public static final ModelLayerLocation ENERGY_CHEST_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(TwoSidesMod.MOD_ID, "chest_boat/energy"), "main");
+
 }
