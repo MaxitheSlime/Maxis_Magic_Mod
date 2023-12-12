@@ -61,6 +61,8 @@ public class ModCreativeModeTabs {
                     {
                         pOutput.accept(ModItems.LEMON.get());
                         pOutput.accept(ModItems.LEMON_SEEDS.get());
+                        pOutput.accept(ModItems.ENERGY_ORB.get());
+                        pOutput.accept(ModItems.ENERGY_SEEDS.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_MOBS = CREATIVE_MODE_TABS.register("two_sides_mobs",

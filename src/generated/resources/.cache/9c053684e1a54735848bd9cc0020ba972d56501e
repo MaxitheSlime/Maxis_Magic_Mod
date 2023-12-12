@@ -1,11 +1,13 @@
-// 1.20.1	2023-12-12T00:14:49.7092668	Item Models: twosidesmod
+// 1.20.1	2023-12-12T03:07:47.1577286	Item Models: twosidesmod
 474ce6fcc32ff61796fe4fc40ccddacc407bd6b0 assets/twosidesmod/models/item/bar_brawl_record.json
 175e2d65f3006226d7e3c59f9b88aab713bb2f61 assets/twosidesmod/models/item/crystal_flower.json
 552df37df955bff1e13cc00db319735d382a7189 assets/twosidesmod/models/item/dice.json
 e6b867962f0e851c2431de1ff779c6a0bc5d6293 assets/twosidesmod/models/item/energy_boat.json
 9fcff29c1d8f3fa0862edd2ebc2723b81eaa9a1a assets/twosidesmod/models/item/energy_chest_boat.json
 f2de98455c6085a7bb882b327b476fe846e41473 assets/twosidesmod/models/item/energy_hanging_sign.json
+3576f38da82b72abd06fa9a980c21b215866a41b assets/twosidesmod/models/item/energy_orb.json
 bf385ce96cedb8ee95c778ca98b211f4b87b145d assets/twosidesmod/models/item/energy_sapling.json
+d6eefd0763b666a2182b0ccff4fc5afae634537b assets/twosidesmod/models/item/energy_seeds.json
 39ebc277e774afb27318f8059ce9ff06b4da8fa7 assets/twosidesmod/models/item/energy_sign.json
 5959bb32510079900580146b9a54393dd9e2cfb2 assets/twosidesmod/models/item/fire_quartz.json
 2e4f84ef910c11449f6965cb96a685d8de2ce863 assets/twosidesmod/models/item/impure_rose_quartz.json

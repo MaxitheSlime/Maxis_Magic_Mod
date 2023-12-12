@@ -2,6 +2,7 @@ package net.maxitheslime.twosidesmod.datagen;
 
 import net.maxitheslime.twosidesmod.TwoSidesMod;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
+import net.maxitheslime.twosidesmod.block.custom.EnergyCropBlock;
 import net.maxitheslime.twosidesmod.block.custom.LemonBonsaiCropBlock;
 import net.maxitheslime.twosidesmod.block.custom.RoseQuartzLampBlock;
 import net.minecraft.data.PackOutput;
@@ -84,6 +85,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         hangingSignBlock(ModBlocks.ENERGY_HANGING_SIGN.get(), ModBlocks.ENERGY_WALL_HANGING_SIGN.get(),
                 blockTexture(ModBlocks.ENERGY_PLANKS.get()));
 
+        makeEnergyCrop(((EnergyCropBlock) ModBlocks.ENERGY_CROP.get()), "energy_stage", "energy_stage");
+
+    }
+
+    public void makeEnergyCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> energyStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] energyStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((EnergyCropBlock) block).getAgeProperty()),
+                new ResourceLocation(TwoSidesMod.MOD_ID, "block/" + textureName + state.getValue(((EnergyCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
     }
 
     public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {

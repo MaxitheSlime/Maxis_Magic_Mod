@@ -3,6 +3,7 @@ package net.maxitheslime.twosidesmod.block.entity;
 import net.maxitheslime.twosidesmod.block.custom.PurifyingTableBlock;
 import net.maxitheslime.twosidesmod.block.screen.PurificationTableMenu;
 import net.maxitheslime.twosidesmod.fluid.ModFluids;
+import net.maxitheslime.twosidesmod.item.ModItems;
 import net.maxitheslime.twosidesmod.recipe.PurificationRecipe;
 import net.maxitheslime.twosidesmod.util.InventoryDirectionEntry;
 import net.maxitheslime.twosidesmod.util.InventoryDirectionWrapper;
@@ -61,7 +62,7 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
                 case 0 -> true;
                 case 1 -> stack.getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).isPresent();
                 case 2 -> false;
-                case 3 -> stack.getItem() == Items.AMETHYST_SHARD;
+                case 3 -> stack.getItem() == ModItems.ENERGY_ORB.get();
                 default -> super.isItemValid(slot, stack);
             };
         }
@@ -319,7 +320,7 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
 
     private boolean hasEnergyItemInSlot(int energyItemSlot) {
         return !this.itemHandler.getStackInSlot(energyItemSlot).isEmpty() &&
-                this.itemHandler.getStackInSlot(energyItemSlot).getItem() == Items.AMETHYST_SHARD;
+                this.itemHandler.getStackInSlot(energyItemSlot).getItem() == ModItems.ENERGY_ORB.get();
     }
 
     private void craftItem() {

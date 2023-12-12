@@ -101,6 +101,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> DICE = ITEMS.register("dice",
             () -> new DiceItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> ENERGY_ORB = ITEMS.register("energy_orb",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ENERGY_ORB)));
+    public static final RegistryObject<Item> ENERGY_SEEDS = ITEMS.register("energy_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.ENERGY_CROP.get(), new Item.Properties()));
     
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

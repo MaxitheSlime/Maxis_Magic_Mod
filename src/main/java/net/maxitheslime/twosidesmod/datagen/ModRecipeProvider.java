@@ -55,6 +55,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModBlocks.ENERGY_LEAVES.get()).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ENERGY_SEEDS.get(), 8)
+                .pattern("lll")
+                .pattern("SsS")
+                .pattern("LLL")
+                .define('l', ModBlocks.ENERGY_LEAVES.get())
+                .define('L', ModBlocks.ENERGY_LOG.get())
+                .define('S', ModBlocks.ENERGY_SAPLING.get())
+                .define('s', ModItems.LEMON_SEEDS.get())
+                .unlockedBy("has_purification_table", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.PURIFICATION_TABLE.get()).build()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PURIFICATION_TABLE.get())
                 .pattern("ABA")
                 .pattern("RGR")

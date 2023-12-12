@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "twosidesmod:energy_log"
+    },
+    "S": {
+      "item": "twosidesmod:energy_sapling"
+    },
+    "l": {
+      "item": "twosidesmod:energy_leaves"
+    },
+    "s": {
+      "item": "twosidesmod:lemon_seeds"
+    }
+  },
+  "pattern": [
+    "lll",
+    "SsS",
+    "LLL"
+  ],
+  "result": {
+    "count": 8,
+    "item": "twosidesmod:energy_seeds"
+  },
+  "show_notification": true
+}

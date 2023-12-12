@@ -69,6 +69,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ENERGY_BOAT);
         simpleItem(ModItems.ENERGY_CHEST_BOAT);
 
+        simpleItem(ModItems.ENERGY_ORB);
+        simpleItem(ModItems.ENERGY_SEEDS);
+
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

@@ -1,10 +1,11 @@
-// 1.20.1	2023-12-12T01:55:25.2241809	Loot Tables
+// 1.20.1	2023-12-12T03:07:47.165333	Loot Tables
 e0c1e8b4aa0da09e62bf8152150468ec933c7d9b data/twosidesmod/loot_tables/blocks/bonsai_lemon_crop.json
 8484f3dee99f2b713b5541b9e8052236ae141c5c data/twosidesmod/loot_tables/blocks/colored_leaves.json
 ef789d190e1a1bb63dfecfd47bff933c3e7115ac data/twosidesmod/loot_tables/blocks/crystal_flower.json
 608e6ecd48aa5192b227f6a637e1b4e207380191 data/twosidesmod/loot_tables/blocks/deepslate_rose_quartz_ore.json
 8dc1826606e6a247d82fc82e2ad319558e388c97 data/twosidesmod/loot_tables/blocks/dice_block.json
 97aa07f4ee894df0437a019341ea43f622b9929b data/twosidesmod/loot_tables/blocks/end_rose_quartz_ore.json
+080fe0f24505ee07478a9df2706805db02f84078 data/twosidesmod/loot_tables/blocks/energy_crop.json
 4021b132a6ccc248fc90e6e61b3d46882de8f33e data/twosidesmod/loot_tables/blocks/energy_hanging_sign.json
 d06d84b6e993e539c73dbe0bed4dd314427c4dff data/twosidesmod/loot_tables/blocks/energy_leaves.json
 f3a7ce5b99aa3b45bb2f7afe0bedbe341e7bd079 data/twosidesmod/loot_tables/blocks/energy_log.json

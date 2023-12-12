@@ -1,6 +1,7 @@
 package net.maxitheslime.twosidesmod.datagen.loot;
 
 import net.maxitheslime.twosidesmod.block.ModBlocks;
+import net.maxitheslime.twosidesmod.block.custom.EnergyCropBlock;
 import net.maxitheslime.twosidesmod.block.custom.LemonBonsaiCropBlock;
 import net.maxitheslime.twosidesmod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -75,6 +76,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.DICE_BLOCK.get(), block ->
                 createSingleItemTable(ModItems.DICE.get()));
+
+        LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.ENERGY_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(EnergyCropBlock.AGE, 7))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(ModBlocks.ENERGY_CROP.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(EnergyCropBlock.AGE, 8)));
+
+        this.add(ModBlocks.ENERGY_CROP.get(), createCropDrops(ModBlocks.ENERGY_CROP.get(), ModItems.ENERGY_ORB.get(),
+                ModItems.ENERGY_SEEDS.get(), lootitemcondition$builder2));
+
     }
 
     @Override
