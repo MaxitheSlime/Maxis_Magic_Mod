@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:energy_leaves"
+    },
+    "D": {
+      "item": "minecraft:green_dye"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ADA",
+    "AAA"
+  ],
+  "result": {
+    "count": 8,
+    "item": "twosidesmod:colored_leaves"
+  },
+  "show_notification": true
+}

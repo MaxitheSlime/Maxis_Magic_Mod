@@ -1,8 +1,9 @@
-// 1.20.1	2023-12-10T21:18:25.0779636	Recipes
+// 1.20.1	2023-12-12T01:55:25.2275114	Recipes
 8eafd34008f7989bc4d2a29466872374765e7835 data/minecraft/advancements/recipes/diamond.json
 a36bef6721ff64c070703056c19a9d42ebac2506 data/minecraft/advancements/recipes/misc/pink_dye.json
 2867a858605d75e3a2f9d049b99c65f66c1197fb data/minecraft/recipes/pink_dye.json
 967f5818ff095be7f4460027c0b4894459e0e2fd data/twosidesmod/advancements/recipes/misc/bar_brawl_record.json
+ed1eaa15f9fc6a7c359381009feae6caa2faed48 data/twosidesmod/advancements/recipes/misc/colored_leaves.json
 1386c9c70cce89821aab14973cb441a2cdc50dd5 data/twosidesmod/advancements/recipes/misc/crystal_flower.json
 736babca969ef181fad656347497df8617ccc38e data/twosidesmod/advancements/recipes/misc/data_tablet.json
 3b29586981a5be6f72a9df70c15288800e49525c data/twosidesmod/advancements/recipes/misc/dice.json
@@ -61,6 +62,7 @@ eb2ca70d3229933e97d523861c6a8862f92406fb data/twosidesmod/advancements/recipes/m
 b38e62043436341641ca8bccb5f450797393ac2b data/twosidesmod/advancements/recipes/misc/stripped_energy_wood.json
 a9b6c3ab6749394b7084b27422985a12e43375f8 data/twosidesmod/advancements/recipes/pure_rose_quartz.json
 b45e9ed626883e4e23d4c6804afcc5caa8609b30 data/twosidesmod/recipes/bar_brawl_record.json
+dc3e356babaf0a71a5878110a628e2ee38026962 data/twosidesmod/recipes/colored_leaves.json
 a205f8838853e4afe72f745b717c2e235b55b647 data/twosidesmod/recipes/crystal_flower.json
 749c03bc28b8f6306932d2e640c23216d6003cc0 data/twosidesmod/recipes/data_tablet.json
 498008e2ce49f02c2ec32ea8143b9ba8d7879e00 data/twosidesmod/recipes/diamond_from_purification.json

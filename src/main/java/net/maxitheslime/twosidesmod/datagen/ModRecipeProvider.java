@@ -45,6 +45,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.COLORED_LEAVES.get(), 8)
+                .pattern("AAA")
+                .pattern("ADA")
+                .pattern("AAA")
+                .define('A', ModBlocks.ENERGY_LEAVES.get())
+                .define('D', Items.GREEN_DYE)
+                .unlockedBy("has_energy_leaves", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_LEAVES.get()).build()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PURIFICATION_TABLE.get())
                 .pattern("ABA")
                 .pattern("RGR")

@@ -141,6 +141,23 @@ public class ModBlocks {
                     return 30;
                 }
             });
+    public static final RegistryObject<Block> COLORED_LEAVES = registerBlock("colored_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
     public static final RegistryObject<Block> ENERGY_SIGN = BLOCKS.register("energy_sign",
             () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.ENERGY));
     public static final RegistryObject<Block> ENERGY_WALL_SIGN = BLOCKS.register("energy_wall_sign",

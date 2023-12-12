@@ -75,6 +75,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ENERGY_PLANKS);
 
         leavesBlock(ModBlocks.ENERGY_LEAVES);
+        leavesBlock(ModBlocks.COLORED_LEAVES);
         saplingBlock(ModBlocks.ENERGY_SAPLING);
 
         signBlock(((StandingSignBlock) ModBlocks.ENERGY_SIGN.get()), ((WallSignBlock) ModBlocks.ENERGY_WALL_SIGN.get()),
