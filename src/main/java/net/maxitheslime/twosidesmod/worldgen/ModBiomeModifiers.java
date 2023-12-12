@@ -24,9 +24,9 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_NETHER_ROSE_QUARTZ_ORE = registerKey("add_nether_rose_quartz_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_ROSE_QUARTZ_ORE = registerKey("add_end_rose_quartz_ore");
     public static final ResourceKey<BiomeModifier> SPAWN_RQG = registerKey("spawn_rqg");
-
     public static final ResourceKey<BiomeModifier> ADD_CRYSTALLIZED_FLOWER = registerKey("add_crystallized_flower");
-    
+    public static final ResourceKey<BiomeModifier> ADD_RQ_GEODE = registerKey("add_rose_quartz_geode");
+
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
@@ -59,6 +59,11 @@ public class ModBiomeModifiers {
         context.register(SPAWN_RQG, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_DRY_OVERWORLD),
                 List.of(new MobSpawnSettings.SpawnerData(ModEntities.RQG.get(), 20, 1, 3))));
+
+        context.register(ADD_RQ_GEODE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RQ_GEODE_PLACED_KEY)),
+                GenerationStep.Decoration.LOCAL_MODIFICATIONS));
 
     }
 

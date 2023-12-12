@@ -5,7 +5,7 @@
     "dirt_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:dirt"
+        "Name": "minecraft:deepslate_emerald_ore"
       }
     },
     "foliage_placer": {
@@ -34,7 +34,7 @@
       "upper_size": 2
     },
     "trunk_placer": {
-      "type": "minecraft:straight_trunk_placer",
+      "type": "twosidesmod:energy_trunk_placer",
       "base_height": 3,
       "height_rand_a": 2,
       "height_rand_b": 1

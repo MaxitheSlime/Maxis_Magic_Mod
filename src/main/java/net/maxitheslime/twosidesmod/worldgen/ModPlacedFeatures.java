@@ -18,13 +18,12 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> ENERGY_PLACED_KEY = registerKey("energy_placed");
-
     public static final ResourceKey<PlacedFeature> ROSE_QUARTZ_ORE_PLACED_KEY = registerKey("rose_quartz_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_ROSE_QUARTZ_ORE_PLACED_KEY = registerKey("nether_rose_quartz_ore_placed");
     public static final ResourceKey<PlacedFeature> END_ROSE_QUARTZ_ORE_PLACED_KEY = registerKey("end_rose_quartz_ore_placed");
-
     public static final ResourceKey<PlacedFeature> CRYSTALLIZED_FLOWER_PLACED_KEY = registerKey("crystallized_flower_placed");
-    
+    public static final ResourceKey<PlacedFeature> RQ_GEODE_PLACED_KEY = registerKey("rose_quartz_geode_placed");
+
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
@@ -43,6 +42,12 @@ public class ModPlacedFeatures {
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
         register(context, CRYSTALLIZED_FLOWER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRYSTALLIZED_FLOWER_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, RQ_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RQ_GEODE_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(37), InSquarePlacement.spread(),
+                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
+                        BiomeFilter.biome()));
+
     }
 
 

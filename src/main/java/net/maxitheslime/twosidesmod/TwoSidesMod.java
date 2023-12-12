@@ -26,6 +26,8 @@ import net.maxitheslime.twosidesmod.recipe.ModRecipes;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
 import net.maxitheslime.twosidesmod.util.ModWoodTypes;
 import net.maxitheslime.twosidesmod.villager.ModVillagers;
+import net.maxitheslime.twosidesmod.worldgen.tree.ModFoliagePlacerTypes;
+import net.maxitheslime.twosidesmod.worldgen.tree.ModTrunkPlacerTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.model.BoatModel;
 import net.minecraft.client.model.ChestBoatModel;
@@ -86,6 +88,8 @@ public class TwoSidesMod {
             ModMenuTypes.register(modEventBus);
             ModRecipes.register(modEventBus);
             ModEntities.register(modEventBus);
+            ModTrunkPlacerTypes.register(modEventBus);
+            ModFoliagePlacerTypes.register(modEventBus);
 
             // Register ourselves for server and other game events we are interested in
             MinecraftForge.EVENT_BUS.register(this);
