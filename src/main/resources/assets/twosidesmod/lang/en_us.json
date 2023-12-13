@@ -63,10 +63,11 @@
   "block.twosidesmod.stripped_energy_log": "Stripped Energy Log",
   "block.twosidesmod.stripped_energy_wood": "Stripped Energy Wood",
   "block.twosidesmod.energy_leaves": "Energy Leaves",
-  "block.twosidesmod.colored_leaves": "Colored Leaves",
+  "block.twosidesmod.colored_leaves": "Colored Energy Leaves",
   "block.twosidesmod.energy_sapling": "Energy Sapling",
   "block.twosidesmod.energy_sign": "Energy Sign",
   "block.twosidesmod.energy_hanging_sign": "Energy Hanging Sign",
+  "block.twosidesmod.maxi_portal": "Rose Quartz Dimension Portal",
 
   "creativetab.two_sides_items": "2 Sides Items",
   "creativetab.two_sides_blocks": "2 Sides Blocks",

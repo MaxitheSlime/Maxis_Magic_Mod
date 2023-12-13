@@ -1,4 +1,4 @@
-// 1.20.1	2023-12-12T03:07:47.1627342	Block States: twosidesmod
+// 1.20.1	2023-12-13T00:25:51.6306003	Block States: twosidesmod
 0fa1ae036f78ccb60a5738efa8b5578e7de3fae7 assets/twosidesmod/blockstates/bonsai_lemon_crop.json
 55bd1e301dee407221af22484001169713973eb4 assets/twosidesmod/blockstates/colored_leaves.json
 8d49335b0fe6f6253a2727f044dac41fee365e7d assets/twosidesmod/blockstates/crystal_flower.json
@@ -15,6 +15,7 @@ afd77c6c9c778c4fa8eb249685a501c52362a785 assets/twosidesmod/blockstates/energy_w
 90d5116f83482f745d8d8edf4f98893a7904bffd assets/twosidesmod/blockstates/energy_wall_sign.json
 e1f6e0d2c2e8d1b0c72a70fbea2310150b85d894 assets/twosidesmod/blockstates/energy_wood.json
 65b68bc6d90508d8ddce6f569331e397eda03838 assets/twosidesmod/blockstates/impure_rose_quartz_block.json
+804734ff0392b9ea7eb63698947cc257ff4c0a0b assets/twosidesmod/blockstates/maxi_portal.json
 69d7b3bf547055747ee57d5d6ed1f5ec27aebbe6 assets/twosidesmod/blockstates/nether_rose_quartz_ore.json
 d711ddd43a280f1ebe45183d048bfc1a3332e483 assets/twosidesmod/blockstates/pure_rose_quartz_block.json
 b0fd8cfcea9b87c7b78e9b5fea76dd8c6186452b assets/twosidesmod/blockstates/purification_table.json
@@ -62,6 +63,7 @@ d3cab441e899bec7baede879a91bc4d20bf358f8 assets/twosidesmod/models/block/lemon_s
 ef45baf96ccd63173cf20947410cae3c2918b7f4 assets/twosidesmod/models/block/lemon_stage4.json
 a36b35a122fcee7a5af833aa27548376d006f945 assets/twosidesmod/models/block/lemon_stage5.json
 c5c3699b5bf5ef7f905218be367fc18b3780c58e assets/twosidesmod/models/block/lemon_stage6.json
+b6020e8c0ae34b5c0d0666aeb3cd72f718324a59 assets/twosidesmod/models/block/maxi_portal.json
 f5785a05b8d6e5c0cfeca68fc3fc26a0949bdb59 assets/twosidesmod/models/block/nether_rose_quartz_ore.json
 52b6f400bc0d17d344e9d943d0d4dfb475d6a469 assets/twosidesmod/models/block/pure_rose_quartz_block.json
 2eebbd6ee2d9d64b5ebebad507b218191fe96b9f assets/twosidesmod/models/block/rose_quartz_button.json
@@ -109,6 +111,7 @@ cafb44a858516be82ea68da8ef586bdef2ad2731 assets/twosidesmod/models/block/strippe
 8621502b43d360a47a05e76e66082e16b89f2ca4 assets/twosidesmod/models/item/energy_planks.json
 ea537dbc0453aefa5ef45622269d2c8b58214ef0 assets/twosidesmod/models/item/energy_wood.json
 c59a356e159278af58c7258d81fcb44452164fc0 assets/twosidesmod/models/item/impure_rose_quartz_block.json
+b9d1768eaf6f665cf1a58a837ba49597b4291ccb assets/twosidesmod/models/item/maxi_portal.json
 a3424915fab4679d2a486aa608c2e45b31eba93b assets/twosidesmod/models/item/nether_rose_quartz_ore.json
 be5fa62f897383469c9f852633133af365ecd6ec assets/twosidesmod/models/item/pure_rose_quartz_block.json
 f3bfee4e2f9c55e4b100ab3802175f516cfa9fa1 assets/twosidesmod/models/item/rose_quartz_fence_gate.json

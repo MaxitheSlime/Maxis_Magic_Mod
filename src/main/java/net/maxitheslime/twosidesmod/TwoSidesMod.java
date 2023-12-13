@@ -26,6 +26,8 @@ import net.maxitheslime.twosidesmod.recipe.ModRecipes;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
 import net.maxitheslime.twosidesmod.util.ModWoodTypes;
 import net.maxitheslime.twosidesmod.villager.ModVillagers;
+import net.maxitheslime.twosidesmod.worldgen.biome.ModTerraBlenderAPI;
+import net.maxitheslime.twosidesmod.worldgen.biome.surface.ModSurfaceRules;
 import net.maxitheslime.twosidesmod.worldgen.tree.ModFoliagePlacerTypes;
 import net.maxitheslime.twosidesmod.worldgen.tree.ModTrunkPlacerTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -52,6 +54,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TwoSidesMod.MOD_ID)
@@ -90,6 +93,7 @@ public class TwoSidesMod {
             ModEntities.register(modEventBus);
             ModTrunkPlacerTypes.register(modEventBus);
             ModFoliagePlacerTypes.register(modEventBus);
+            ModTerraBlenderAPI.registerRegions();
 
             // Register ourselves for server and other game events we are interested in
             MinecraftForge.EVENT_BUS.register(this);
@@ -104,6 +108,9 @@ public class TwoSidesMod {
                 ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CRYSTALLIZED_FLOWER.getId(), ModBlocks.POTTED_CRYSTALLIZED_FLOWER);
 
                 BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.THICK, ModItems.PURE_ROSE_QUARTZ.get(), ModPotions.SLIMEY_POTION.get()));
+
+                SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
+
             });
         }
 

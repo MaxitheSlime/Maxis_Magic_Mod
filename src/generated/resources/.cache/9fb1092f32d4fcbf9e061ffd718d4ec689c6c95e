@@ -1,4 +1,4 @@
-// 1.20.1	2023-12-12T03:07:47.1663412	Recipes
+// 1.20.1	2023-12-13T00:31:03.3679929	Recipes
 8eafd34008f7989bc4d2a29466872374765e7835 data/minecraft/advancements/recipes/diamond.json
 a36bef6721ff64c070703056c19a9d42ebac2506 data/minecraft/advancements/recipes/misc/pink_dye.json
 2867a858605d75e3a2f9d049b99c65f66c1197fb data/minecraft/recipes/pink_dye.json
@@ -17,6 +17,7 @@ ebf6856dd7d9d8df90f490007bb5b17e14f44538 data/twosidesmod/advancements/recipes/m
 7e220195fb2342bacc6f819e839c2d081719fc0f data/twosidesmod/advancements/recipes/misc/impure_rose_quartz_block.json
 ec08d5ac018d9dec66aff94013ce0932a3134e59 data/twosidesmod/advancements/recipes/misc/lemon_juice_bucket.json
 035751a960f697ac1b62a1f5c6b697631053f1f3 data/twosidesmod/advancements/recipes/misc/lemon_seeds.json
+54277067000b20e5f523a061e1ecc9d0437b812b data/twosidesmod/advancements/recipes/misc/maxi_portal.json
 b48834c7579f14c66b66ac19326ca417272f2f29 data/twosidesmod/advancements/recipes/misc/metal_detector.json
 3d2a575a2068775be165e6718bd3063218cbf550 data/twosidesmod/advancements/recipes/misc/pure_rose_quartz.json
 73b68a819477b9d8a803585a7d8c0c731fd46b54 data/twosidesmod/advancements/recipes/misc/pure_rose_quartz_block.json
@@ -78,6 +79,7 @@ e91d96f2e25012f6f2bb78a05f187388ae19e13f data/twosidesmod/recipes/impure_rose_qu
 604d5fcbf8be136fd8867210a5041932c55d5317 data/twosidesmod/recipes/impure_rose_quartz_block.json
 8153fcb60c3832dd16e63f8c7591eda2fb0ae41b data/twosidesmod/recipes/lemon_juice_bucket.json
 dbc4cf591c8c76abff4830b9ebcdf123e32361a1 data/twosidesmod/recipes/lemon_seeds.json
+b0479c6e7f682456791442f076a55af5dc8b0435 data/twosidesmod/recipes/maxi_portal.json
 7bbb8d3303ec96a141813017e6a2c5ab15f95312 data/twosidesmod/recipes/metal_detector.json
 7fb3415bde66b489208f586304ad4a903e0e21c2 data/twosidesmod/recipes/pure_rose_quartz.json
 a88d724e1630ee1d84c58f5d6cca8e042e140748 data/twosidesmod/recipes/pure_rose_quartz_block.json

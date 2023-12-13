@@ -76,7 +76,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ENERGY_PLANKS);
 
         leavesBlock(ModBlocks.ENERGY_LEAVES);
-        leavesBlock(ModBlocks.COLORED_LEAVES);
+        leavesBlock(ModBlocks.ENERGY_LEAVES_ALT);
         saplingBlock(ModBlocks.ENERGY_SAPLING);
 
         signBlock(((StandingSignBlock) ModBlocks.ENERGY_SIGN.get()), ((WallSignBlock) ModBlocks.ENERGY_WALL_SIGN.get()),
@@ -86,6 +86,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.ENERGY_PLANKS.get()));
 
         makeEnergyCrop(((EnergyCropBlock) ModBlocks.ENERGY_CROP.get()), "energy_stage", "energy_stage");
+
+        blockWithItem(ModBlocks.MAXI_PORTAL);
 
     }
 

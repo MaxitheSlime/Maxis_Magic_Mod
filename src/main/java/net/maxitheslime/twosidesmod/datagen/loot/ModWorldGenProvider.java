@@ -4,6 +4,8 @@ import net.maxitheslime.twosidesmod.TwoSidesMod;
 import net.maxitheslime.twosidesmod.worldgen.ModBiomeModifiers;
 import net.maxitheslime.twosidesmod.worldgen.ModConfiguredFeatures;
 import net.maxitheslime.twosidesmod.worldgen.ModPlacedFeatures;
+import net.maxitheslime.twosidesmod.worldgen.biome.ModBiomes;
+import net.maxitheslime.twosidesmod.worldgen.dimension.ModDimensions;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -18,6 +20,9 @@ public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
+            .add(Registries.BIOME, ModBiomes::boostrap)
+            .add(Registries.LEVEL_STEM, ModDimensions::bootstrapStem)
+            .add(Registries.DIMENSION_TYPE, ModDimensions::bootstrapType)
             .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
 
     public ModWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {

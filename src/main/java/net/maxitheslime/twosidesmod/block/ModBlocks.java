@@ -141,7 +141,7 @@ public class ModBlocks {
                     return 30;
                 }
             });
-    public static final RegistryObject<Block> COLORED_LEAVES = registerBlock("colored_leaves",
+    public static final RegistryObject<Block> ENERGY_LEAVES_ALT = registerBlock("colored_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -176,6 +176,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> DICE_BLOCK = BLOCKS.register("dice_block",
             () -> new DiceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(6f)));
+
+    public static final RegistryObject<Block> MAXI_PORTAL = registerBlock("maxi_portal",
+            () -> new MaxiPortalBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_PORTAL).noLootTable().noOcclusion().noCollission()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

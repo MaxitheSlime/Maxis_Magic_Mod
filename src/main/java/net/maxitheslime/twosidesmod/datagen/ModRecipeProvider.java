@@ -45,7 +45,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.COLORED_LEAVES.get(), 8)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENERGY_LEAVES_ALT.get(), 8)
                 .pattern("AAA")
                 .pattern("ADA")
                 .pattern("AAA")
@@ -53,6 +53,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('D', Items.GREEN_DYE)
                 .unlockedBy("has_energy_leaves", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModBlocks.ENERGY_LEAVES.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MAXI_PORTAL.get(), 2)
+                .pattern("FRW")
+                .pattern("OCO")
+                .pattern("LEI")
+                .define('E', ModBlocks.ENERGY_LOG.get())
+                .define('R', ModBlocks.ROSE_QUARTZ_BLOCK.get())
+                .define('O', Blocks.OBSIDIAN)
+                .define('C', Blocks.CRYING_OBSIDIAN)
+                .define('W', Items.WATER_BUCKET)
+                .define('L', Items.LAVA_BUCKET)
+                .define('I', Items.IRON_INGOT)
+                .define('F', Items.FLINT)
+                .unlockedBy("has_crying_obsidian", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(Blocks.CRYING_OBSIDIAN).build()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ENERGY_SEEDS.get(), 8)

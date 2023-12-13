@@ -115,9 +115,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.STRIPPED_ENERGY_LOG.get());
                         pOutput.accept(ModBlocks.STRIPPED_ENERGY_WOOD.get());
                         pOutput.accept(ModBlocks.ENERGY_LEAVES.get());
-                        pOutput.accept(ModBlocks.COLORED_LEAVES.get());
+                        pOutput.accept(ModBlocks.ENERGY_LEAVES_ALT.get());
                         pOutput.accept(ModBlocks.ENERGY_SAPLING.get());
                         pOutput.accept(ModBlocks.CRYSTALLIZED_FLOWER.get());
+                        pOutput.accept(ModBlocks.MAXI_PORTAL.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

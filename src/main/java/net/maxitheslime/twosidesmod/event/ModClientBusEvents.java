@@ -36,7 +36,7 @@ public class ModClientBusEvents {
     @SubscribeEvent
     public static void registerColoredBlocks(RegisterColorHandlersEvent.Block event) {
         event.register((pState, pLevel, pPos, pTintIndex) -> pLevel != null &&
-                pPos != null ? BiomeColors.getAverageFoliageColor(pLevel, pPos) : FoliageColor.getDefaultColor(), ModBlocks.COLORED_LEAVES.get());
+                pPos != null ? BiomeColors.getAverageFoliageColor(pLevel, pPos) : FoliageColor.getDefaultColor(), ModBlocks.ENERGY_LEAVES_ALT.get());
     }
 
     @SubscribeEvent
@@ -44,6 +44,6 @@ public class ModClientBusEvents {
         event.register((pStack, pTintIndex) -> {
             BlockState state = ((BlockItem)pStack.getItem()).getBlock().defaultBlockState();
             return event.getBlockColors().getColor(state, null, null, pTintIndex);
-        }, ModBlocks.COLORED_LEAVES.get());
+        }, ModBlocks.ENERGY_LEAVES_ALT.get());
     }
 }

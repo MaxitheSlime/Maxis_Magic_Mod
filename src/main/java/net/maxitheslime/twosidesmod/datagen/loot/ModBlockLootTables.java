@@ -63,7 +63,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.ENERGY_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.ENERGY_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.dropSelf(ModBlocks.COLORED_LEAVES.get());
+        this.dropSelf(ModBlocks.ENERGY_LEAVES_ALT.get());
 
         this.add(ModBlocks.ENERGY_SIGN.get(), block ->
                 createSingleItemTable(ModItems.ENERGY_SIGN.get()));
