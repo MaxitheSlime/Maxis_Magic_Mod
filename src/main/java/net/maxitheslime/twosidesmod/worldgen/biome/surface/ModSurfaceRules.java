@@ -22,7 +22,7 @@ public class ModSurfaceRules {
                                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, GRASS_BLOCK)),
                                 SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, ROSE_QUARTZ)),
 
-                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.TEST_BIOME_2),
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.ROSE_QUARTZ_BIOME),
                                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, GRASS_BLOCK)),
                                 SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, ROSE_QUARTZ)),
 

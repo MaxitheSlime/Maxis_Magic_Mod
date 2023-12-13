@@ -18,11 +18,11 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 
 public class ModBiomes {
     public static final ResourceKey<Biome> TEST_BIOME = register("test_biome");
-    public static final ResourceKey<Biome> TEST_BIOME_2 = register("test_biome_2");
+    public static final ResourceKey<Biome> ROSE_QUARTZ_BIOME = register("rose_quartz_biome");
 
     public static void boostrap(BootstapContext<Biome> context) {
         context.register(TEST_BIOME, testBiome(context));
-        context.register(TEST_BIOME_2, testBiome2(context));
+        context.register(ROSE_QUARTZ_BIOME, testBiome2(context));
     }
 
     public static void globalOverworldGeneration(BiomeGenerationSettings.Builder builder) {
