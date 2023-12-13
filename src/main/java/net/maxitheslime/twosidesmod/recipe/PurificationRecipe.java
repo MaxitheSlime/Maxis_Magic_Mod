@@ -12,16 +12,25 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class PurificationRecipe implements Recipe<SimpleContainer> {
     private final NonNullList<Ingredient> inputItems;
     private final ItemStack output;
     private final ResourceLocation id;
+    private final int craftTime;
+    private final int energyAmount;
+    private final FluidStack fluidStack;
 
-    public PurificationRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> inputItems) {
+    public PurificationRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> inputItems,
+                              int craftTime, int energyAmount, FluidStack fluidStack) {
         this.inputItems = inputItems;
         this.output = output;
         this.id = id;
+        this.craftTime = craftTime;
+        this.energyAmount = energyAmount;
+        this.fluidStack = fluidStack;
     }
 
     @Override
@@ -58,6 +67,18 @@ public class PurificationRecipe implements Recipe<SimpleContainer> {
         return id;
     }
 
+    public int getCraftTime() {
+        return craftTime;
+    }
+
+    public int getEnergyAmount() {
+        return energyAmount;
+    }
+
+    public FluidStack getFluidStack() {
+        return fluidStack;
+    }
+
     @Override
     public RecipeSerializer<?> getSerializer() {
         return Serializer.INSTANCE;
@@ -82,6 +103,8 @@ public class PurificationRecipe implements Recipe<SimpleContainer> {
         @Override
         public PurificationRecipe m_6729_(ResourceLocation id, JsonObject json) {
             ItemStack output = ShapedRecipe.m_151274_(GsonHelper.getAsJsonObject(json, "output"));
+            FluidStack fluidStack = new FluidStack(ForgeRegistries.FLUIDS.getValue(new ResourceLocation(json.get("fluidType").getAsString())),
+                    json.get("fluidAmount").getAsInt());
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(json, "ingredients");
             NonNullList<Ingredient> inputs = NonNullList.withSize(1, Ingredient.EMPTY);
@@ -90,28 +113,37 @@ public class PurificationRecipe implements Recipe<SimpleContainer> {
                 inputs.set(i, Ingredient.m_43917_(ingredients.get(i)));
             }
 
-            return new PurificationRecipe(id, output, inputs);
+            int craftTime = json.get("craftTime").getAsInt();
+            int energyAmount = json.get("energyAmount").getAsInt();
+            return new PurificationRecipe(id, output, inputs, craftTime, energyAmount, fluidStack);
         }
 
         @Override
         public PurificationRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
             NonNullList<Ingredient> inputs = NonNullList.withSize(buf.readInt(), Ingredient.EMPTY);
+            FluidStack fluidStack = buf.readFluidStack();
 
             for (int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromNetwork(buf));
             }
 
+            int craftTime = buf.readInt();
+            int energyAmount = buf.readInt();
             ItemStack output = buf.readItem();
-            return new PurificationRecipe(id, output, inputs);
+            return new PurificationRecipe(id, output, inputs, craftTime, energyAmount, fluidStack);
         }
 
         @Override
         public void toNetwork(FriendlyByteBuf buf, PurificationRecipe recipe) {
             buf.writeInt(recipe.getIngredients().size());
+            buf.writeFluidStack(recipe.fluidStack);
 
             for (Ingredient ing : recipe.getIngredients()) {
                 ing.toNetwork(buf);
             }
+
+            buf.writeInt(recipe.craftTime);
+            buf.writeInt(recipe.energyAmount);
             buf.writeItemStack(recipe.getResultItem(null), false);
         }
     }
