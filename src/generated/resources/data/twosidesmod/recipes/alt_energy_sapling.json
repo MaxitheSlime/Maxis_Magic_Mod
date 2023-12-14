@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "twosidesmod:energy_leaves"
+      "item": "twosidesmod:energy_sapling"
     },
     "D": {
       "item": "minecraft:green_dye"
@@ -16,7 +16,7 @@
   ],
   "result": {
     "count": 8,
-    "item": "twosidesmod:colored_leaves"
+    "item": "twosidesmod:alt_energy_sapling"
   },
   "show_notification": true
 }

@@ -18,6 +18,7 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> ENERGY_PLACED_KEY = registerKey("energy_placed");
+    public static final ResourceKey<PlacedFeature> ALT_ENERGY_PLACED_KEY = registerKey("alt_energy_placed");
     public static final ResourceKey<PlacedFeature> ROSE_QUARTZ_ORE_PLACED_KEY = registerKey("rose_quartz_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_ROSE_QUARTZ_ORE_PLACED_KEY = registerKey("nether_rose_quartz_ore_placed");
     public static final ResourceKey<PlacedFeature> END_ROSE_QUARTZ_ORE_PLACED_KEY = registerKey("end_rose_quartz_ore_placed");
@@ -30,6 +31,10 @@ public class ModPlacedFeatures {
         register(context, ENERGY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENERGY_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
                         ModBlocks.ENERGY_SAPLING.get()));
+
+        register(context, ALT_ENERGY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ALT_ENERGY_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
+                        ModBlocks.ALT_ENERGY_SAPLING.get()));
 
         register(context, ROSE_QUARTZ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_ROSE_QUARTZ_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,

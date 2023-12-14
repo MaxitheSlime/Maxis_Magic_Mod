@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_energy_leaves": {
+    "has_energy_sapling": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:energy_leaves"
+              "twosidesmod:energy_sapling"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "twosidesmod:colored_leaves"
+        "recipe": "twosidesmod:alt_energy_sapling"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_energy_leaves",
+      "has_energy_sapling",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "twosidesmod:colored_leaves"
+      "twosidesmod:alt_energy_sapling"
     ]
   },
   "sends_telemetry_event": false

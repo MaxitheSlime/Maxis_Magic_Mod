@@ -32,6 +32,7 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ENERGY_KEY = registerKey("energy");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ALT_ENERGY_KEY = registerKey("alt_energy");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ROSE_QUARTZ_ORE_KEY = registerKey("rose_quartz_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_ROSE_QUARTZ_ORE_KEY = registerKey("nether_rose_quartz_ore");
@@ -55,6 +56,14 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.ENERGY_LOG.get()),
                 new EnergyTrunkPlacer(3, 2, 1),
                 BlockStateProvider.simple(ModBlocks.ENERGY_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
+                new TwoLayersFeatureSize(1, 0, 2))
+                .dirt(BlockStateProvider.simple(Blocks.DEEPSLATE_EMERALD_ORE)).build());
+
+        register(context, ALT_ENERGY_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.ENERGY_LOG.get()),
+                new EnergyTrunkPlacer(3, 2, 1),
+                BlockStateProvider.simple(ModBlocks.ENERGY_LEAVES_ALT.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2))
                 .dirt(BlockStateProvider.simple(Blocks.DEEPSLATE_EMERALD_ORE)).build());

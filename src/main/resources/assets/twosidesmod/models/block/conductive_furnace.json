@@ -2,7 +2,7 @@
   "parent": "minecraft:block/orientable",
   "textures": {
     "front": "twosidesmod:block/conductive_furnace_front",
-    "side": "minecraft:block/furnace_side",
-    "top": "minecraft:block/furnace_top"
+    "side": "twosidesmod:block/conductive_furnace_side",
+    "top": "twosidesmod:block/conductive_furnace_top"
   }
 }

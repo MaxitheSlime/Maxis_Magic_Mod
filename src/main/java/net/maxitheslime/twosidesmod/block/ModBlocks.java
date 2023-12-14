@@ -6,6 +6,7 @@ import net.maxitheslime.twosidesmod.fluid.ModFluids;
 import net.maxitheslime.twosidesmod.item.ModItems;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
 import net.maxitheslime.twosidesmod.util.ModWoodTypes;
+import net.maxitheslime.twosidesmod.worldgen.tree.AltEnergyTreeGrower;
 import net.maxitheslime.twosidesmod.worldgen.tree.EnergyTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -171,6 +172,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ENERGY_SAPLING = registerBlock("energy_sapling",
             () -> new ModSaplingBlock(new EnergyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> ALT_ENERGY_SAPLING = registerBlock("alt_energy_sapling",
+            () -> new ModSaplingBlock(new AltEnergyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<Block> ENERGY_CROP = BLOCKS.register("energy_crop",
             () -> new EnergyCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));

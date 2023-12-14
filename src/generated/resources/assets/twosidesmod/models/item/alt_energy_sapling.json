@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "twosidesmod:block/alt_energy_sapling"
+  }
+}

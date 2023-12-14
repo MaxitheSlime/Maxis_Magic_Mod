@@ -101,6 +101,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_TRAPDOOR.get());
                         pOutput.accept(ModBlocks.ROSE_QUARTZ_LAMP.get());
                         pOutput.accept(ModBlocks.PURIFICATION_TABLE.get());
+                        pOutput.accept(ModBlocks.CONDUCTIVE_FURNACE.get());
                         pOutput.accept(ModBlocks.ENERGY_PLANKS.get());
                         pOutput.accept(ModItems.ENERGY_SIGN.get());
                         pOutput.accept(ModItems.ENERGY_HANGING_SIGN.get());
@@ -125,6 +126,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ENERGY_LEAVES.get());
                         pOutput.accept(ModBlocks.ENERGY_LEAVES_ALT.get());
                         pOutput.accept(ModBlocks.ENERGY_SAPLING.get());
+                        pOutput.accept(ModBlocks.ALT_ENERGY_SAPLING.get());
                         pOutput.accept(ModBlocks.CRYSTALLIZED_FLOWER.get());
                         pOutput.accept(ModBlocks.MAXI_PORTAL.get());
                     }).build());
