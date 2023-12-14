@@ -1,9 +1,9 @@
-// 1.20.1	2023-12-13T01:32:49.5395608	Block Tags
+// 1.20.1	2023-12-14T00:15:31.7416626	Block Tags
 998740fd122ad3e4e8497ad16f66a8ad97a6787e data/minecraft/tags/blocks/doors.json
 af68db2746837fafc05ca36a6cffae05fa7f01a8 data/minecraft/tags/blocks/fences.json
 3b160f528d065913e1e2a2589e2515f0003e16df data/minecraft/tags/blocks/fence_gates.json
 c78070682a91fcfcd7fd2593de25f790d3342d0c data/minecraft/tags/blocks/logs_that_burn.json
-5cb2900488edb1382d459c9516ee804337e601b9 data/minecraft/tags/blocks/mineable/pickaxe.json
+ced2a7f6695a0b7a2dc4fab2bccf1fdb8efc799a data/minecraft/tags/blocks/mineable/pickaxe.json
 494032a2b2205b0da67a9118ccca6192efc0e527 data/minecraft/tags/blocks/needs_diamond_tool.json
 c3efa8328a5e006f7d2267dd54de5b994d0fff65 data/minecraft/tags/blocks/needs_iron_tool.json
 6698d6557c13cc663e4b064e436b64ddd0e57414 data/minecraft/tags/blocks/planks.json

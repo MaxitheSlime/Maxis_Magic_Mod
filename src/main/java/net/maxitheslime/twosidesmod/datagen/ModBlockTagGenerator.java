@@ -10,7 +10,6 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.common.Mod;
 
 import javax.annotation.Nullable;
 import java.util.concurrent.CompletableFuture;
@@ -50,7 +49,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ROSE_QUARTZ_TRAPDOOR.get(),
                         ModBlocks.SOUND_BLOCK.get(),
                         ModBlocks.DICE_BLOCK.get(),
-                        ModBlocks.MAXI_PORTAL.get()
+                        ModBlocks.MAXI_PORTAL.get(),
+                        ModBlocks.RUBY_BLOCK.get(),
+                        ModBlocks.RUBY_BLOCK_1.get(),
+                        ModBlocks.RUBY_BLOCK_2.get(),
+                        ModBlocks.RUBY_BLOCK_3.get(),
+                        ModBlocks.WAXED_RUBY_BLOCK.get(),
+                        ModBlocks.WAXED_RUBY_BLOCK_1.get(),
+                        ModBlocks.WAXED_RUBY_BLOCK_2.get(),
+                        ModBlocks.WAXED_RUBY_BLOCK_3.get(),
+                        ModBlocks.PURIFICATION_TABLE.get(),
+                        ModBlocks.CONDUCTIVE_FURNACE.get()
                 );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)

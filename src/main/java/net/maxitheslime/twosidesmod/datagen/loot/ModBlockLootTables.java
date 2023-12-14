@@ -87,6 +87,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.ENERGY_CROP.get(), createCropDrops(ModBlocks.ENERGY_CROP.get(), ModItems.ENERGY_ORB.get(),
                 ModItems.ENERGY_SEEDS.get(), lootitemcondition$builder2));
 
+        this.dropSelf(ModBlocks.RUBY_BLOCK.get());
+        this.dropSelf(ModBlocks.RUBY_BLOCK_1.get());
+        this.dropSelf(ModBlocks.RUBY_BLOCK_2.get());
+        this.dropSelf(ModBlocks.RUBY_BLOCK_3.get());
+
+        this.dropSelf(ModBlocks.WAXED_RUBY_BLOCK.get());
+        this.dropSelf(ModBlocks.WAXED_RUBY_BLOCK_1.get());
+        this.dropSelf(ModBlocks.WAXED_RUBY_BLOCK_2.get());
+        this.dropSelf(ModBlocks.WAXED_RUBY_BLOCK_3.get());
+
+        this.dropSelf(ModBlocks.CONDUCTIVE_FURNACE.get());
+
     }
 
     @Override

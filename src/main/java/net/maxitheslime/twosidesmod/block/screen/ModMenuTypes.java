@@ -16,6 +16,8 @@ public class ModMenuTypes {
 
     public static final RegistryObject<MenuType<PurificationTableMenu>> PURIFICATION_MENU =
             registerMenuType(PurificationTableMenu::new, "purification_menu");
+    public static final RegistryObject<MenuType<ConductiveFurnaceMenu>> CONDUCTIVE_FURNACE_MENU =
+            registerMenuType(ConductiveFurnaceMenu::new, "conductive_furnace_menu");
 
 
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name) {

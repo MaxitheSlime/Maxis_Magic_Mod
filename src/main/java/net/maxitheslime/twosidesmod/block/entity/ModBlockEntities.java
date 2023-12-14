@@ -16,6 +16,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("purification_table_block_entity", () ->
                     BlockEntityType.Builder.of(PurificationTableEntity::new,
                             ModBlocks.PURIFICATION_TABLE.get()).build(null));
+    public static final RegistryObject<BlockEntityType<ConductiveFurnaceBlockEntity>> CONDUCTIVE_FURNACE_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("conductive_furnace_block_entity", () ->
+                    BlockEntityType.Builder.of(ConductiveFurnaceBlockEntity::new,
+                            ModBlocks.CONDUCTIVE_FURNACE.get()).build(null));
 
     public static final RegistryObject<BlockEntityType<ModSignBlockEntity>> MOD_SIGN =
             BLOCK_ENTITIES.register("mod_sign", () ->

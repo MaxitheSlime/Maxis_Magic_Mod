@@ -87,6 +87,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModBlocks.PURIFICATION_TABLE.get()).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ENERGY_BOAT.get())
+                .pattern("   ")
+                .pattern("E E")
+                .pattern("EEE")
+                .define('E', ModBlocks.ENERGY_PLANKS.get())
+                .unlockedBy("has_energy_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_PLANKS.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ENERGY_CHEST_BOAT.get())
+                .pattern("   ")
+                .pattern("C E")
+                .pattern("   ")
+                .define('E', ModItems.ENERGY_BOAT.get())
+                .define('C', Blocks.CHEST)
+                .unlockedBy("has_energy_boat", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.ENERGY_BOAT.get()).build()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PURIFICATION_TABLE.get())
                 .pattern("ABA")
                 .pattern("RGR")
@@ -99,6 +118,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.SMOOTH_STONE_SLAB)
                 .unlockedBy("has_iron_ingot", inventoryTrigger(ItemPredicate.Builder.item().
                         of(Items.IRON_INGOT).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CONDUCTIVE_FURNACE.get())
+                .pattern(" E ")
+                .pattern("AFA")
+                .pattern(" E ")
+                .define('F', Blocks.FURNACE)
+                .define('E', ModItems.ENERGY_ORB.get())
+                .define('A', Items.AMETHYST_SHARD)
+                .unlockedBy("has_energy_orb", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.ENERGY_ORB.get()).build()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_QUARTZ_LAMP.get())

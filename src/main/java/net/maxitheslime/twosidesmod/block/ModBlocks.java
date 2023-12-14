@@ -9,7 +9,6 @@ import net.maxitheslime.twosidesmod.util.ModWoodTypes;
 import net.maxitheslime.twosidesmod.worldgen.tree.EnergyTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
@@ -93,7 +92,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PURIFICATION_TABLE = registerBlock("purification_table",
             () -> new PurifyingTableBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
-
+    public static final RegistryObject<Block> CONDUCTIVE_FURNACE = registerBlock("conductive_furnace",
+            () -> new ConductiveFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    
     public static final RegistryObject<LiquidBlock> LEMON_JUICE_BLOCK = BLOCKS.register("lemon_juice_block",
             () -> new LiquidBlock(ModFluids.SOURCE_LEMON_JUICE, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));
 
@@ -180,6 +181,27 @@ public class ModBlocks {
     public static final RegistryObject<Block> MAXI_PORTAL = registerBlock("maxi_portal",
             () -> new MaxiPortalBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_PORTAL).noLootTable().noOcclusion().noCollission()));
 
+    public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
+            () -> new DegradableRubyBlock(GemDegradable.GemDegradationLevel.UNAFFECTED,
+                    BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> RUBY_BLOCK_1 = registerBlock("ruby_block_1",
+            () -> new DegradableRubyBlock(GemDegradable.GemDegradationLevel.EXPOSED,
+                    BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> RUBY_BLOCK_2 = registerBlock("ruby_block_2",
+            () -> new DegradableRubyBlock(GemDegradable.GemDegradationLevel.WEATHERED,
+                    BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> RUBY_BLOCK_3 = registerBlock("ruby_block_3",
+            () -> new DegradableRubyBlock(GemDegradable.GemDegradationLevel.DEGRADED,
+                    BlockBehaviour.Properties.copy(Blocks.STONE)));
+
+    public static final RegistryObject<Block> WAXED_RUBY_BLOCK = registerBlock("waxed_ruby_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> WAXED_RUBY_BLOCK_1 = registerBlock("waxed_ruby_block_1",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> WAXED_RUBY_BLOCK_2 = registerBlock("waxed_ruby_block_2",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> WAXED_RUBY_BLOCK_3 = registerBlock("waxed_ruby_block_3",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

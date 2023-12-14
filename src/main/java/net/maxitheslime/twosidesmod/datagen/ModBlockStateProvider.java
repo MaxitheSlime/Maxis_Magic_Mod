@@ -89,6 +89,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.MAXI_PORTAL);
 
+        blockWithItem(ModBlocks.RUBY_BLOCK);
+        blockWithItem(ModBlocks.RUBY_BLOCK_1);
+        blockWithItem(ModBlocks.RUBY_BLOCK_2);
+        blockWithItem(ModBlocks.RUBY_BLOCK_3);
+
+        blockWithItem(ModBlocks.WAXED_RUBY_BLOCK);
+        blockWithItem(ModBlocks.WAXED_RUBY_BLOCK_1);
+        blockWithItem(ModBlocks.WAXED_RUBY_BLOCK_2);
+        blockWithItem(ModBlocks.WAXED_RUBY_BLOCK_3);
+
     }
 
     public void makeEnergyCrop(CropBlock block, String modelName, String textureName) {
@@ -125,8 +135,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(),
-                models().cubeAll(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
-    }
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));}
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlock(blockRegistryObject.get(),

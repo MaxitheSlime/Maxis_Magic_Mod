@@ -3,6 +3,7 @@ package net.maxitheslime.twosidesmod;
 import com.mojang.logging.LogUtils;
 import net.maxitheslime.twosidesmod.block.ModBlocks;
 import net.maxitheslime.twosidesmod.block.entity.ModBlockEntities;
+import net.maxitheslime.twosidesmod.block.screen.ConductiveFurnaceScreen;
 import net.maxitheslime.twosidesmod.block.screen.ModMenuTypes;
 import net.maxitheslime.twosidesmod.block.screen.PurificationTableScreen;
 import net.maxitheslime.twosidesmod.effect.ModEffects;
@@ -139,7 +140,8 @@ public class TwoSidesMod {
                     ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_LEMON_JUICE.get(), RenderType.translucent());
 
                     MenuScreens.register(ModMenuTypes.PURIFICATION_MENU.get(), PurificationTableScreen::new);
-
+                    MenuScreens.register(ModMenuTypes.CONDUCTIVE_FURNACE_MENU.get(), ConductiveFurnaceScreen::new);
+                    
                     EntityRenderers.register(ModEntities.RQG.get(), RQGRenderer::new);
                     EntityRenderers.register(ModEntities.RUBY_STATUE.get(), RubyStatueRenderer::new);
                     EntityRenderers.register(ModEntities.DICE_PROJECTILE.get(), ThrownItemRenderer::new);

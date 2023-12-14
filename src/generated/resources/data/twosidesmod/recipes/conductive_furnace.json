@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "E": {
+      "item": "twosidesmod:energy_orb"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "pattern": [
+    " E ",
+    "AFA",
+    " E "
+  ],
+  "result": {
+    "item": "twosidesmod:conductive_furnace"
+  },
+  "show_notification": true
+}

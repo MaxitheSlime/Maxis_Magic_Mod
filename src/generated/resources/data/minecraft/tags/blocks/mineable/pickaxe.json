@@ -17,6 +17,16 @@
     "twosidesmod:rose_quartz_trapdoor",
     "twosidesmod:sound_block",
     "twosidesmod:dice_block",
-    "twosidesmod:maxi_portal"
+    "twosidesmod:maxi_portal",
+    "twosidesmod:ruby_block",
+    "twosidesmod:ruby_block_1",
+    "twosidesmod:ruby_block_2",
+    "twosidesmod:ruby_block_3",
+    "twosidesmod:waxed_ruby_block",
+    "twosidesmod:waxed_ruby_block_1",
+    "twosidesmod:waxed_ruby_block_2",
+    "twosidesmod:waxed_ruby_block_3",
+    "twosidesmod:purification_table",
+    "twosidesmod:conductive_furnace"
   ]
 }

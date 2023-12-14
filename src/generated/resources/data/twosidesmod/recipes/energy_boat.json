@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "twosidesmod:energy_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "E E",
+    "EEE"
+  ],
+  "result": {
+    "item": "twosidesmod:energy_boat"
+  },
+  "show_notification": true
+}

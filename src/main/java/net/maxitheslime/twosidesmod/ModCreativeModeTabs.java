@@ -104,6 +104,14 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ENERGY_PLANKS.get());
                         pOutput.accept(ModItems.ENERGY_SIGN.get());
                         pOutput.accept(ModItems.ENERGY_HANGING_SIGN.get());
+                        pOutput.accept(ModBlocks.RUBY_BLOCK.get());
+                        pOutput.accept(ModBlocks.RUBY_BLOCK_1.get());
+                        pOutput.accept(ModBlocks.RUBY_BLOCK_2.get());
+                        pOutput.accept(ModBlocks.RUBY_BLOCK_3.get());
+                        pOutput.accept(ModBlocks.WAXED_RUBY_BLOCK.get());
+                        pOutput.accept(ModBlocks.WAXED_RUBY_BLOCK_1.get());
+                        pOutput.accept(ModBlocks.WAXED_RUBY_BLOCK_2.get());
+                        pOutput.accept(ModBlocks.WAXED_RUBY_BLOCK_3.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_NATURE_BLOCKS = CREATIVE_MODE_TABS.register("two_sides_nature_blocks",

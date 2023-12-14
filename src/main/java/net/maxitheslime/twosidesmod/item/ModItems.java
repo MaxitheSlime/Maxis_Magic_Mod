@@ -103,7 +103,7 @@ public class ModItems {
             () -> new DiceItem(new Item.Properties()));
 
     public static final RegistryObject<Item> ENERGY_ORB = ITEMS.register("energy_orb",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.ENERGY_ORB)));
+            () -> new ModWaxingItem(new Item.Properties().food(ModFoodProperties.ENERGY_ORB)));
     public static final RegistryObject<Item> ENERGY_SEEDS = ITEMS.register("energy_seeds",
             () -> new ItemNameBlockItem(ModBlocks.ENERGY_CROP.get(), new Item.Properties()));
     
