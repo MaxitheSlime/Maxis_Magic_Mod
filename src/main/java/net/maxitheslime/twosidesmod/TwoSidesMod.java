@@ -105,8 +105,17 @@ public class TwoSidesMod {
             event.enqueueWork(() -> {
                 ComposterBlock.COMPOSTABLES.put(ModItems.LEMON.get(), 0.35f);
                 ComposterBlock.COMPOSTABLES.put(ModItems.LEMON_SEEDS.get(), 0.20f);
+                ComposterBlock.COMPOSTABLES.put(ModItems.ENERGY_ORB.get(), 0.1525f);
+                ComposterBlock.COMPOSTABLES.put(ModItems.ENERGY_SEEDS.get(), 0.08714f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.CRYSTALLIZED_FLOWER.get(), 0.80f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.ENERGY_LEAVES_ALT.get(), 0.45f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.ENERGY_LEAVES.get(), 0.40f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.ENERGY_SAPLING.get(), 0.30f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.ALT_ENERGY_SAPLING.get(), 0.35f);
 
                 ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CRYSTALLIZED_FLOWER.getId(), ModBlocks.POTTED_CRYSTALLIZED_FLOWER);
+                ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.ALT_ENERGY_SAPLING.getId(), ModBlocks.POTTED_ALT_ENERGY_SAPLING);
+                ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.ENERGY_SAPLING.getId(), ModBlocks.POTTED_ENERGY_SAPLING);
 
                 BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.THICK, ModItems.PURE_ROSE_QUARTZ.get(), ModPotions.SLIMEY_POTION.get()));
 

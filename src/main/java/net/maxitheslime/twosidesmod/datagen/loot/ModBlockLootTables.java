@@ -101,6 +101,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.CONDUCTIVE_FURNACE.get());
 
+        this.add(ModBlocks.POTTED_ENERGY_SAPLING.get(), createPotFlowerItemTable(ModBlocks.ENERGY_SAPLING.get()));
+        this.add(ModBlocks.POTTED_ALT_ENERGY_SAPLING.get(), createPotFlowerItemTable(ModBlocks.ALT_ENERGY_SAPLING.get()));
+
+
     }
 
     @Override

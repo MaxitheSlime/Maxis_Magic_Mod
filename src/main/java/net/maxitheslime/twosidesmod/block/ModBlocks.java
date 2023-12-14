@@ -175,6 +175,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> ALT_ENERGY_SAPLING = registerBlock("alt_energy_sapling",
             () -> new ModSaplingBlock(new AltEnergyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+    public static final RegistryObject<Block> POTTED_ALT_ENERGY_SAPLING = BLOCKS.register("potted_alt_energy_sapling",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), ALT_ENERGY_SAPLING,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+    public static final RegistryObject<Block> POTTED_ENERGY_SAPLING = BLOCKS.register("potted_energy_sapling",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), ENERGY_SAPLING,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+
     public static final RegistryObject<Block> ENERGY_CROP = BLOCKS.register("energy_crop",
             () -> new EnergyCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
