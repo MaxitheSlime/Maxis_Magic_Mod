@@ -1,16 +1,16 @@
 {
   "structures": [
     {
-      "structure": "twosidesmod:tutorial_house",
+      "structure": "twosidesmod:supply_hub",
       "weight": 1
     }
   ],
   "placement": {
-    "salt": 750545120,
+    "salt": 446981001,
 
-    "spacing": 40,
+    "spacing": 50,
 
-    "separation": 15,
+    "separation": 40,
 
     "type": "minecraft:random_spread"
   }
