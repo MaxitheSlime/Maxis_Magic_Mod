@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "twosidesmod:block/energy_planks",
+    "side": "twosidesmod:block/energy_planks",
+    "top": "twosidesmod:block/energy_planks"
+  }
+}

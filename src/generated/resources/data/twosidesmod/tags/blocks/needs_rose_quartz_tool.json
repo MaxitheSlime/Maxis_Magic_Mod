@@ -1,6 +1,19 @@
 {
   "values": [
     "twosidesmod:nether_rose_quartz_ore",
-    "twosidesmod:end_rose_quartz_ore"
+    "twosidesmod:end_rose_quartz_ore",
+    "twosidesmod:energy_planks",
+    "twosidesmod:energy_log",
+    "twosidesmod:stripped_energy_log",
+    "twosidesmod:energy_wood",
+    "twosidesmod:stripped_energy_wood",
+    "twosidesmod:energy_stairs",
+    "twosidesmod:energy_slab",
+    "twosidesmod:energy_pressure_plate",
+    "twosidesmod:energy_button",
+    "twosidesmod:energy_fence",
+    "twosidesmod:energy_fence_gate",
+    "twosidesmod:energy_door",
+    "twosidesmod:energy_trapdoor"
   ]
 }

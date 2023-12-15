@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "twosidesmod:block/energy_pressure_plate"
+    },
+    "powered=true": {
+      "model": "twosidesmod:block/energy_pressure_plate_down"
+    }
+  }
+}

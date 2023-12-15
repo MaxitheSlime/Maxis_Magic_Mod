@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "twosidesmod:block/energy_planks"
+  }
+}

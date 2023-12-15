@@ -103,6 +103,14 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PURIFICATION_TABLE.get());
                         pOutput.accept(ModBlocks.CONDUCTIVE_FURNACE.get());
                         pOutput.accept(ModBlocks.ENERGY_PLANKS.get());
+                        pOutput.accept(ModBlocks.ENERGY_STAIRS.get());
+                        pOutput.accept(ModBlocks.ENERGY_SLAB.get());
+                        pOutput.accept(ModBlocks.ENERGY_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.ENERGY_BUTTON.get());
+                        pOutput.accept(ModBlocks.ENERGY_FENCE.get());
+                        pOutput.accept(ModBlocks.ENERGY_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.ENERGY_DOOR.get());
+                        pOutput.accept(ModBlocks.ENERGY_TRAPDOOR.get());
                         pOutput.accept(ModItems.ENERGY_SIGN.get());
                         pOutput.accept(ModItems.ENERGY_HANGING_SIGN.get());
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
