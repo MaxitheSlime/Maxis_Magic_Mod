@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:energy_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "AA ",
+    "AA "
+  ],
+  "result": {
+    "item": "twosidesmod:energy_trapdoor"
+  },
+  "show_notification": true
+}

@@ -228,6 +228,82 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENERGY_STAIRS.get(), 6)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.ENERGY_PLANKS.get())
+                .unlockedBy("has_energy_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_PLANKS.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENERGY_SLAB.get(), 6)
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("AAA")
+                .define('A', ModBlocks.ENERGY_PLANKS.get())
+                .unlockedBy("has_energy_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_PLANKS.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENERGY_PRESSURE_PLATE.get())
+                .pattern(" A ")
+                .pattern(" S ")
+                .pattern(" A ")
+                .define('A', ModBlocks.ENERGY_PLANKS.get())
+                .define('S', Blocks.OAK_PRESSURE_PLATE)
+                .unlockedBy("has_energy_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_PLANKS.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENERGY_BUTTON.get())
+                .pattern("   ")
+                .pattern("ASA")
+                .pattern("   ")
+                .define('A', ModBlocks.ENERGY_PLANKS.get())
+                .define('S', Blocks.OAK_BUTTON)
+                .unlockedBy("has_energy_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_PLANKS.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENERGY_FENCE.get(), 3)
+                .pattern("   ")
+                .pattern("SAS")
+                .pattern("SAS")
+                .define('A', ModBlocks.ENERGY_PLANKS.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_energy_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_PLANKS.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENERGY_FENCE_GATE.get())
+                .pattern("   ")
+                .pattern("ASA")
+                .pattern("ASA")
+                .define('A', ModBlocks.ENERGY_PLANKS.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_energy_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_PLANKS.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENERGY_DOOR.get(),3)
+                .pattern("AA ")
+                .pattern("AA ")
+                .pattern("AA ")
+                .define('A', ModBlocks.ENERGY_PLANKS.get())
+                .unlockedBy("has_energy_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_PLANKS.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENERGY_TRAPDOOR.get())
+                .pattern("   ")
+                .pattern("AA ")
+                .pattern("AA ")
+                .define('A', ModBlocks.ENERGY_PLANKS.get())
+                .unlockedBy("has_energy_planks", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.ENERGY_PLANKS.get()).build()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SOUND_BLOCK.get())
                 .pattern("AAA")
                 .pattern("ANA")

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:energy_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "   ",
+    "SAS",
+    "SAS"
+  ],
+  "result": {
+    "count": 3,
+    "item": "twosidesmod:energy_fence"
+  },
+  "show_notification": true
+}

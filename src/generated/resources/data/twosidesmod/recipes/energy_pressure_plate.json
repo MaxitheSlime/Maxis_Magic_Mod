@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:energy_planks"
+    },
+    "S": {
+      "item": "minecraft:oak_pressure_plate"
+    }
+  },
+  "pattern": [
+    " A ",
+    " S ",
+    " A "
+  ],
+  "result": {
+    "item": "twosidesmod:energy_pressure_plate"
+  },
+  "show_notification": true
+}

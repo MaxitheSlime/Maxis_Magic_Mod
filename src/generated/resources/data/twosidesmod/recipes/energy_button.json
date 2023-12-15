@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:energy_planks"
+    },
+    "S": {
+      "item": "minecraft:oak_button"
+    }
+  },
+  "pattern": [
+    "   ",
+    "ASA",
+    "   "
+  ],
+  "result": {
+    "item": "twosidesmod:energy_button"
+  },
+  "show_notification": true
+}
