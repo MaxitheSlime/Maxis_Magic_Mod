@@ -1,4 +1,4 @@
-// 1.20.1	2023-12-15T00:16:11.1278878	Recipes
+// 1.20.1	2023-12-15T01:14:23.1372609	Recipes
 8eafd34008f7989bc4d2a29466872374765e7835 data/minecraft/advancements/recipes/diamond.json
 a36bef6721ff64c070703056c19a9d42ebac2506 data/minecraft/advancements/recipes/misc/pink_dye.json
 2867a858605d75e3a2f9d049b99c65f66c1197fb data/minecraft/recipes/pink_dye.json
@@ -6,7 +6,7 @@ a36bef6721ff64c070703056c19a9d42ebac2506 data/minecraft/advancements/recipes/mis
 967f5818ff095be7f4460027c0b4894459e0e2fd data/twosidesmod/advancements/recipes/misc/bar_brawl_record.json
 a47f6eb3fa060cce2e61c7ad950ff0edb95ac0f8 data/twosidesmod/advancements/recipes/misc/conductive_furnace.json
 1386c9c70cce89821aab14973cb441a2cdc50dd5 data/twosidesmod/advancements/recipes/misc/crystal_flower.json
-736babca969ef181fad656347497df8617ccc38e data/twosidesmod/advancements/recipes/misc/data_tablet.json
+fc2753a6154a6773555a2fe09b3ef1f76e2b141f data/twosidesmod/advancements/recipes/misc/data_tablet.json
 3b29586981a5be6f72a9df70c15288800e49525c data/twosidesmod/advancements/recipes/misc/dice.json
 cf01f090c9915f7379109cda68ca10709c95100d data/twosidesmod/advancements/recipes/misc/energy_boat.json
 4601cb0423414ca81bf29c046de03a35adaf58a5 data/twosidesmod/advancements/recipes/misc/energy_button.json
@@ -26,7 +26,7 @@ d30dc4ae458882718c1342589c93b2f04787b877 data/twosidesmod/advancements/recipes/m
 5b82694af35cb609521198ca1c51a9e0be07145d data/twosidesmod/advancements/recipes/misc/fire_quartz.json
 ebf6856dd7d9d8df90f490007bb5b17e14f44538 data/twosidesmod/advancements/recipes/misc/impure_rose_quartz.json
 7e220195fb2342bacc6f819e839c2d081719fc0f data/twosidesmod/advancements/recipes/misc/impure_rose_quartz_block.json
-ec08d5ac018d9dec66aff94013ce0932a3134e59 data/twosidesmod/advancements/recipes/misc/lemon_juice_bucket.json
+6f51891164607e880678a7a105208e1ab21a348b data/twosidesmod/advancements/recipes/misc/lemon_juice_bucket.json
 035751a960f697ac1b62a1f5c6b697631053f1f3 data/twosidesmod/advancements/recipes/misc/lemon_seeds.json
 54277067000b20e5f523a061e1ecc9d0437b812b data/twosidesmod/advancements/recipes/misc/maxi_portal.json
 b48834c7579f14c66b66ac19326ca417272f2f29 data/twosidesmod/advancements/recipes/misc/metal_detector.json

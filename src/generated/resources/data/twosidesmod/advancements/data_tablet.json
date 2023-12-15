@@ -1,11 +1,12 @@
 {
+  "parent": "twosidesmod:metal_detector",
   "criteria": {
-    "has_iron_pickaxe": {
+    "has_data_tablet": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:iron_pickaxe"
+              "twosidesmod:data_tablet"
             ]
           }
         ]
@@ -15,24 +16,22 @@
   },
   "display": {
     "announce_to_chat": true,
-    "background": "twosidesmod:textures/block/rose_quartz_ore.png",
     "description": {
-      "text": "Magic at Your Fingertips!"
+      "text": "Batteries still not included. But a SD card is!"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:iron_pickaxe",
-      "nbt": "{Damage:0}"
+      "item": "twosidesmod:data_tablet"
     },
     "show_toast": true,
     "title": {
-      "text": "2 Sides Mod"
+      "text": "Data Tablet"
     }
   },
   "requirements": [
     [
-      "has_iron_pickaxe"
+      "has_data_tablet"
     ]
   ],
   "sends_telemetry_event": true

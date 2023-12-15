@@ -1,11 +1,12 @@
 {
+  "parent": "twosidesmod:twosidesmod",
   "criteria": {
-    "has_iron_pickaxe": {
+    "has_pure_rose_quartz_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:iron_pickaxe"
+              "twosidesmod:pure_rose_quartz_block"
             ]
           }
         ]
@@ -15,24 +16,22 @@
   },
   "display": {
     "announce_to_chat": true,
-    "background": "twosidesmod:textures/block/rose_quartz_ore.png",
     "description": {
-      "text": "Magic at Your Fingertips!"
+      "text": "Why not stack them up?"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:iron_pickaxe",
-      "nbt": "{Damage:0}"
+      "item": "twosidesmod:pure_rose_quartz_block"
     },
     "show_toast": true,
     "title": {
-      "text": "2 Sides Mod"
+      "text": "Purified Rose Quartz Block"
     }
   },
   "requirements": [
     [
-      "has_iron_pickaxe"
+      "has_pure_rose_quartz_block"
     ]
   ],
   "sends_telemetry_event": true

@@ -1,11 +1,11 @@
 {
   "criteria": {
-    "has_iron_pickaxe": {
+    "has_lemon_seeds": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:iron_pickaxe"
+              "twosidesmod:lemon_seeds"
             ]
           }
         ]
@@ -15,24 +15,23 @@
   },
   "display": {
     "announce_to_chat": true,
-    "background": "twosidesmod:textures/block/rose_quartz_ore.png",
+    "background": "twosidesmod:textures/item/energy_seeds.png",
     "description": {
-      "text": "Magic at Your Fingertips!"
+      "text": "When Life gives you lemons..."
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:iron_pickaxe",
-      "nbt": "{Damage:0}"
+      "item": "twosidesmod:lemon_seeds"
     },
     "show_toast": true,
     "title": {
-      "text": "2 Sides Mod"
+      "text": "Lemon Seeds"
     }
   },
   "requirements": [
     [
-      "has_iron_pickaxe"
+      "has_lemon_seeds"
     ]
   ],
   "sends_telemetry_event": true

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pure_rose_quartz": {
+    "has_metal_detector": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:pure_rose_quartz"
+              "twosidesmod:metal_detector"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_pure_rose_quartz",
+      "has_metal_detector",
       "has_the_recipe"
     ]
   ],

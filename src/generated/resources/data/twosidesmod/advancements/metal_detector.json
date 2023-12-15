@@ -1,5 +1,5 @@
 {
-  "parent": "twosidesmod:twosidesmod",
+  "parent": "twosidesmod:impure_rose_quartz",
   "criteria": {
     "has_metal_detector": {
       "conditions": {

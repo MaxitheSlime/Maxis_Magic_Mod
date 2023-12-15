@@ -1,11 +1,12 @@
 {
+  "parent": "twosidesmod:lemon_farming",
   "criteria": {
-    "has_iron_pickaxe": {
+    "has_lemon_juice_bucket": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:iron_pickaxe"
+              "twosidesmod:lemon_juice_bucket"
             ]
           }
         ]
@@ -15,24 +16,22 @@
   },
   "display": {
     "announce_to_chat": true,
-    "background": "twosidesmod:textures/block/rose_quartz_ore.png",
     "description": {
-      "text": "Magic at Your Fingertips!"
+      "text": "...make Lemonade!"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:iron_pickaxe",
-      "nbt": "{Damage:0}"
+      "item": "twosidesmod:lemon_juice_bucket"
     },
     "show_toast": true,
     "title": {
-      "text": "2 Sides Mod"
+      "text": "Lemon Juice Bucket"
     }
   },
   "requirements": [
     [
-      "has_iron_pickaxe"
+      "has_lemon_juice_bucket"
     ]
   ],
   "sends_telemetry_event": true

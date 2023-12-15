@@ -1,11 +1,12 @@
 {
+  "parent": "twosidesmod:pure_rose_quartz_block",
   "criteria": {
-    "has_iron_pickaxe": {
+    "has_rose_quartz_pickaxe": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:iron_pickaxe"
+              "twosidesmod:rose_quartz_pickaxe"
             ]
           }
         ]
@@ -15,24 +16,23 @@
   },
   "display": {
     "announce_to_chat": true,
-    "background": "twosidesmod:textures/block/rose_quartz_ore.png",
     "description": {
-      "text": "Magic at Your Fingertips!"
+      "text": "Now We're getting serious... -ly wealthy."
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:iron_pickaxe",
+      "item": "twosidesmod:rose_quartz_pickaxe",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "text": "2 Sides Mod"
+      "text": "Rose Quartz Pickaxe"
     }
   },
   "requirements": [
     [
-      "has_iron_pickaxe"
+      "has_rose_quartz_pickaxe"
     ]
   ],
   "sends_telemetry_event": true

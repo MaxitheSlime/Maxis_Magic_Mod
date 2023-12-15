@@ -383,8 +383,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('R', Items.REDSTONE)
                 .define('I', Items.IRON_INGOT)
                 .define('P', Blocks.GLASS_PANE)
-                .unlockedBy("has_pure_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().
-                        of(ModItems.PURE_ROSE_QUARTZ.get()).build()))
+                .unlockedBy("has_metal_detector", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.METAL_DETECTOR.get()).build()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_QUARTZ_LIGHTBULB.get())
@@ -608,8 +608,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("LBL")
                 .define('L', ModItems.LEMON.get())
                 .define('B', Items.BUCKET)
-                .unlockedBy("has_bucket", inventoryTrigger(ItemPredicate.Builder.item().
-                        of(Items.BUCKET).build()))
+                .unlockedBy("has_lemon", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.LEMON.get()).build()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BAR_BRAWL_RECORD.get())

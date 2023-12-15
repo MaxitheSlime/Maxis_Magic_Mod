@@ -1,11 +1,12 @@
 {
+  "parent": "twosidesmod:twosidesmod",
   "criteria": {
-    "has_iron_pickaxe": {
+    "has_impure_rose_quartz": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:iron_pickaxe"
+              "twosidesmod:impure_rose_quartz"
             ]
           }
         ]
@@ -15,24 +16,22 @@
   },
   "display": {
     "announce_to_chat": true,
-    "background": "twosidesmod:textures/block/rose_quartz_ore.png",
     "description": {
-      "text": "Magic at Your Fingertips!"
+      "text": "Let's go smelt this!"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:iron_pickaxe",
-      "nbt": "{Damage:0}"
+      "item": "twosidesmod:rose_quartz_ore"
     },
     "show_toast": true,
     "title": {
-      "text": "2 Sides Mod"
+      "text": "Impure Rose Quartz"
     }
   },
   "requirements": [
     [
-      "has_iron_pickaxe"
+      "has_impure_rose_quartz"
     ]
   ],
   "sends_telemetry_event": true
