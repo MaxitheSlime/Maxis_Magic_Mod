@@ -74,6 +74,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STRIPPED_ENERGY_WOOD);
 
         blockWithItem(ModBlocks.ENERGY_PLANKS);
+        stairsBlock((StairBlock) ModBlocks.ENERGY_STAIRS.get(), blockTexture(ModBlocks.ENERGY_PLANKS.get()));
+        slabBlock((SlabBlock) ModBlocks.ENERGY_SLAB.get(), blockTexture(ModBlocks.ENERGY_PLANKS.get()),blockTexture(ModBlocks.ENERGY_PLANKS.get()));
+        blockItem(ModBlocks.ENERGY_STAIRS);
+        blockItem(ModBlocks.ENERGY_SLAB);
+
+        buttonBlock((ButtonBlock) ModBlocks.ENERGY_BUTTON.get(), blockTexture(ModBlocks.ENERGY_PLANKS.get()));
+        pressurePlateBlock((PressurePlateBlock) ModBlocks.ENERGY_PRESSURE_PLATE.get(), blockTexture(ModBlocks.ENERGY_PLANKS.get()));
+        blockItem(ModBlocks.ENERGY_PRESSURE_PLATE);
+        fenceBlock((FenceBlock) ModBlocks.ENERGY_FENCE.get(), blockTexture(ModBlocks.ENERGY_PLANKS.get()));
+        fenceGateBlock((FenceGateBlock) ModBlocks.ENERGY_FENCE_GATE.get(), blockTexture(ModBlocks.ENERGY_PLANKS.get()));
+        blockItem(ModBlocks.ENERGY_FENCE_GATE);
+
+        doorBlockWithRenderType((DoorBlock)ModBlocks.ENERGY_DOOR.get(), modLoc("block/energy_door_bottom"), modLoc("block/energy_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.ENERGY_TRAPDOOR.get(), modLoc("block/energy_trapdoor"), true, "cutout");
+        blockItem(ModBlocks.ENERGY_TRAPDOOR, "_bottom");
 
         leavesBlock(ModBlocks.ENERGY_LEAVES);
         leavesBlock(ModBlocks.ENERGY_LEAVES_ALT);

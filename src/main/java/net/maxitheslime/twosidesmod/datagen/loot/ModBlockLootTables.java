@@ -59,6 +59,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_ENERGY_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_ENERGY_WOOD.get());
         this.dropSelf(ModBlocks.ENERGY_PLANKS.get());
+        this.dropSelf(ModBlocks.ENERGY_STAIRS.get());
+        this.add(ModBlocks.ENERGY_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ENERGY_SLAB.get()));
+        this.dropSelf(ModBlocks.ENERGY_BUTTON.get());
+        this.dropSelf(ModBlocks.ENERGY_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ENERGY_FENCE.get());
+        this.dropSelf(ModBlocks.ENERGY_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.ENERGY_TRAPDOOR.get());
+        this.add(ModBlocks.ENERGY_DOOR.get(),
+                block -> createDoorTable(ModBlocks.ENERGY_DOOR.get()));
+        
         this.dropSelf(ModBlocks.ENERGY_SAPLING.get());
         this.dropSelf(ModBlocks.ALT_ENERGY_SAPLING.get());
 

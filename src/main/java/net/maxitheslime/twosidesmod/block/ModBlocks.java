@@ -52,7 +52,7 @@ public class ModBlocks {
                     BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL), BlockSetType.IRON));
     public static final RegistryObject<Block> ROSE_QUARTZ_BUTTON = registerBlock("rose_quartz_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL), BlockSetType.IRON,
-                    10, true));
+                    80, true));
     public static final RegistryObject<Block> ROSE_QUARTZ_FENCE = registerBlock("rose_quartz_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> ROSE_QUARTZ_FENCE_GATE = registerBlock("rose_quartz_fence_gate",
@@ -169,6 +169,27 @@ public class ModBlocks {
             () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.ENERGY));
     public static final RegistryObject<Block> ENERGY_WALL_HANGING_SIGN = BLOCKS.register("energy_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.ENERGY));
+
+    public static final RegistryObject<Block> ENERGY_STAIRS = registerBlock("energy_stairs",
+            () -> new StairBlock(() -> ModBlocks.ENERGY_PLANKS.get().defaultBlockState() ,
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> ENERGY_SLAB = registerBlock("energy_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> ENERGY_PRESSURE_PLATE = registerBlock("energy_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(ModBlocks.ENERGY_PLANKS.get()).sound(SoundType.WOOD), BlockSetType.OAK));
+    public static final RegistryObject<Block> ENERGY_BUTTON = registerBlock("energy_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(ModBlocks.ENERGY_PLANKS.get()).sound(SoundType.WOOD), BlockSetType.OAK,
+                    40, true));
+    public static final RegistryObject<Block> ENERGY_FENCE = registerBlock("energy_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(ModBlocks.ENERGY_PLANKS.get())));
+    public static final RegistryObject<Block> ENERGY_FENCE_GATE = registerBlock("energy_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(ModBlocks.ENERGY_PLANKS.get()), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final RegistryObject<Block> ENERGY_DOOR = registerBlock("energy_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(ModBlocks.ENERGY_PLANKS.get()).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> ENERGY_TRAPDOOR = registerBlock("energy_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(ModBlocks.ENERGY_PLANKS.get()).noOcclusion(), BlockSetType.OAK));
+
 
     public static final RegistryObject<Block> ENERGY_SAPLING = registerBlock("energy_sapling",
             () -> new ModSaplingBlock(new EnergyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));

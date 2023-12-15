@@ -62,6 +62,22 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.CONDUCTIVE_FURNACE.get()
                 );
 
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.ENERGY_PLANKS.get(),
+                        ModBlocks.ENERGY_LOG.get(),
+                        ModBlocks.STRIPPED_ENERGY_LOG.get(),
+                        ModBlocks.ENERGY_WOOD.get(),
+                        ModBlocks.STRIPPED_ENERGY_WOOD.get(),
+                        ModBlocks.ENERGY_STAIRS.get(),
+                        ModBlocks.ENERGY_SLAB.get(),
+                        ModBlocks.ENERGY_PRESSURE_PLATE.get(),
+                        ModBlocks.ENERGY_BUTTON.get(),
+                        ModBlocks.ENERGY_FENCE.get(),
+                        ModBlocks.ENERGY_FENCE_GATE.get(),
+                        ModBlocks.ENERGY_DOOR.get(),
+                        ModBlocks.ENERGY_TRAPDOOR.get()
+                );
+
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ROSE_QUARTZ_BLOCK.get(),
                         ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK.get(),
@@ -81,8 +97,21 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get());
 
         this.tag(ModTags.Blocks.NEEDS_ROSE_QUARTZ_TOOL)
-                .add(ModBlocks.NETHER_ROSE_QUARTZ_ORE.get())
-                .add(ModBlocks.END_ROSE_QUARTZ_ORE.get());
+                .add(ModBlocks.NETHER_ROSE_QUARTZ_ORE.get(),
+                        ModBlocks.END_ROSE_QUARTZ_ORE.get(),
+                        ModBlocks.ENERGY_PLANKS.get(),
+                        ModBlocks.ENERGY_LOG.get(),
+                        ModBlocks.STRIPPED_ENERGY_LOG.get(),
+                        ModBlocks.ENERGY_WOOD.get(),
+                        ModBlocks.STRIPPED_ENERGY_WOOD.get(),
+                        ModBlocks.ENERGY_STAIRS.get(),
+                        ModBlocks.ENERGY_SLAB.get(),
+                        ModBlocks.ENERGY_PRESSURE_PLATE.get(),
+                        ModBlocks.ENERGY_BUTTON.get(),
+                        ModBlocks.ENERGY_FENCE.get(),
+                        ModBlocks.ENERGY_FENCE_GATE.get(),
+                        ModBlocks.ENERGY_DOOR.get(),
+                        ModBlocks.ENERGY_TRAPDOOR.get());
 
         this.tag(ModTags.Blocks.PAXEL_MINEABLE)
                 .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
@@ -90,15 +119,18 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(BlockTags.MINEABLE_WITH_SHOVEL);
 
         this.tag(BlockTags.FENCES)
-                .add(ModBlocks.ROSE_QUARTZ_FENCE.get());
+                .add(ModBlocks.ROSE_QUARTZ_FENCE.get(),
+                        ModBlocks.ENERGY_FENCE.get());
         this.tag(BlockTags.FENCE_GATES)
                 .add(ModBlocks.ROSE_QUARTZ_FENCE_GATE.get());
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.ROSE_QUARTZ_WALL.get());
         this.tag(BlockTags.DOORS)
-                .add(ModBlocks.ROSE_QUARTZ_DOOR.get());
+                .add(ModBlocks.ROSE_QUARTZ_DOOR.get(),
+                        ModBlocks.ENERGY_DOOR.get());
         this.tag(BlockTags.TRAPDOORS)
-                .add(ModBlocks.ROSE_QUARTZ_TRAPDOOR.get());
+                .add(ModBlocks.ROSE_QUARTZ_TRAPDOOR.get(),
+                        ModBlocks.ENERGY_TRAPDOOR.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.ENERGY_LOG.get())

@@ -54,6 +54,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.LEMON_JUICE_BUCKET);
 
+        buttonItem(ModBlocks.ENERGY_BUTTON, ModBlocks.ENERGY_PLANKS);
+        fenceItem(ModBlocks.ENERGY_FENCE, ModBlocks.ENERGY_PLANKS);
+
+        simpleBlockItem(ModBlocks.ENERGY_DOOR);
+
         saplingItem(ModBlocks.ENERGY_SAPLING);
         saplingItem(ModBlocks.ALT_ENERGY_SAPLING);
 
