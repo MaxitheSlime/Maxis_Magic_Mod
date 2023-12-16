@@ -1,12 +1,12 @@
 {
-  "parent": "twosidesmod:rose_quartz_tools",
+  "parent": "twosidesmod:rose_quartz_disk_piece",
   "criteria": {
-    "has_energy_log": {
+    "has_rose_quartz_disk": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:energy_log"
+              "twosidesmod:bar_brawl_record"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Normal tools can't cut these trees."
+      "text": "Time to listen to some tunes!"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "twosidesmod:energy_log"
+      "item": "twosidesmod:bar_brawl_record"
     },
     "show_toast": true,
     "title": {
-      "text": "That is a very vibrant Green"
+      "text": "Together they make a disk!"
     }
   },
   "requirements": [
     [
-      "has_energy_log"
+      "has_rose_quartz_disk"
     ]
   ],
   "sends_telemetry_event": true

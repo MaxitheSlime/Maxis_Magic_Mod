@@ -1,12 +1,12 @@
 {
-  "parent": "twosidesmod:rose_quartz_tools",
+  "parent": "twosidesmod:rs_spawn_egg",
   "criteria": {
-    "has_energy_log": {
+    "has_ruby_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:energy_log"
+              "twosidesmod:ruby_block"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Normal tools can't cut these trees."
+      "text": "That's it? Just another red block? There has to be more to it? Right?"
     },
     "frame": "task",
-    "hidden": false,
+    "hidden": true,
     "icon": {
-      "item": "twosidesmod:energy_log"
+      "item": "twosidesmod:ruby_block"
     },
     "show_toast": true,
     "title": {
-      "text": "That is a very vibrant Green"
+      "text": "Corpse Trophy"
     }
   },
   "requirements": [
     [
-      "has_energy_log"
+      "has_ruby_block"
     ]
   ],
   "sends_telemetry_event": true

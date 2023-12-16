@@ -1,12 +1,12 @@
 {
-  "parent": "twosidesmod:rose_quartz_tools",
+  "parent": "twosidesmod:pure_rose_quartz_block",
   "criteria": {
-    "has_energy_log": {
+    "has_alert_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:energy_log"
+              "twosidesmod:sound_block"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Normal tools can't cut these trees."
+      "text": "Creates a new Villager job"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "twosidesmod:energy_log"
+      "item": "twosidesmod:sound_block"
     },
     "show_toast": true,
     "title": {
-      "text": "That is a very vibrant Green"
+      "text": "WEE WOO WEE WOO!"
     }
   },
   "requirements": [
     [
-      "has_energy_log"
+      "has_alert_block"
     ]
   ],
   "sends_telemetry_event": true

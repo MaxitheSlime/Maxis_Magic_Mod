@@ -1,5 +1,7 @@
-// 1.20.1	2023-12-12T02:07:02.040819	Global Loot Modifiers : twosidesmod
-be09ddc744b4ad51acee523fca636b09b14cfd05 data/forge/loot_modifiers/global_loot_modifiers.json
+// 1.20.1	2023-12-16T01:59:04.526946	Global Loot Modifiers : twosidesmod
+ab07eef4addbc90f5101b20a314d2300774dfa06 data/forge/loot_modifiers/global_loot_modifiers.json
+53507610c36e9c182168089baf29d0769867765b data/twosidesmod/loot_modifiers/disk_piece_from_jungle_temple.json
+94020a50fa4c1e6407f19663500b9228828fc7cb data/twosidesmod/loot_modifiers/disk_piece_from_suspicious_sand.json
 8a3bf76e43958fa48bd7b6e3ac0482eea8af5eec data/twosidesmod/loot_modifiers/lemon_seeds_from_fern.json
 f72fb4337322b96957dcf3992af8addf7beb78f7 data/twosidesmod/loot_modifiers/lemon_seeds_from_grass.json
 63c43da88685c88219334a535baf9ffb668de25e data/twosidesmod/loot_modifiers/metal_detector_from_jungle_temple.json

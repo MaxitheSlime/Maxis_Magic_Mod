@@ -44,7 +44,7 @@
       "text": "These saplings are different, but I can't quite tell why."
     },
     "frame": "task",
-    "hidden": true,
+    "hidden": false,
     "icon": {
       "item": "twosidesmod:alt_energy_sapling"
     },

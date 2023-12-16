@@ -30,8 +30,15 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
         add("metal_detector_from_jungle_temple", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/jungle_temple")).build() },
                 ModItems.METAL_DETECTOR.get()));
+        add("disk_piece_from_jungle_temple", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/jungle_temple")).build() },
+                ModItems.ROSE_QUARTZ_DISK_PIECE.get()));
+
         add("metal_detector_from_suspicious_sand", new AddSusSandItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("archaeology/desert_pyramid")).build() },
                 ModItems.METAL_DETECTOR.get()));
+        add("disk_piece_from_suspicious_sand", new AddSusSandItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("archaeology/desert_pyramid")).build() },
+                ModItems.ROSE_QUARTZ_DISK_PIECE.get()));
     }
 }

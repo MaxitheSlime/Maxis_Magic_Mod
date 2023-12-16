@@ -49,6 +49,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_rose_quartz_lamp": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_lamp"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_rose_quartz_pressure_plate": {
       "conditions": {
         "items": [
@@ -118,7 +130,7 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "twosidesmod:pure_rose_quartz_block"
+      "item": "twosidesmod:rose_quartz_stairs"
     },
     "show_toast": true,
     "title": {
@@ -152,6 +164,9 @@
     ],
     [
       "has_rose_quartz_wall"
+    ],
+    [
+      "has_rose_quartz_lamp"
     ]
   ],
   "sends_telemetry_event": true

@@ -81,7 +81,6 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                         Component.literal("Quick and Simple"), Component.literal("It may not do much, but it sure is fast!"),
                         null, FrameType.TASK,
                         true, true, false))
-                .parent(purificationTable)
                 .parent(fireQuartz)
                 .addCriterion("has_conductive_furnace", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.CONDUCTIVE_FURNACE.get())))
                 .addCriterion("has_energy_orb", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENERGY_ORB.get())))
@@ -116,54 +115,40 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .parent(rqRootAdvancement)
                 .addCriterion("has_pure_rose_quartz_block", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ROSE_QUARTZ_BLOCK.get())))
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "pure_rose_quartz_block"), existingFileHelper);
-        
-        //chopped down an energy log
-        Advancement energyLog = Advancement.Builder.advancement()
-                .display(new DisplayInfo(new ItemStack(ModBlocks.ENERGY_LOG.get()),
-                        Component.literal("That is a very vibrant Green"), Component.literal("Normal tools can't cut these trees."),
+
+        //Crafted the alert block
+        Advancement alertBlock = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModBlocks.SOUND_BLOCK.get()),
+                        Component.literal("WEE WOO WEE WOO!"), Component.literal("Creates a new Villager job"),
                         null, FrameType.TASK,
                         true, true, false))
                 .parent(rqBlock)
-                .addCriterion("has_energy_log", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_LOG.get())))
-                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "energy_log"), existingFileHelper);
+                .addCriterion("has_alert_block", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.SOUND_BLOCK.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "alert_block"), existingFileHelper);
 
-        //Crafted all the energy decor blocks
-        Advancement energyDecorBlocks = Advancement.Builder.advancement()
-                .display(new DisplayInfo(new ItemStack(ModBlocks.ENERGY_PLANKS.get()),
-                        Component.literal("And just use that I guess"), Component.literal("It's not like its tingling in your fingers or anything..."),
+        //Allocated a disk piece
+        Advancement diskPiece = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.ROSE_QUARTZ_DISK_PIECE.get()),
+                        Component.literal("You found a Disk Piece!"), Component.literal("They cam come from a few places..."),
+                        null, FrameType.TASK,
+                        true, true, true))
+                .parent(alertBlock)
+                .addCriterion("has_rose_quartz_disk_piece", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ROSE_QUARTZ_DISK_PIECE.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "rose_quartz_disk_piece"), existingFileHelper);
+
+        //Crafted the disk
+        Advancement disk = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.BAR_BRAWL_RECORD.get()),
+                        Component.literal("Together they make a disk!"), Component.literal("Time to listen to some tunes!"),
                         null, FrameType.TASK,
                         true, true, false))
-                .parent(energyLog)
-                .addCriterion("has_energy_planks", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_PLANKS.get())))
-                .addCriterion("has_energy_wood", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_WOOD.get())))
-                .addCriterion("has_stripped_energy_wood", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.STRIPPED_ENERGY_WOOD.get())))
-                .addCriterion("has_stripped_energy_log", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.STRIPPED_ENERGY_LOG.get())))
-                .addCriterion("has_energy_slab", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_SLAB.get())))
-                .addCriterion("has_energy_stairs", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_STAIRS.get())))
-                .addCriterion("has_energy_button", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_BUTTON.get())))
-                .addCriterion("has_energy_pressure_plate", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_PRESSURE_PLATE.get())))
-                .addCriterion("has_energy_door", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_DOOR.get())))
-                .addCriterion("has_energy_trapdoor", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_TRAPDOOR.get())))
-                .addCriterion("has_energy_fence", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_FENCE.get())))
-                .addCriterion("has_energy_fence_gate", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_FENCE_GATE.get())))
-                .addCriterion("has_energy_sign", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENERGY_SIGN.get())))
-                .addCriterion("has_energy_hanging_sign", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENERGY_HANGING_SIGN.get())))
-                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "energy_decor"), existingFileHelper);
-
-        //Crafted energy boats
-        Advancement energyBoats = Advancement.Builder.advancement()
-                .display(new DisplayInfo(new ItemStack(ModItems.ENERGY_CHEST_BOAT.get()),
-                        Component.literal("There's even boats."), Component.literal("Really green boats."),
-                        null, FrameType.TASK,
-                        true, true, false))
-                .parent(energyDecorBlocks)
-                .addCriterion("has_energy_boat", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENERGY_BOAT.get())))
-                .addCriterion("has_energy_chest_boat", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENERGY_CHEST_BOAT.get())))
-                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "energy_boats"), existingFileHelper);
+                .parent(diskPiece)
+                .addCriterion("has_rose_quartz_disk", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.BAR_BRAWL_RECORD.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "rose_quartz_disk"), existingFileHelper);
 
         //Crafted the rose quartz decoration blocks
         Advancement rqDecorBlocks = Advancement.Builder.advancement()
-                .display(new DisplayInfo(new ItemStack(ModBlocks.ROSE_QUARTZ_BLOCK.get()),
+                .display(new DisplayInfo(new ItemStack(ModBlocks.ROSE_QUARTZ_STAIRS.get()),
                         Component.literal("That's very... Eccentric"), Component.literal("This is so much Rose Quartz"),
                         null, FrameType.TASK,
                         true, true, false))
@@ -177,6 +162,7 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .addCriterion("has_rose_quartz_fence", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ROSE_QUARTZ_FENCE.get())))
                 .addCriterion("has_rose_quartz_fence_gate", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ROSE_QUARTZ_FENCE_GATE.get())))
                 .addCriterion("has_rose_quartz_wall", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ROSE_QUARTZ_WALL.get())))
+                .addCriterion("has_rose_quartz_lamp", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ROSE_QUARTZ_LAMP.get())))
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "rose_quartz_decor"), existingFileHelper);
 
         //Crafted the rose quartz tools
@@ -238,6 +224,50 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .addCriterion("has_rose_quartz_hammer", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ROSE_QUARTZ_HAMMER.get())))
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "rose_quartz_hammer"), existingFileHelper);
 
+        //chopped down an energy log
+        Advancement energyLog = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModBlocks.ENERGY_LOG.get()),
+                        Component.literal("That is a very vibrant Green"), Component.literal("Normal tools can't cut these trees."),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(rqTools)
+                .addCriterion("has_energy_log", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_LOG.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "energy_log"), existingFileHelper);
+
+        //Crafted all the energy decor blocks
+        Advancement energyDecorBlocks = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModBlocks.ENERGY_PLANKS.get()),
+                        Component.literal("And just use that I guess"), Component.literal("It's not like its tingling in your fingers or anything..."),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(energyLog)
+                .addCriterion("has_energy_planks", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_PLANKS.get())))
+                .addCriterion("has_energy_wood", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_WOOD.get())))
+                .addCriterion("has_stripped_energy_wood", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.STRIPPED_ENERGY_WOOD.get())))
+                .addCriterion("has_stripped_energy_log", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.STRIPPED_ENERGY_LOG.get())))
+                .addCriterion("has_energy_slab", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_SLAB.get())))
+                .addCriterion("has_energy_stairs", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_STAIRS.get())))
+                .addCriterion("has_energy_button", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_BUTTON.get())))
+                .addCriterion("has_energy_pressure_plate", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_PRESSURE_PLATE.get())))
+                .addCriterion("has_energy_door", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_DOOR.get())))
+                .addCriterion("has_energy_trapdoor", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_TRAPDOOR.get())))
+                .addCriterion("has_energy_fence", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_FENCE.get())))
+                .addCriterion("has_energy_fence_gate", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_FENCE_GATE.get())))
+                .addCriterion("has_energy_sign", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENERGY_SIGN.get())))
+                .addCriterion("has_energy_hanging_sign", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENERGY_HANGING_SIGN.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "energy_decor"), existingFileHelper);
+
+        //Crafted energy boats
+        Advancement energyBoats = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.ENERGY_CHEST_BOAT.get()),
+                        Component.literal("There's even boats."), Component.literal("Really green boats."),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(energyDecorBlocks)
+                .addCriterion("has_energy_boat", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENERGY_BOAT.get())))
+                .addCriterion("has_energy_chest_boat", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ENERGY_CHEST_BOAT.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "energy_boats"), existingFileHelper);
+
         //Farm some Lemons to start off your mod farm
         Advancement cropRootAdvancement = Advancement.Builder.advancement()
                 .display(new DisplayInfo(new ItemStack(ModItems.LEMON_SEEDS.get()),
@@ -298,16 +328,74 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "ate_energy_seeds"), existingFileHelper);
 
         //has custom biome plants
-        Advancement BiomePlants = Advancement.Builder.advancement()
+        Advancement biomePlants = Advancement.Builder.advancement()
                 .display(new DisplayInfo(new ItemStack(ModBlocks.ALT_ENERGY_SAPLING.get()),
                         Component.literal("New Flora just dropped"), Component.literal("These saplings are different, but I can't quite tell why."),
                         null, FrameType.TASK,
-                        true, true, true))
+                        true, true, false))
                 .parent(cropRootAdvancement)
                 .addCriterion("has_energy_sapling", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ENERGY_SAPLING.get())))
                 .addCriterion("has_alt_energy_sapling", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.ALT_ENERGY_SAPLING.get())))
                 .addCriterion("has_crystallized_flower", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.CRYSTALLIZED_FLOWER.get())))
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "biome_plants"), existingFileHelper);
 
+        //has portal to custom dimension
+        Advancement customDimension = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModBlocks.MAXI_PORTAL.get()),
+                        Component.literal("It's not the rapture!"), Component.literal("It's a whole new dimension!"),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(biomePlants)
+                .addCriterion("has_maxi_portal", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.MAXI_PORTAL.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "custom_portal"), existingFileHelper);
+
+        //Craft the Dice
+        Advancement rpgRootAdvancement = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.DICE.get()),
+                        Component.literal("RNG-esus"), Component.literal("Let's start with the basics. Mobs."),
+                        new ResourceLocation(TwoSidesMod.MOD_ID, "textures/item/dice.png"), FrameType.TASK,
+                        true, true, false))
+                .addCriterion("has_dice", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.DICE.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "rngesus"), existingFileHelper);
+
+        //craft the lightbulb
+        Advancement refractLight = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModBlocks.MAXI_PORTAL.get()),
+                        Component.literal("A lightbulb? For what?"), Component.literal("It's a whole new dimension!"),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(rpgRootAdvancement)
+                .addCriterion("has_rose_quartz_lightbulb", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ROSE_QUARTZ_LIGHTBULB.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "rose_quartz_lighbulb"), existingFileHelper);
+
+        //craft some RQG spawn eggs
+        Advancement rqgSpawner = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.RQG_SPAWN_EGG.get()),
+                        Component.literal("Aren't these creative only?"), Component.literal("Wonder if these remotes are good for anything..."),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(rpgRootAdvancement)
+                .addCriterion("has_rqg_spawn_egg", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RQG_SPAWN_EGG.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "rqg_spawn_egg"), existingFileHelper);
+
+        //craft a ruby statue spawner
+        Advancement rsSpawner = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.RS_SPAWN_EGG.get()),
+                        Component.literal("Why do I hear Boss Music?"), Component.literal("This gives me goosebumps."),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(rpgRootAdvancement)
+                .addCriterion("has_rs_spawn_egg", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RS_SPAWN_EGG.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "rs_spawn_egg"), existingFileHelper);
+
+        //slay a ruby statue
+        Advancement rsDefeat = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModBlocks.RUBY_BLOCK.get()),
+                        Component.literal("Corpse Trophy"), Component.literal("That's it? Just another red block? There has to be more to it? Right?"),
+                        null, FrameType.TASK,
+                        true, true, true))
+                .parent(rsSpawner)
+                .addCriterion("has_ruby_block", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.RUBY_BLOCK.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "ruby_block"), existingFileHelper);
     }
 }

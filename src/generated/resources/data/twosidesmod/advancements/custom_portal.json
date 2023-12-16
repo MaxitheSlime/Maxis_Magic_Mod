@@ -1,12 +1,12 @@
 {
-  "parent": "twosidesmod:rose_quartz_tools",
+  "parent": "twosidesmod:biome_plants",
   "criteria": {
-    "has_energy_log": {
+    "has_maxi_portal": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:energy_log"
+              "twosidesmod:maxi_portal"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Normal tools can't cut these trees."
+      "text": "It's a whole new dimension!"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "twosidesmod:energy_log"
+      "item": "twosidesmod:maxi_portal"
     },
     "show_toast": true,
     "title": {
-      "text": "That is a very vibrant Green"
+      "text": "It's not the rapture!"
     }
   },
   "requirements": [
     [
-      "has_energy_log"
+      "has_maxi_portal"
     ]
   ],
   "sends_telemetry_event": true

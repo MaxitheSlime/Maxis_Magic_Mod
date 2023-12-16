@@ -1,12 +1,12 @@
 {
-  "parent": "twosidesmod:rose_quartz_tools",
+  "parent": "twosidesmod:rngesus",
   "criteria": {
-    "has_energy_log": {
+    "has_rs_spawn_egg": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:energy_log"
+              "twosidesmod:rs_spawn_egg"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Normal tools can't cut these trees."
+      "text": "This gives me goosebumps."
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "twosidesmod:energy_log"
+      "item": "twosidesmod:rs_spawn_egg"
     },
     "show_toast": true,
     "title": {
-      "text": "That is a very vibrant Green"
+      "text": "Why do I hear Boss Music?"
     }
   },
   "requirements": [
     [
-      "has_energy_log"
+      "has_rs_spawn_egg"
     ]
   ],
   "sends_telemetry_event": true

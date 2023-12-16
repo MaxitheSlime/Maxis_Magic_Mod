@@ -1,12 +1,12 @@
 {
-  "parent": "twosidesmod:rose_quartz_tools",
+  "parent": "twosidesmod:alert_block",
   "criteria": {
-    "has_energy_log": {
+    "has_rose_quartz_disk_piece": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:energy_log"
+              "twosidesmod:rose_quartz_disk_piece"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Normal tools can't cut these trees."
+      "text": "They cam come from a few places..."
     },
     "frame": "task",
-    "hidden": false,
+    "hidden": true,
     "icon": {
-      "item": "twosidesmod:energy_log"
+      "item": "twosidesmod:rose_quartz_disk_piece"
     },
     "show_toast": true,
     "title": {
-      "text": "That is a very vibrant Green"
+      "text": "You found a Disk Piece!"
     }
   },
   "requirements": [
     [
-      "has_energy_log"
+      "has_rose_quartz_disk_piece"
     ]
   ],
   "sends_telemetry_event": true

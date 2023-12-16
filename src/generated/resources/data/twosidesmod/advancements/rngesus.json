@@ -1,12 +1,11 @@
 {
-  "parent": "twosidesmod:rose_quartz_tools",
   "criteria": {
-    "has_energy_log": {
+    "has_dice": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:energy_log"
+              "twosidesmod:dice"
             ]
           }
         ]
@@ -16,22 +15,23 @@
   },
   "display": {
     "announce_to_chat": true,
+    "background": "twosidesmod:textures/item/dice.png",
     "description": {
-      "text": "Normal tools can't cut these trees."
+      "text": "Let's start with the basics. Mobs."
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "twosidesmod:energy_log"
+      "item": "twosidesmod:dice"
     },
     "show_toast": true,
     "title": {
-      "text": "That is a very vibrant Green"
+      "text": "RNG-esus"
     }
   },
   "requirements": [
     [
-      "has_energy_log"
+      "has_dice"
     ]
   ],
   "sends_telemetry_event": true

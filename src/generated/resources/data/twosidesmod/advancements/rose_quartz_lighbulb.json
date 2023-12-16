@@ -1,12 +1,12 @@
 {
-  "parent": "twosidesmod:rose_quartz_tools",
+  "parent": "twosidesmod:rngesus",
   "criteria": {
-    "has_energy_log": {
+    "has_rose_quartz_lightbulb": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:energy_log"
+              "twosidesmod:rose_quartz_lightbulb"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Normal tools can't cut these trees."
+      "text": "It's a whole new dimension!"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "twosidesmod:energy_log"
+      "item": "twosidesmod:maxi_portal"
     },
     "show_toast": true,
     "title": {
-      "text": "That is a very vibrant Green"
+      "text": "A lightbulb? For what?"
     }
   },
   "requirements": [
     [
-      "has_energy_log"
+      "has_rose_quartz_lightbulb"
     ]
   ],
   "sends_telemetry_event": true
