@@ -65,8 +65,8 @@ public class RSEntity extends Animal {
                 .add(Attributes.MOVEMENT_SPEED, 0.10D)
                 .add(Attributes.FOLLOW_RANGE, 30D)
                 .add(Attributes.ARMOR_TOUGHNESS, 0.5f)
-                .add(Attributes.ATTACK_KNOCKBACK, 3.0f)
-                .add(Attributes.ATTACK_DAMAGE, 8f);
+                .add(Attributes.ATTACK_KNOCKBACK, 5.0f)
+                .add(Attributes.ATTACK_DAMAGE, 6f);
     }
 
     @Nullable
