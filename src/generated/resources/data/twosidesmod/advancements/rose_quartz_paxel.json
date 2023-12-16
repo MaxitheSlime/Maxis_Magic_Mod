@@ -1,12 +1,12 @@
 {
-  "parent": "twosidesmod:metal_detector",
+  "parent": "twosidesmod:rose_quartz_tools",
   "criteria": {
-    "has_data_tablet": {
+    "has_rose_quartz_paxel": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:data_tablet"
+              "twosidesmod:rose_quartz_paxel"
             ]
           }
         ]
@@ -17,21 +17,22 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Batteries not included. But a SD card is!"
+      "text": "It's some sort of... multi-tool?"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "twosidesmod:data_tablet"
+      "item": "twosidesmod:rose_quartz_paxel",
+      "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "text": "Location, Location, Location!"
+      "text": "What the heck is this?"
     }
   },
   "requirements": [
     [
-      "has_data_tablet"
+      "has_rose_quartz_paxel"
     ]
   ],
   "sends_telemetry_event": true

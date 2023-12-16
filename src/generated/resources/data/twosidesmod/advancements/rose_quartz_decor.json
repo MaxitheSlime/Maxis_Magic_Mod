@@ -1,0 +1,158 @@
+{
+  "parent": "twosidesmod:pure_rose_quartz_block",
+  "criteria": {
+    "has_rose_quartz_button": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_button"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rose_quartz_door": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_door"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rose_quartz_fence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_fence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rose_quartz_fence_gate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_fence_gate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rose_quartz_pressure_plate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_pressure_plate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rose_quartz_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_slab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rose_quartz_stairs": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_stairs"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rose_quartz_trapdoor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_trapdoor"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rose_quartz_wall": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_wall"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "This is so much Rose Quartz"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:pure_rose_quartz_block"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "That's very... Eccentric"
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_quartz_slab"
+    ],
+    [
+      "has_rose_quartz_stairs"
+    ],
+    [
+      "has_rose_quartz_button"
+    ],
+    [
+      "has_rose_quartz_pressure_plate"
+    ],
+    [
+      "has_rose_quartz_door"
+    ],
+    [
+      "has_rose_quartz_trapdoor"
+    ],
+    [
+      "has_rose_quartz_fence"
+    ],
+    [
+      "has_rose_quartz_fence_gate"
+    ],
+    [
+      "has_rose_quartz_wall"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

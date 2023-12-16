@@ -1,12 +1,12 @@
 {
-  "parent": "twosidesmod:metal_detector",
+  "parent": "twosidesmod:rose_quartz_armor",
   "criteria": {
-    "has_data_tablet": {
+    "has_rose_quartz_horse_armor": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:data_tablet"
+              "twosidesmod:rose_quartz_horse_armor"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Batteries not included. But a SD card is!"
+      "text": "You're seriosuly devoted, aren't you?"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "twosidesmod:data_tablet"
+      "item": "twosidesmod:rose_quartz_horse_armor"
     },
     "show_toast": true,
     "title": {
-      "text": "Location, Location, Location!"
+      "text": "Bling Bling"
     }
   },
   "requirements": [
     [
-      "has_data_tablet"
+      "has_rose_quartz_horse_armor"
     ]
   ],
   "sends_telemetry_event": true

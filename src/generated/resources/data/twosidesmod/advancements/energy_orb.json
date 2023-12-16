@@ -1,12 +1,12 @@
 {
-  "parent": "twosidesmod:pure_rose_quartz_block",
+  "parent": "twosidesmod:energy_seeds",
   "criteria": {
-    "has_rose_quartz_pickaxe": {
+    "has_energy_orb": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:rose_quartz_pickaxe"
+              "twosidesmod:energy_orb"
             ]
           }
         ]
@@ -17,22 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Now We're getting serious... -ly wealthy."
+      "text": "We could probably use this to power something"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "twosidesmod:rose_quartz_pickaxe",
-      "nbt": "{Damage:0}"
+      "item": "twosidesmod:energy_orb"
     },
     "show_toast": true,
     "title": {
-      "text": "Rose Quartz Pickaxe"
+      "text": "It feels powerful..."
     }
   },
   "requirements": [
     [
-      "has_rose_quartz_pickaxe"
+      "has_energy_orb"
     ]
   ],
   "sends_telemetry_event": true

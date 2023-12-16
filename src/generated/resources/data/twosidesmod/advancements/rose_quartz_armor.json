@@ -1,0 +1,99 @@
+{
+  "parent": "twosidesmod:rose_quartz_tools",
+  "criteria": {
+    "has_rose_quartz_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rose_quartz_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rose_quartz_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rose_quartz_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rose_quartz_shield": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:rose_quartz_shield"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Why are there particles coming off of you?"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:rose_quartz_shield",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "A Full Set..."
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_quartz_helmet"
+    ],
+    [
+      "has_rose_quartz_chestplate"
+    ],
+    [
+      "has_rose_quartz_leggings"
+    ],
+    [
+      "has_rose_quartz_boots"
+    ],
+    [
+      "has_rose_quartz_shield"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

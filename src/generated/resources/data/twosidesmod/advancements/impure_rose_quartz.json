@@ -17,7 +17,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Let's go smelt this!"
+      "text": "Smelt this new gem!"
     },
     "frame": "task",
     "hidden": false,
@@ -26,7 +26,7 @@
     },
     "show_toast": true,
     "title": {
-      "text": "Impure Rose Quartz"
+      "text": "The Age of Magic begins"
     }
   },
   "requirements": [

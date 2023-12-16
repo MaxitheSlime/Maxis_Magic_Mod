@@ -1,0 +1,68 @@
+{
+  "parent": "twosidesmod:impure_rose_quartz",
+  "criteria": {
+    "has_energy_orb": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_orb"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_impure_rose_quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:impure_rose_quartz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_lemon_juice_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:lemon_juice_bucket"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "You need power and some kind of fluid to better purify these gems."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:writable_book"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Purification Supplies"
+    }
+  },
+  "requirements": [
+    [
+      "has_lemon_juice_bucket"
+    ],
+    [
+      "has_energy_orb"
+    ],
+    [
+      "has_impure_rose_quartz"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

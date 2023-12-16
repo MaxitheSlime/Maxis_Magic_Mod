@@ -1,0 +1,53 @@
+{
+  "parent": "twosidesmod:energy_decor",
+  "criteria": {
+    "has_energy_boat": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_boat"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_chest_boat": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_chest_boat"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Really green boats."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:energy_chest_boat"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "There's even boats."
+    }
+  },
+  "requirements": [
+    [
+      "has_energy_boat"
+    ],
+    [
+      "has_energy_chest_boat"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

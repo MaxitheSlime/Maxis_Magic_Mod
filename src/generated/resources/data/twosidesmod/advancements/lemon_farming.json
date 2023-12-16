@@ -15,9 +15,9 @@
   },
   "display": {
     "announce_to_chat": true,
-    "background": "twosidesmod:textures/item/energy_seeds.png",
+    "background": "twosidesmod:textures/item/lemon_seeds.png",
     "description": {
-      "text": "When Life gives you lemons..."
+      "text": "What could these be?"
     },
     "frame": "task",
     "hidden": false,
@@ -26,7 +26,7 @@
     },
     "show_toast": true,
     "title": {
-      "text": "Lemon Seeds"
+      "text": "Farming"
     }
   },
   "requirements": [

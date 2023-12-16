@@ -1,12 +1,12 @@
 {
-  "parent": "twosidesmod:metal_detector",
+  "parent": "twosidesmod:pure_rose_quartz_block",
   "criteria": {
-    "has_data_tablet": {
+    "has_energy_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:data_tablet"
+              "twosidesmod:energy_log"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Batteries not included. But a SD card is!"
+      "text": "Normal tools can't cut these trees."
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "twosidesmod:data_tablet"
+      "item": "twosidesmod:energy_log"
     },
     "show_toast": true,
     "title": {
-      "text": "Location, Location, Location!"
+      "text": "That is a very vibrant Green"
     }
   },
   "requirements": [
     [
-      "has_data_tablet"
+      "has_energy_log"
     ]
   ],
   "sends_telemetry_event": true

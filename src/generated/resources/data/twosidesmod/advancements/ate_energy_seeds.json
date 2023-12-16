@@ -1,0 +1,36 @@
+{
+  "parent": "twosidesmod:energy_orb",
+  "criteria": {
+    "ate_energy_orb": {
+      "conditions": {
+        "item": {
+          "items": [
+            "twosidesmod:energy_orb"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "It's like a sugar rush!"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "twosidesmod:energy_orb"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Electrifying!"
+    }
+  },
+  "requirements": [
+    [
+      "ate_energy_orb"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

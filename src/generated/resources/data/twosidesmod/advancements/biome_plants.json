@@ -1,0 +1,68 @@
+{
+  "parent": "twosidesmod:lemon_farming",
+  "criteria": {
+    "has_alt_energy_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:alt_energy_sapling"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_crystallized_flower": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:crystal_flower"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_sapling"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "These saplings are different, but I can't quite tell why."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "twosidesmod:alt_energy_sapling"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "New Flora just dropped"
+    }
+  },
+  "requirements": [
+    [
+      "has_energy_sapling"
+    ],
+    [
+      "has_alt_energy_sapling"
+    ],
+    [
+      "has_crystallized_flower"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

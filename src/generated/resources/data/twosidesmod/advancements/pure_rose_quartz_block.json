@@ -17,7 +17,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Why not stack them up?"
+      "text": "How many did you mine?"
     },
     "frame": "task",
     "hidden": false,
@@ -26,7 +26,7 @@
     },
     "show_toast": true,
     "title": {
-      "text": "Purified Rose Quartz Block"
+      "text": "What a Load of Gems!"
     }
   },
   "requirements": [

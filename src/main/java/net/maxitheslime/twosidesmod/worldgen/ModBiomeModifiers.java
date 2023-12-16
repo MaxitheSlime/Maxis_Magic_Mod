@@ -57,8 +57,8 @@ public class ModBiomeModifiers {
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(SPAWN_RQG, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
-                biomes.getOrThrow(Tags.Biomes.IS_DRY_OVERWORLD),
-                List.of(new MobSpawnSettings.SpawnerData(ModEntities.RQG.get(), 20, 1, 3))));
+                biomes.getOrThrow(Tags.Biomes.IS_COLD_OVERWORLD),
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.RQG.get(), 50, 1, 3))));
 
         context.register(ADD_RQ_GEODE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),

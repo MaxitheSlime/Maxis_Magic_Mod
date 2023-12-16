@@ -1,12 +1,12 @@
 {
-  "parent": "twosidesmod:metal_detector",
+  "parent": "twosidesmod:impure_rose_quartz",
   "criteria": {
-    "has_data_tablet": {
+    "has_fire_quartz": {
       "conditions": {
         "items": [
           {
             "items": [
-              "twosidesmod:data_tablet"
+              "twosidesmod:fire_quartz"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Batteries not included. But a SD card is!"
+      "text": "It gives off such pretty yellows and greens"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "twosidesmod:data_tablet"
+      "item": "twosidesmod:fire_quartz"
     },
     "show_toast": true,
     "title": {
-      "text": "Location, Location, Location!"
+      "text": "Better than coal!"
     }
   },
   "requirements": [
     [
-      "has_data_tablet"
+      "has_fire_quartz"
     ]
   ],
   "sends_telemetry_event": true

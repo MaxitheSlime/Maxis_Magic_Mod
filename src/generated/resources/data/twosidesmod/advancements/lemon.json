@@ -1,0 +1,36 @@
+{
+  "parent": "twosidesmod:lemon_farming",
+  "criteria": {
+    "has_lemon": {
+      "conditions": {
+        "item": {
+          "items": [
+            "twosidesmod:lemon"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "These are oddly bittersweet!"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "twosidesmod:lemon"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "When Life Gives you Lemons..."
+    }
+  },
+  "requirements": [
+    [
+      "has_lemon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,233 @@
+{
+  "parent": "twosidesmod:energy_log",
+  "criteria": {
+    "has_energy_button": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_button"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_door": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_door"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_fence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_fence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_fence_gate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_fence_gate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_hanging_sign": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_hanging_sign"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_pressure_plate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_pressure_plate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_sign": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_sign"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_slab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_stairs": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_stairs"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_trapdoor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_trapdoor"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stripped_energy_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:stripped_energy_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stripped_energy_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:stripped_energy_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "It's not like its tingling in your fingers or anything..."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:energy_planks"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "And just use that I guess"
+    }
+  },
+  "requirements": [
+    [
+      "has_energy_planks"
+    ],
+    [
+      "has_energy_wood"
+    ],
+    [
+      "has_stripped_energy_wood"
+    ],
+    [
+      "has_stripped_energy_log"
+    ],
+    [
+      "has_energy_slab"
+    ],
+    [
+      "has_energy_stairs"
+    ],
+    [
+      "has_energy_button"
+    ],
+    [
+      "has_energy_pressure_plate"
+    ],
+    [
+      "has_energy_door"
+    ],
+    [
+      "has_energy_trapdoor"
+    ],
+    [
+      "has_energy_fence"
+    ],
+    [
+      "has_energy_fence_gate"
+    ],
+    [
+      "has_energy_sign"
+    ],
+    [
+      "has_energy_hanging_sign"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

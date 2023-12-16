@@ -1,10 +1,10 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "#forge:is_dry/overworld",
+  "biomes": "#forge:is_cold/overworld",
   "spawners": {
     "type": "twosidesmod:rqg",
     "maxCount": 3,
     "minCount": 1,
-    "weight": 20
+    "weight": 50
   }
 }

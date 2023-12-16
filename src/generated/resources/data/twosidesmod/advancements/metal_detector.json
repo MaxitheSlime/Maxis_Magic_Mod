@@ -17,7 +17,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Batteries not included! (Actually doesn't need batteries)"
+      "text": "I've been looking everywhere for you!"
     },
     "frame": "task",
     "hidden": false,
@@ -27,7 +27,7 @@
     },
     "show_toast": true,
     "title": {
-      "text": "Ore Detector"
+      "text": "Where Ore You?"
     }
   },
   "requirements": [

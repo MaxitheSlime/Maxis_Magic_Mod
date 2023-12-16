@@ -1,0 +1,53 @@
+{
+  "parent": "twosidesmod:fire_quartz",
+  "criteria": {
+    "has_conductive_furnace": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:conductive_furnace"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_energy_orb": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:energy_orb"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "It may not do much, but it sure is fast!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twosidesmod:conductive_furnace"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Quick and Simple"
+    }
+  },
+  "requirements": [
+    [
+      "has_conductive_furnace"
+    ],
+    [
+      "has_energy_orb"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

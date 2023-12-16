@@ -25,7 +25,7 @@
       "spawns": [
         {
           "type": "twosidesmod:rqg",
-          "weight": 1,
+          "weight": 10,
           "minCount": 1,
           "maxCount": 1
         }
