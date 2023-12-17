@@ -95,6 +95,8 @@ public class TwoSidesMod {
             ModTrunkPlacerTypes.register(modEventBus);
             ModFoliagePlacerTypes.register(modEventBus);
             ModTerraBlenderAPI.registerRegions();
+            //Use this for other keybinds, couldn't get custom bar to work
+            //ModMessages.register();
 
             // Register ourselves for server and other game events we are interested in
             MinecraftForge.EVENT_BUS.register(this);

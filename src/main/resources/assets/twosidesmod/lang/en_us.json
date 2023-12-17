@@ -124,5 +124,5 @@
   "twosidesmod.tooltip.liquid.amount.with.capacity": "%s / %s mB",
   "twosidesmod.tooltip.liquid.amount": "%s mB",
 
-  "fluid_type.twosidesmod.lemon_juice_fluid" : "Lemon Juice"
+  "fluid_type.twosidesmod.lemon_juice_fluid": "Lemon Juice"
 }
