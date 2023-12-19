@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_impure_crystal_influence_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:impure_crystal_influence_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "twosidesmod:impure_crystal_influence_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_impure_crystal_influence_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "twosidesmod:impure_crystal_influence_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

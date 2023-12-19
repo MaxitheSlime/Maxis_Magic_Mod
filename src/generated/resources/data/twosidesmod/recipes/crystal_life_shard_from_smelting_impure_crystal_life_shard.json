@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "crystal_life_shard",
+  "ingredient": {
+    "item": "twosidesmod:impure_crystal_life_shard"
+  },
+  "result": "twosidesmod:crystal_life_shard"
+}

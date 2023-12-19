@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_end_life_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:end_life_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "twosidesmod:crystal_life_shard_from_smelting_end_life_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_end_life_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "twosidesmod:crystal_life_shard_from_smelting_end_life_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

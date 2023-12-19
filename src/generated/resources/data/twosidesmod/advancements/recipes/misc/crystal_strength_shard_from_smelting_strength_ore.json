@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_strength_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twosidesmod:strength_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "twosidesmod:crystal_strength_shard_from_smelting_strength_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_strength_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "twosidesmod:crystal_strength_shard_from_smelting_strength_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

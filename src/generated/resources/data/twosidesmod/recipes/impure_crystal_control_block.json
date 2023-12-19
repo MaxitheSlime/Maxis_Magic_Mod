@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "crystal_control_shard",
+  "ingredients": [
+    {
+      "item": "twosidesmod:impure_crystal_control_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "twosidesmod:impure_crystal_control_shard"
+  }
+}

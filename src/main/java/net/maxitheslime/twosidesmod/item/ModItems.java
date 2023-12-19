@@ -106,7 +106,35 @@ public class ModItems {
             () -> new ModWaxingItem(new Item.Properties().food(ModFoodProperties.ENERGY_ORB)));
     public static final RegistryObject<Item> ENERGY_SEEDS = ITEMS.register("energy_seeds",
             () -> new ItemNameBlockItem(ModBlocks.ENERGY_CROP.get(), new Item.Properties()));
-    
+
+    public static final RegistryObject<Item> CRYSTAL_STRENGTH_SHARD = ITEMS.register("crystal_strength_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IMPURE_CRYSTAL_STRENGTH_SHARD = ITEMS.register("impure_crystal_strength_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRYSTAL_INFLUENCE_SHARD = ITEMS.register("crystal_influence_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IMPURE_CRYSTAL_INFLUENCE_SHARD = ITEMS.register("impure_crystal_influence_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRYSTAL_GREED_SHARD = ITEMS.register("crystal_greed_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IMPURE_CRYSTAL_GREED_SHARD = ITEMS.register("impure_crystal_greed_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRYSTAL_CONTROL_SHARD = ITEMS.register("crystal_control_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IMPURE_CRYSTAL_CONTROL_SHARD = ITEMS.register("impure_crystal_control_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRYSTAL_POWER_SHARD = ITEMS.register("crystal_power_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IMPURE_CRYSTAL_POWER_SHARD = ITEMS.register("impure_crystal_power_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRYSTAL_LIFE_SHARD = ITEMS.register("crystal_life_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IMPURE_CRYSTAL_LIFE_SHARD = ITEMS.register("impure_crystal_life_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRYSTAL_SOUL_SHARD = ITEMS.register("crystal_soul_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IMPURE_CRYSTAL_SOUL_SHARD = ITEMS.register("impure_crystal_soul_shard",
+            () -> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "crystal_influence_shard",
+  "key": {
+    "#": {
+      "item": "twosidesmod:impure_crystal_influence_shard"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "twosidesmod:impure_crystal_influence_block"
+  },
+  "show_notification": true
+}

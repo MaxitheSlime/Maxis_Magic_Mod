@@ -24,6 +24,20 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ROSE_QUARTZ_DISK_PIECE.get());
                         pOutput.accept(ModItems.BAR_BRAWL_RECORD.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_LIGHTBULB.get());
+                        pOutput.accept(ModItems.CRYSTAL_STRENGTH_SHARD.get());
+                        pOutput.accept(ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get());
+                        pOutput.accept(ModItems.CRYSTAL_INFLUENCE_SHARD.get());
+                        pOutput.accept(ModItems.IMPURE_CRYSTAL_INFLUENCE_SHARD.get());
+                        pOutput.accept(ModItems.CRYSTAL_GREED_SHARD.get());
+                        pOutput.accept(ModItems.IMPURE_CRYSTAL_GREED_SHARD.get());
+                        pOutput.accept(ModItems.CRYSTAL_CONTROL_SHARD.get());
+                        pOutput.accept(ModItems.IMPURE_CRYSTAL_CONTROL_SHARD.get());
+                        pOutput.accept(ModItems.CRYSTAL_POWER_SHARD.get());
+                        pOutput.accept(ModItems.IMPURE_CRYSTAL_POWER_SHARD.get());
+                        pOutput.accept(ModItems.CRYSTAL_LIFE_SHARD.get());
+                        pOutput.accept(ModItems.IMPURE_CRYSTAL_LIFE_SHARD.get());
+                        pOutput.accept(ModItems.CRYSTAL_SOUL_SHARD.get());
+                        pOutput.accept(ModItems.IMPURE_CRYSTAL_SOUL_SHARD.get());
                     }).build());
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_TOOLS = CREATIVE_MODE_TABS.register("two_sides_tools",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METAL_DETECTOR.get())).
@@ -121,6 +135,20 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WAXED_RUBY_BLOCK_1.get());
                         pOutput.accept(ModBlocks.WAXED_RUBY_BLOCK_2.get());
                         pOutput.accept(ModBlocks.WAXED_RUBY_BLOCK_3.get());
+                        pOutput.accept(ModBlocks.STRENGTH_BLOCK.get());
+                        pOutput.accept(ModBlocks.IMPURE_STRENGTH_BLOCK.get());
+                        pOutput.accept(ModBlocks.INFLUENCE_BLOCK.get());
+                        pOutput.accept(ModBlocks.IMPURE_INFLUENCE_BLOCK.get());
+                        pOutput.accept(ModBlocks.GREED_BLOCK.get());
+                        pOutput.accept(ModBlocks.IMPURE_GREED_BLOCK.get());
+                        pOutput.accept(ModBlocks.CONTROL_BLOCK.get());
+                        pOutput.accept(ModBlocks.IMPURE_CONTROL_BLOCK.get());
+                        pOutput.accept(ModBlocks.POWER_BLOCK.get());
+                        pOutput.accept(ModBlocks.IMPURE_POWER_BLOCK.get());
+                        pOutput.accept(ModBlocks.LIFE_BLOCK.get());
+                        pOutput.accept(ModBlocks.IMPURE_LIFE_BLOCK.get());
+                        pOutput.accept(ModBlocks.SOUL_BLOCK.get());
+                        pOutput.accept(ModBlocks.IMPURE_SOUL_BLOCK.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_NATURE_BLOCKS = CREATIVE_MODE_TABS.register("two_sides_nature_blocks",

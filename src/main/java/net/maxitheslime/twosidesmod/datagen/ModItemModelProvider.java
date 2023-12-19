@@ -78,6 +78,21 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ENERGY_ORB);
         simpleItem(ModItems.ENERGY_SEEDS);
 
+        simpleItem(ModItems.CRYSTAL_STRENGTH_SHARD);
+        simpleItem(ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD);
+        simpleItem(ModItems.CRYSTAL_INFLUENCE_SHARD);
+        simpleItem(ModItems.IMPURE_CRYSTAL_INFLUENCE_SHARD);
+        simpleItem(ModItems.CRYSTAL_GREED_SHARD);
+        simpleItem(ModItems.IMPURE_CRYSTAL_GREED_SHARD);
+        simpleItem(ModItems.CRYSTAL_CONTROL_SHARD);
+        simpleItem(ModItems.IMPURE_CRYSTAL_CONTROL_SHARD);
+        simpleItem(ModItems.CRYSTAL_POWER_SHARD);
+        simpleItem(ModItems.IMPURE_CRYSTAL_POWER_SHARD);
+        simpleItem(ModItems.CRYSTAL_LIFE_SHARD);
+        simpleItem(ModItems.IMPURE_CRYSTAL_LIFE_SHARD);
+        simpleItem(ModItems.CRYSTAL_SOUL_SHARD);
+        simpleItem(ModItems.IMPURE_CRYSTAL_SOUL_SHARD);
+
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

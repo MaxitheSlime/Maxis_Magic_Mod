@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "crystal_greed_shard",
+  "ingredient": {
+    "item": "twosidesmod:impure_crystal_greed_shard"
+  },
+  "result": "twosidesmod:crystal_greed_shard"
+}

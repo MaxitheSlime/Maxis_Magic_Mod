@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "twosidesmod:block/impure_crystal_soul_block"
+  }
+}

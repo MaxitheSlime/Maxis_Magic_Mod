@@ -10,7 +10,7 @@ public class ModSurfaceRules {
     private static final SurfaceRules.RuleSource DIRT = makeStateRule(Blocks.DIRT);
     private static final SurfaceRules.RuleSource GRASS_BLOCK = makeStateRule(Blocks.GRASS_BLOCK);
     private static final SurfaceRules.RuleSource END_STONE = makeStateRule(Blocks.END_STONE);
-    private static final SurfaceRules.RuleSource ROSE_QUARTZ = makeStateRule(ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK.get());
+    private static final SurfaceRules.RuleSource INFLUENCE = makeStateRule(ModBlocks.IMPURE_INFLUENCE_BLOCK.get());
 
     public static SurfaceRules.RuleSource makeRules() {
         SurfaceRules.ConditionSource isAtOrAboveWaterLevel = SurfaceRules.waterBlockCheck(-1, 0);
@@ -20,11 +20,11 @@ public class ModSurfaceRules {
         return SurfaceRules.sequence(
                 SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.TEST_BIOME),
                                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, GRASS_BLOCK)),
-                                SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, ROSE_QUARTZ)),
+                                SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, INFLUENCE)),
 
                 SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.ROSE_QUARTZ_BIOME),
                                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, GRASS_BLOCK)),
-                                SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, ROSE_QUARTZ)),
+                                SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, INFLUENCE)),
 
 
                 // Default to a grass and dirt surface

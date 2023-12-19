@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "twosidesmod:block/crystal_control_block"
+    }
+  }
+}

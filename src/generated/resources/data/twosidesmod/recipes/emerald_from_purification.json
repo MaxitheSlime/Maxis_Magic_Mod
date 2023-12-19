@@ -1,0 +1,16 @@
+{
+  "type": "twosidesmod:purification",
+  "craftTime": 100,
+  "energyAmount": 500,
+  "fluidAmount": 750,
+  "fluidType": "minecraft:water",
+  "ingredients": [
+    {
+      "item": "minecraft:deepslate"
+    }
+  ],
+  "output": {
+    "count": 3,
+    "item": "minecraft:emerald"
+  }
+}

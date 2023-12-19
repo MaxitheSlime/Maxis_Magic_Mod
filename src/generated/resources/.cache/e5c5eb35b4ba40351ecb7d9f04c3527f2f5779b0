@@ -1,4 +1,4 @@
-// 1.20.1	2023-12-16T02:02:25.3639304	Advancements
+// 1.20.1	2023-12-18T23:51:12.4916323	Advancements
 895d8ce99cbfe086f438cdbffc9bf4ff63fb561c data/twosidesmod/advancements/alert_block.json
 cc6af8906e76a210a4275f048ce633dd72825f5f data/twosidesmod/advancements/ate_energy_seeds.json
 fc6ecbcd31de7a002787938a6842e7bdeaf665f7 data/twosidesmod/advancements/biome_plants.json
@@ -11,6 +11,7 @@ e20fc325c392bfd5c292af4b7463a2910cc20d79 data/twosidesmod/advancements/energy_lo
 56bcb5c7db6875c0905ce019c7d73f19ad8d4cc2 data/twosidesmod/advancements/energy_orb.json
 e610445d742405f1cc4bd3c0d3a08d7f5055b9fa data/twosidesmod/advancements/energy_seeds.json
 8f19677e0794a0c3060843c377e5b81bcfa40a11 data/twosidesmod/advancements/fire_quartz.json
+cd2b53a0550ac09f7e41c86a152dd7ca27590107 data/twosidesmod/advancements/impure_magic.json
 2765618abbd5199c1966cd52b91b33eb3bf9a141 data/twosidesmod/advancements/impure_rose_quartz.json
 45712d08a91433af1fd043b26249c9b7e1235bdf data/twosidesmod/advancements/lemon.json
 25004219d470557e5d02ec680469e75488cdb723 data/twosidesmod/advancements/lemon_farming.json

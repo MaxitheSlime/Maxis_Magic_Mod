@@ -1,0 +1,16 @@
+{
+  "type": "twosidesmod:purification",
+  "craftTime": 160,
+  "energyAmount": 50,
+  "fluidAmount": 500,
+  "fluidType": "twosidesmod:lemon_juice_fluid",
+  "ingredients": [
+    {
+      "item": "twosidesmod:impure_crystal_influence_shard"
+    }
+  ],
+  "output": {
+    "count": 3,
+    "item": "twosidesmod:crystal_influence_shard"
+  }
+}

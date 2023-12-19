@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "crystal_life_shard",
+  "ingredient": {
+    "item": "twosidesmod:nether_life_ore"
+  },
+  "result": "twosidesmod:crystal_life_shard"
+}

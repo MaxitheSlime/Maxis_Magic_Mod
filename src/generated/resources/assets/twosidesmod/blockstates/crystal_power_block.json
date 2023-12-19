@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "twosidesmod:block/crystal_power_block"
+    }
+  }
+}

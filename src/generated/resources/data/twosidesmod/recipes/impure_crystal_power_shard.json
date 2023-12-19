@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "crystal_power_shard",
+  "key": {
+    "#": {
+      "item": "twosidesmod:impure_crystal_power_shard"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "twosidesmod:impure_crystal_power_block"
+  },
+  "show_notification": true
+}

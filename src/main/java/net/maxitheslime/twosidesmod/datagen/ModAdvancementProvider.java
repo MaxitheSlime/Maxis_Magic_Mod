@@ -31,7 +31,7 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .addCriterion("has_iron_pickaxe", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_PICKAXE)))
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "twosidesmod"), existingFileHelper);
 
-        //Mined rose quartz or or ds rose quartz ore
+        //Mined rose quartz ore
         Advancement rqGet = Advancement.Builder.advancement()
         .display(new DisplayInfo(new ItemStack(ModBlocks.ROSE_QUARTZ_ORE.get()),
                 Component.literal("The Age of Magic begins"), Component.literal("Smelt this new gem!"),
@@ -40,6 +40,22 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .parent(rqRootAdvancement)
                 .addCriterion("has_impure_rose_quartz", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_ROSE_QUARTZ.get())))
                 .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "impure_rose_quartz"), existingFileHelper);
+
+        //Mined magic ores
+        Advancement magicGet = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModBlocks.STRENGTH_ORE.get()),
+                        Component.literal("Further Magic"), Component.literal("We should smelt these too."),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(rqGet)
+                .addCriterion("has_impure_strength", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get())))
+                .addCriterion("has_impure_influence", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_CRYSTAL_INFLUENCE_SHARD.get())))
+                .addCriterion("has_impure_greed", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_CRYSTAL_GREED_SHARD.get())))
+                .addCriterion("has_impure_control", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_CRYSTAL_CONTROL_SHARD.get())))
+                .addCriterion("has_impure_power", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_CRYSTAL_POWER_SHARD.get())))
+                .addCriterion("has_impure_life", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_CRYSTAL_LIFE_SHARD.get())))
+                .addCriterion("has_impure_soul", new Criterion(InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IMPURE_CRYSTAL_SOUL_SHARD.get())))
+                .save(saver, new ResourceLocation(TwoSidesMod.MOD_ID, "impure_magic"), existingFileHelper);
 
         //got supplies for the Purification Table
         Advancement purificationSupplies = Advancement.Builder.advancement()

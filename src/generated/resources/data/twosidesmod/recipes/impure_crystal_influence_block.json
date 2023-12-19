@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "crystal_influence_shard",
+  "ingredients": [
+    {
+      "item": "twosidesmod:impure_crystal_influence_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "twosidesmod:impure_crystal_influence_shard"
+  }
+}

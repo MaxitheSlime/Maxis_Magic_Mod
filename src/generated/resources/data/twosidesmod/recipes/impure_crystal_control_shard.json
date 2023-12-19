@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "crystal_control_shard",
+  "key": {
+    "#": {
+      "item": "twosidesmod:impure_crystal_control_shard"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "twosidesmod:impure_crystal_control_block"
+  },
+  "show_notification": true
+}

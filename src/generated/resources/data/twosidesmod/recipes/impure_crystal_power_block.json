@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "crystal_power_shard",
+  "ingredients": [
+    {
+      "item": "twosidesmod:impure_crystal_power_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "twosidesmod:impure_crystal_power_shard"
+  }
+}

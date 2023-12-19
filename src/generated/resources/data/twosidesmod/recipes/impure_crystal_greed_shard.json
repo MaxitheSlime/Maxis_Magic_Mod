@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "crystal_greed_shard",
+  "key": {
+    "#": {
+      "item": "twosidesmod:impure_crystal_greed_shard"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "twosidesmod:impure_crystal_greed_block"
+  },
+  "show_notification": true
+}

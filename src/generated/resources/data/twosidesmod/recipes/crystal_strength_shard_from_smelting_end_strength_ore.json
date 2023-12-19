@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "crystal_strength_shard",
+  "ingredient": {
+    "item": "twosidesmod:end_strength_ore"
+  },
+  "result": "twosidesmod:crystal_strength_shard"
+}

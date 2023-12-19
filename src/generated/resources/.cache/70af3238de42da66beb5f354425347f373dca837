@@ -1,15 +1,15 @@
-// 1.20.1	2023-12-15T00:06:06.7472117	Block Tags
+// 1.20.1	2023-12-18T23:51:12.4780552	Block Tags
 e430ba5e840e29b513726687e005d3c010a6b067 data/minecraft/tags/blocks/doors.json
 b3d8267eb01eac12e14d4b4cdabe6cc8f37bb5dd data/minecraft/tags/blocks/fences.json
 3b160f528d065913e1e2a2589e2515f0003e16df data/minecraft/tags/blocks/fence_gates.json
 c78070682a91fcfcd7fd2593de25f790d3342d0c data/minecraft/tags/blocks/logs_that_burn.json
 347d7d528b39986c407f8a82f6d18fad0b370be2 data/minecraft/tags/blocks/mineable/axe.json
-ced2a7f6695a0b7a2dc4fab2bccf1fdb8efc799a data/minecraft/tags/blocks/mineable/pickaxe.json
+4237b90c67aa870cbb9c2f845810fa237eb7a90b data/minecraft/tags/blocks/mineable/pickaxe.json
 494032a2b2205b0da67a9118ccca6192efc0e527 data/minecraft/tags/blocks/needs_diamond_tool.json
 c3efa8328a5e006f7d2267dd54de5b994d0fff65 data/minecraft/tags/blocks/needs_iron_tool.json
 6698d6557c13cc663e4b064e436b64ddd0e57414 data/minecraft/tags/blocks/planks.json
 52112784dfd24e55c432b368ab12937fc4520df1 data/minecraft/tags/blocks/trapdoors.json
 3505b618d61b79dc9ddc7b63bfc8ba0b16ebba2e data/minecraft/tags/blocks/walls.json
-326db08597190632406be2d51ca4f5c98313b9ba data/twosidesmod/tags/blocks/md_values.json
+15711ac2a71dd1ae907cd1b54bf5f52b16c28152 data/twosidesmod/tags/blocks/md_values.json
 82362cfbd1836db13c7e9d36c8712821e795ac55 data/twosidesmod/tags/blocks/mineable/paxel.json
-d6987f2f5db043d7db306f511da5b7c2161e54ea data/twosidesmod/tags/blocks/needs_rose_quartz_tool.json
+b539c0fd55d686dd6d226d303a748d9f86ac71a4 data/twosidesmod/tags/blocks/needs_rose_quartz_tool.json

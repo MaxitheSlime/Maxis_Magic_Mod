@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "crystal_life_shard",
+  "ingredient": {
+    "item": "twosidesmod:end_life_ore"
+  },
+  "result": "twosidesmod:crystal_life_shard"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "crystal_control_shard",
+  "ingredient": {
+    "item": "twosidesmod:deepslate_control_ore"
+  },
+  "result": "twosidesmod:crystal_control_shard"
+}

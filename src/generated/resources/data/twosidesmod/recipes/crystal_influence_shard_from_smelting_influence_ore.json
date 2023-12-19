@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "crystal_influence_shard",
+  "ingredient": {
+    "item": "twosidesmod:influence_ore"
+  },
+  "result": "twosidesmod:crystal_influence_shard"
+}

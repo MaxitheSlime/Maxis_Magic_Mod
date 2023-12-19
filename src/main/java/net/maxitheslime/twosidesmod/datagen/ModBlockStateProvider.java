@@ -27,11 +27,52 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.ROSE_QUARTZ_BLOCK);
         blockWithItem(ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK);
-
         blockWithItem(ModBlocks.ROSE_QUARTZ_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE);
         blockWithItem(ModBlocks.END_ROSE_QUARTZ_ORE);
         blockWithItem(ModBlocks.NETHER_ROSE_QUARTZ_ORE);
+        blockWithItem(ModBlocks.STRENGTH_BLOCK);
+        blockWithItem(ModBlocks.IMPURE_STRENGTH_BLOCK);
+        blockWithItem(ModBlocks.STRENGTH_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_STRENGTH_ORE);
+        blockWithItem(ModBlocks.END_STRENGTH_ORE);
+        blockWithItem(ModBlocks.NETHER_STRENGTH_ORE);
+        blockWithItem(ModBlocks.INFLUENCE_BLOCK);
+        blockWithItem(ModBlocks.IMPURE_INFLUENCE_BLOCK);
+        blockWithItem(ModBlocks.INFLUENCE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_INFLUENCE_ORE);
+        blockWithItem(ModBlocks.END_INFLUENCE_ORE);
+        blockWithItem(ModBlocks.NETHER_INFLUENCE_ORE);
+        blockWithItem(ModBlocks.GREED_BLOCK);
+        blockWithItem(ModBlocks.IMPURE_GREED_BLOCK);
+        blockWithItem(ModBlocks.GREED_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_GREED_ORE);
+        blockWithItem(ModBlocks.END_GREED_ORE);
+        blockWithItem(ModBlocks.NETHER_GREED_ORE);
+        blockWithItem(ModBlocks.CONTROL_BLOCK);
+        blockWithItem(ModBlocks.IMPURE_CONTROL_BLOCK);
+        blockWithItem(ModBlocks.CONTROL_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_CONTROL_ORE);
+        blockWithItem(ModBlocks.END_CONTROL_ORE);
+        blockWithItem(ModBlocks.NETHER_CONTROL_ORE);
+        blockWithItem(ModBlocks.POWER_BLOCK);
+        blockWithItem(ModBlocks.IMPURE_POWER_BLOCK);
+        blockWithItem(ModBlocks.POWER_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_POWER_ORE);
+        blockWithItem(ModBlocks.END_POWER_ORE);
+        blockWithItem(ModBlocks.NETHER_POWER_ORE);
+        blockWithItem(ModBlocks.LIFE_BLOCK);
+        blockWithItem(ModBlocks.IMPURE_LIFE_BLOCK);
+        blockWithItem(ModBlocks.LIFE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_LIFE_ORE);
+        blockWithItem(ModBlocks.END_LIFE_ORE);
+        blockWithItem(ModBlocks.NETHER_LIFE_ORE);
+        blockWithItem(ModBlocks.SOUL_BLOCK);
+        blockWithItem(ModBlocks.IMPURE_SOUL_BLOCK);
+        blockWithItem(ModBlocks.SOUL_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_SOUL_ORE);
+        blockWithItem(ModBlocks.END_SOUL_ORE);
+        blockWithItem(ModBlocks.NETHER_SOUL_ORE);
 
         blockWithItem(ModBlocks.SOUND_BLOCK);
 
