@@ -1,7 +1,7 @@
 {
   "type": "twosidesmod:purification",
   "craftTime": 160,
-  "energyAmount": 50,
+  "energyAmount": 1500,
   "fluidAmount": 500,
   "fluidType": "twosidesmod:lemon_juice_fluid",
   "ingredients": [

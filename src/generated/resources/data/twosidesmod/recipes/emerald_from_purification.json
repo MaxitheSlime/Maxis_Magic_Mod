@@ -1,7 +1,7 @@
 {
   "type": "twosidesmod:purification",
   "craftTime": 100,
-  "energyAmount": 500,
+  "energyAmount": 2500,
   "fluidAmount": 750,
   "fluidType": "minecraft:water",
   "ingredients": [
