@@ -95,10 +95,6 @@ public class ModBlocks {
             () -> new PurifyingTableBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
     public static final RegistryObject<Block> CONDUCTIVE_FURNACE = registerBlock("conductive_furnace",
             () -> new ConductiveFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
-    
-    public static final RegistryObject<LiquidBlock> LEMON_JUICE_BLOCK = BLOCKS.register("lemon_juice_block",
-            () -> new LiquidBlock(ModFluids.SOURCE_LEMON_JUICE, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));
-
     public static final RegistryObject<Block> ENERGY_LOG = registerBlock("energy_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> ENERGY_WOOD = registerBlock("energy_wood",
@@ -360,6 +356,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> NETHER_SOUL_ORE = registerBlock("nether_soul_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
+
+    public static final RegistryObject<LiquidBlock> LEMON_JUICE_BLOCK = BLOCKS.register("lemon_juice_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_LEMON_JUICE, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));
+    public static final RegistryObject<LiquidBlock> ROSE_QUARTZ_FLUID_BLOCK = BLOCKS.register("rose_quartz_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_ROSE_QUARTZ, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

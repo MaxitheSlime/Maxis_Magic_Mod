@@ -39,6 +39,8 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
@@ -120,6 +122,8 @@ public class TwoSidesMod {
                 ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.ENERGY_SAPLING.getId(), ModBlocks.POTTED_ENERGY_SAPLING);
 
                 BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.THICK, ModItems.PURE_ROSE_QUARTZ.get(), ModPotions.SLIMEY_POTION.get()));
+                BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.HARMING, ModItems.CRYSTAL_SOUL_SHARD.get(), ModPotions.SOUL_HARROW_POTION.get()));
+                BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.SOUL_HARROW_POTION.get(), Items.GLOWSTONE, ModPotions.SOUL_HARROW_II_POTION.get()));
 
                 SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
 

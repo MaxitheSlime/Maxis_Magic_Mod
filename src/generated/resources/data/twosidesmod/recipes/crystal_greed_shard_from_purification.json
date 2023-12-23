@@ -3,7 +3,7 @@
   "craftTime": 160,
   "energyAmount": 1500,
   "fluidAmount": 500,
-  "fluidType": "twosidesmod:lemon_juice_fluid",
+  "fluidType": "twosidesmod:rose_quartz_fluid",
   "ingredients": [
     {
       "item": "twosidesmod:impure_crystal_greed_shard"

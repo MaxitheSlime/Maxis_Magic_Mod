@@ -1,0 +1,10 @@
+{
+  "type": "twosidesmod:conductive_furnace",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "twosidesmod:pure_rose_quartz"
+  },
+  "result": "twosidesmod:rose_quartz_bucket"
+}

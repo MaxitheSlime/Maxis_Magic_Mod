@@ -6,6 +6,7 @@ import net.maxitheslime.twosidesmod.entity.ModEntities;
 import net.maxitheslime.twosidesmod.entity.custom.ModBoatEntity;
 import net.maxitheslime.twosidesmod.fluid.ModFluids;
 import net.maxitheslime.twosidesmod.item.custom.*;
+import net.maxitheslime.twosidesmod.item.custom.rosequartz.*;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
@@ -30,19 +31,19 @@ public class ModItems {
     public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
             () -> new DataTabletItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> ROSE_QUARTZ_SWORD = ITEMS.register("rose_quartz_sword",
-            () -> new SappingSwordItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(256)));
+            () -> new LGSwordItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_PICKAXE = ITEMS.register("rose_quartz_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.ROSE_QUARTZ, 3, 2, new Item.Properties().durability(256)));
+            () -> new LGPickItem(ModToolTiers.ROSE_QUARTZ, 3, 2, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_SHOVEL = ITEMS.register("rose_quartz_shovel",
-            () -> new ShovelItem(ModToolTiers.ROSE_QUARTZ, 3.5f, 3, new Item.Properties().durability(256)));
+            () -> new LGShovelItem(ModToolTiers.ROSE_QUARTZ, 3.5f, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_AXE = ITEMS.register("rose_quartz_axe",
-            () -> new AxeItem(ModToolTiers.ROSE_QUARTZ, 7, 3, new Item.Properties().durability(256)));
+            () -> new LGShovelItem(ModToolTiers.ROSE_QUARTZ, 7, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_HOE = ITEMS.register("rose_quartz_hoe",
-            () -> new HoeItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
+            () -> new LGHoeItem(ModToolTiers.ROSE_QUARTZ, 2, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_PAXEL = ITEMS.register("rose_quartz_paxel",
-            () -> new PaxelItem(ModToolTiers.ROSE_QUARTZ, 3, 3, new Item.Properties().durability(256)));
+            () -> new LGPaxelItem(ModToolTiers.ROSE_QUARTZ, 3, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ROSE_QUARTZ_HAMMER = ITEMS.register("rose_quartz_hammer",
-            () -> new HammerItem(ModToolTiers.ROSE_QUARTZ, 8, 0, new Item.Properties().durability(256)));
+            () -> new LGHammerItem(ModToolTiers.ROSE_QUARTZ, 8, -3, new Item.Properties().durability(300)));
     public static final RegistryObject<Item> ROSE_QUARTZ_BOW = ITEMS.register("rose_quartz_bow",
             () -> new BowItem(new Item.Properties().durability(500)));
     public static final RegistryObject<Item> ROSE_QUARTZ_SHIELD = ITEMS.register("rose_quartz_shield",
@@ -77,6 +78,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> LEMON_JUICE_BUCKET = ITEMS.register("lemon_juice_bucket",
             () -> new BucketItem(ModFluids.SOURCE_LEMON_JUICE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_FLUID_BUCKET = ITEMS.register("rose_quartz_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_ROSE_QUARTZ, new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> ENERGY_SIGN = ITEMS.register("energy_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ENERGY_SIGN.get(), ModBlocks.ENERGY_WALL_SIGN.get()));
@@ -135,6 +138,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> IMPURE_CRYSTAL_SOUL_SHARD = ITEMS.register("impure_crystal_soul_shard",
             () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

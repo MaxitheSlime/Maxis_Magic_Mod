@@ -27,7 +27,6 @@
   "item.twosidesmod.rose_quartz_leggings": "Rose Quartz Pants",
   "item.twosidesmod.rose_quartz_boots": "Rose Quartz Boots",
   "item.twosidesmod.rose_quartz_horse_armor": "Rose Quartz Horse Armor",
-  "item.twosidesmod.lemon_juice_bucket": "Lemon Juice Bucket",
   "item.twosidesmod.remote_control": "RQG Control Stick",
   "item.twosidesmod.rqg_spawn_egg": "Rose Quartz Golem Spawn Egg",
   "item.twosidesmod.rs_spawn_egg": "Ruby Statue Boss Summoner",
@@ -81,6 +80,7 @@
   "block.twosidesmod.energy_fence": "Energy Fence",
   "block.twosidesmod.energy_fence_gate": "Energy Fence Gate",
   "block.twosidesmod.energy_door": "Energy Door",
+  "block.twosidesmod.energy_trapdoor": "Energy Trapdoor",
   "block.twosidesmod.energy_wood": "Energy Wood",
   "block.twosidesmod.stripped_energy_log": "Stripped Energy Log",
   "block.twosidesmod.stripped_energy_wood": "Stripped Energy Wood",
@@ -143,14 +143,28 @@
   "item.minecraft.splash_potion.effect.suction_potion": "Localized Gravity Splash Potion",
   "item.minecraft.lingering_potion.effect.suction_potion": "Localized Gravity Lingering Potion",
   "item.minecraft.tipped_arrow.effect.suction_potion": "Arrow of Localized Gravity",
+  "effect.twosidesmod.soul_harrowed": "Soul Harrowed",
+  "item.minecraft.potion.effect.soul_harrow": "Soul Harrowing Potion",
+  "item.minecraft.splash_potion.effect.soul_harrow": "Soul Harrowing Splash Potion",
+  "item.minecraft.lingering_potion.effect.soul_harrow": "Soul Harrowing Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.soul_harrow": "Arrow of Soul Harrowing",
+  "effect.twosidesmod.soul_harrowed_ii": "Soul Harrowed II",
+  "item.minecraft.potion.effect.soul_harrow_ii": "Soul Harrowing II Potion",
+  "item.minecraft.splash_potion.effect.soul_harrow_ii": "Soul Harrowing II Splash Potion",
+  "item.minecraft.lingering_potion.effect.soul_harrow_ii": "Soul Harrowing II Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.soul_harrow_ii": "Arrow of Soul Harrowing II",
 
   "entity.minecraft.villager.twosidesmod.soundmaster": "Soundmaster",
   "entity.twosidesmod.rqg" : "Rose Quartz Golem",
   "entity.twosidesmod.ruby_statue" : "Ruby Statue",
   "entity.twosidesmod.mod_chest_boat": "Chest Boat",
+  "entity.twosidesmod.mod_boat": "Boat",
 
   "twosidesmod.tooltip.liquid.amount.with.capacity": "%s / %s mB",
   "twosidesmod.tooltip.liquid.amount": "%s mB",
 
-  "fluid_type.twosidesmod.lemon_juice_fluid": "Lemon Juice"
+  "item.twosidesmod.lemon_juice_bucket": "Lemon Juice Bucket",
+  "fluid_type.twosidesmod.lemon_juice_fluid": "Lemon Juice",
+  "item.twosidesmod.rose_quartz_bucket": "Diluted Rose Quartz Bucket",
+  "fluid_type.twosidesmod.rose_quartz_fluid": "Diluted Rose Quartz"
 }
