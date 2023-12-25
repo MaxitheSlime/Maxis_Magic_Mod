@@ -141,19 +141,19 @@ public class ModItems {
     public static final RegistryObject<Item> IMPURE_CRYSTAL_SOUL_SHARD = ITEMS.register("impure_crystal_soul_shard",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SOUL_SWORD = ITEMS.register("soul_sword",
-            () -> new SHSwordItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+            () -> new SHSwordItem(ModToolTiers.ROSE_QUARTZ, 5, 2, new Item.Properties().durability(300)));
     public static final RegistryObject<Item> SOUL_AXE = ITEMS.register("soul_axe",
-            () -> new SHAxeItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+            () -> new SHAxeItem(ModToolTiers.ROSE_QUARTZ, 8, 2, new Item.Properties().durability(300)));
     public static final RegistryObject<Item> SOUL_SHOVEL = ITEMS.register("soul_shovel",
-            () -> new SHShovelItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+            () -> new SHShovelItem(ModToolTiers.ROSE_QUARTZ, 4, 4, new Item.Properties().durability(300)));
     public static final RegistryObject<Item> SOUL_HOE = ITEMS.register("soul_hoe",
-            () -> new SHHoeItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+            () -> new SHHoeItem(ModToolTiers.ROSE_QUARTZ, 3, 2, new Item.Properties().durability(300)));
     public static final RegistryObject<Item> SOUL_PICKAXE = ITEMS.register("soul_pickaxe",
             () -> new SHPickaxeItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
     public static final RegistryObject<Item> SOUL_PAXEL = ITEMS.register("soul_paxel",
-            () -> new SHPaxelItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+            () -> new SHPaxelItem(ModToolTiers.ROSE_QUARTZ, 4, 2, new Item.Properties().durability(300)));
     public static final RegistryObject<Item> SOUL_HAMMER = ITEMS.register("soul_hammer",
-            () -> new SHHammerItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+            () -> new SHHammerItem(ModToolTiers.ROSE_QUARTZ, 9, -2, new Item.Properties().durability(300)));
     public static final RegistryObject<Item> SOUL_BOW = ITEMS.register("soul_bow",
             () -> new BowItem(new Item.Properties().durability(500)));
     public static final RegistryObject<Item> SOUL_SHIELD = ITEMS.register("soul_shield",
