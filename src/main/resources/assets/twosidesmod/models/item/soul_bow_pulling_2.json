@@ -1,0 +1,6 @@
+{
+  "parent": "twosidesmod:item/soul_bow",
+  "textures": {
+    "layer0": "twosidesmod:item/soul_bow_pulling_2"
+  }
+}

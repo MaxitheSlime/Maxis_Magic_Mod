@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "twosidesmod:soul_pickaxe"
+    },
+    "R": {
+      "item": "twosidesmod:crystal_soul_shard"
+    },
+    "S": {
+      "item": "minecraft:bone"
+    }
+  },
+  "pattern": [
+    " R ",
+    "PPP",
+    " S "
+  ],
+  "result": {
+    "item": "twosidesmod:soul_hammer"
+  },
+  "show_notification": true
+}

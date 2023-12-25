@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bone"
+    },
+    "R": {
+      "item": "twosidesmod:crystal_soul_shard"
+    }
+  },
+  "pattern": [
+    "RBR",
+    "RBR",
+    "RBR"
+  ],
+  "result": {
+    "item": "twosidesmod:soul_shield"
+  },
+  "show_notification": true
+}

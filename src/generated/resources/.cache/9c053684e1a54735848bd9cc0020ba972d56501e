@@ -1,4 +1,4 @@
-// 1.20.1	2023-12-22T01:28:33.7967044	Item Models: twosidesmod
+// 1.20.1	2023-12-24T01:45:16.993564	Item Models: twosidesmod
 db559856ec82dd38433341b7b91e3e707d06b294 assets/twosidesmod/models/item/alt_energy_sapling.json
 474ce6fcc32ff61796fe4fc40ccddacc407bd6b0 assets/twosidesmod/models/item/bar_brawl_record.json
 b2a889a54fd6f4db2099cbfc6a7074cb4590009f assets/twosidesmod/models/item/crystal_control_shard.json
@@ -52,3 +52,8 @@ ec4d31584cc47057ee858b61f12a6f765142a792 assets/twosidesmod/models/item/rose_qua
 8643cde4b8f19dec0313d3fbd3bab746a311cb97 assets/twosidesmod/models/item/rose_quartz_wall.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/twosidesmod/models/item/rqg_spawn_egg.json
 31303f040f753edc5198f903480b427658945e45 assets/twosidesmod/models/item/rs_spawn_egg.json
+257cc81b10bab9e9aeb908b8e9d12cc2d4d313de assets/twosidesmod/models/item/soul_boots.json
+d813e6442b4a4c8bfbf6affccf19a78a32d302e0 assets/twosidesmod/models/item/soul_chestplate.json
+1072862c9d58975fb5aa4c98908f0c1b91db437f assets/twosidesmod/models/item/soul_helmet.json
+013058e6d37dd1bcae736a6a4ad15363dea18b87 assets/twosidesmod/models/item/soul_horse_armor.json
+7b84a903f8a92d3256695cf08b2beec96f8c8a2f assets/twosidesmod/models/item/soul_leggings.json

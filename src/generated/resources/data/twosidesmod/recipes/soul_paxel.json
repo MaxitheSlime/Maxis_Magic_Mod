@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "twosidesmod:soul_axe"
+    },
+    "P": {
+      "item": "twosidesmod:soul_pickaxe"
+    },
+    "R": {
+      "item": "twosidesmod:crystal_soul_shard"
+    },
+    "S": {
+      "item": "minecraft:bone"
+    },
+    "V": {
+      "item": "twosidesmod:soul_shovel"
+    }
+  },
+  "pattern": [
+    " P ",
+    "ARV",
+    " S "
+  ],
+  "result": {
+    "item": "twosidesmod:soul_paxel"
+  },
+  "show_notification": true
+}

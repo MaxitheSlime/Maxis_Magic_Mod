@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "twosidesmod:crystal_soul_shard"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "R R",
+    "R R"
+  ],
+  "result": {
+    "item": "twosidesmod:soul_leggings"
+  },
+  "show_notification": true
+}

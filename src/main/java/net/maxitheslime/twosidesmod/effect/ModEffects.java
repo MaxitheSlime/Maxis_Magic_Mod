@@ -19,13 +19,13 @@ public class ModEffects {
                     "7107DE5E-7CE8-4030-940E-514C1F160891", -0.25f, AttributeModifier.Operation.MULTIPLY_TOTAL));
     public static final RegistryObject<MobEffect> SOUL_HARROWING = MOB_EFFECTS.register("soul_harrowed",
             () -> new SoulHarrowEffect(MobEffectCategory.HARMFUL, 0x5800ff)
-                    .addAttributeModifier(Attributes.ARMOR,"7107DE5E-7CE8-4030-940E-514C1F160892",
+                    .addAttributeModifier(Attributes.ARMOR_TOUGHNESS,"7107DE5E-7CE8-4030-940E-514C1F160892",
                             -0.5f, AttributeModifier.Operation.MULTIPLY_TOTAL)
                     .addAttributeModifier(Attributes.MAX_HEALTH, "7107DE5E-7CE8-4030-940E-514C1F160893",
                             -0.25f, AttributeModifier.Operation.MULTIPLY_TOTAL));
     public static final RegistryObject<MobEffect> SOUL_HARROWING_II = MOB_EFFECTS.register("soul_harrowed_ii",
             () -> new SoulHarrowEffect(MobEffectCategory.HARMFUL, 0x5800ff)
-                    .addAttributeModifier(Attributes.ARMOR,"7107DE5E-7CE8-4030-940E-514C1F160894",
+                    .addAttributeModifier(Attributes.ARMOR_TOUGHNESS,"7107DE5E-7CE8-4030-940E-514C1F160894",
                             -0.75f, AttributeModifier.Operation.MULTIPLY_TOTAL)
                     .addAttributeModifier(Attributes.MAX_HEALTH, "7107DE5E-7CE8-4030-940E-514C1F160895",
                             -0.5f, AttributeModifier.Operation.MULTIPLY_TOTAL));

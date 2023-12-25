@@ -6,7 +6,9 @@ import net.maxitheslime.twosidesmod.entity.ModEntities;
 import net.maxitheslime.twosidesmod.entity.custom.ModBoatEntity;
 import net.maxitheslime.twosidesmod.fluid.ModFluids;
 import net.maxitheslime.twosidesmod.item.custom.*;
+import net.maxitheslime.twosidesmod.item.custom.armor.soul.SoulArmorItem;
 import net.maxitheslime.twosidesmod.item.custom.rosequartz.*;
+import net.maxitheslime.twosidesmod.item.custom.soul.*;
 import net.maxitheslime.twosidesmod.sound.ModSounds;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
@@ -138,7 +140,37 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> IMPURE_CRYSTAL_SOUL_SHARD = ITEMS.register("impure_crystal_soul_shard",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SOUL_SWORD = ITEMS.register("soul_sword",
+            () -> new SHSwordItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> SOUL_AXE = ITEMS.register("soul_axe",
+            () -> new SHAxeItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> SOUL_SHOVEL = ITEMS.register("soul_shovel",
+            () -> new SHShovelItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> SOUL_HOE = ITEMS.register("soul_hoe",
+            () -> new SHHoeItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> SOUL_PICKAXE = ITEMS.register("soul_pickaxe",
+            () -> new SHPickaxeItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> SOUL_PAXEL = ITEMS.register("soul_paxel",
+            () -> new SHPaxelItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> SOUL_HAMMER = ITEMS.register("soul_hammer",
+            () -> new SHHammerItem(ModToolTiers.ROSE_QUARTZ, 4, 3, new Item.Properties().durability(300)));
+    public static final RegistryObject<Item> SOUL_BOW = ITEMS.register("soul_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+    public static final RegistryObject<Item> SOUL_SHIELD = ITEMS.register("soul_shield",
+            () -> new ShieldItem(new Item.Properties().durability(500)));
+    public static final RegistryObject<Item> SOUL_HELMET = ITEMS.register("soul_helmet",
+            () -> new SoulArmorItem(ModArmorMaterials.SOUL, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> SOUL_CHESTPLATE = ITEMS.register("soul_chestplate",
+            () -> new SoulArmorItem(ModArmorMaterials.SOUL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> SOUL_LEGGINGS = ITEMS.register("soul_leggings",
+            () -> new SoulArmorItem(ModArmorMaterials.SOUL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> SOUL_BOOTS = ITEMS.register("soul_boots",
+            () -> new SoulArmorItem(ModArmorMaterials.SOUL, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> SOUL_HORSE_ARMOR = ITEMS.register("soul_horse_armor",
+            () -> new HorseArmorItem(12, new ResourceLocation(TwoSidesMod.MOD_ID, "textures/entity/horse/armor/horse_armor_soul.png"),
+                    new Item.Properties()));
+    
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -747,6 +747,147 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModBlocks.ENERGY_LOG.get()).build()))
                 .save(pWriter);
 
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_SWORD.get())
+                .pattern("AAS")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('A', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .define('S', Items.BONE)
+                .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_AXE.get())
+                .pattern("SS ")
+                .pattern("SA ")
+                .pattern(" A ")
+                .define('A', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .define('S', Items.BONE)
+                .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
+                .save(pWriter);
+        
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_PICKAXE.get())
+                .pattern("SAS")
+                .pattern("SAS")
+                .pattern(" A ")
+                .define('A', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .define('S', Items.BONE)
+                .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_SHOVEL.get())
+                .pattern(" A ")
+                .pattern(" S ")
+                .pattern(" A ")
+                .define('A', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .define('S', Items.BONE)
+                .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_HOE.get())
+                .pattern("AA ")
+                .pattern("ASA")
+                .pattern(" AA")
+                .define('A', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .define('S', Items.BONE)
+                .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_PAXEL.get())
+                .pattern(" P ")
+                .pattern("ARV")
+                .pattern(" S ")
+                .define('R', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .define('P', ModItems.SOUL_PICKAXE.get())
+                .define('A', ModItems.SOUL_AXE.get())
+                .define('V', ModItems.SOUL_SHOVEL.get())
+                .define('S', Items.BONE)
+                .unlockedBy("has_rose_quartz_paxel", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.ROSE_QUARTZ_PAXEL.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_HAMMER.get())
+                .pattern(" R ")
+                .pattern("PPP")
+                .pattern(" S ")
+                .define('R', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .define('P', ModItems.SOUL_PICKAXE.get())
+                .define('S', Items.BONE)
+                .unlockedBy("has_rose_quartz_hammer", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.ROSE_QUARTZ_HAMMER.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_BOW.get())
+                .pattern(" RB")
+                .pattern("R B")
+                .pattern(" RB")
+                .define('R', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .define('B', Items.LEATHER)
+                .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_SHIELD.get())
+                .pattern("RBR")
+                .pattern("RBR")
+                .pattern("RBR")
+                .define('R', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .define('B', Items.BONE)
+                .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_HORSE_ARMOR.get())
+                .pattern(" LR")
+                .pattern("RBR")
+                .pattern("RRR")
+                .define('R', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .define('B', Items.PURPLE_WOOL)
+                .define('L', Items.LEAD)
+                .unlockedBy("has_rose_quartz_horse_armor", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.ROSE_QUARTZ_HORSE_ARMOR.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_HELMET.get())
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("   ")
+                .define('R', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_CHESTPLATE.get())
+                .pattern("R R")
+                .pattern("RRR")
+                .pattern("RRR")
+                .define('R', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_LEGGINGS.get())
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("R R")
+                .define('R', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SOUL_BOOTS.get())
+                .pattern("R R")
+                .pattern("R R")
+                .pattern("   ")
+                .define('R', ModItems.CRYSTAL_SOUL_SHARD.get())
+                .unlockedBy("has_crystal_soul_shard", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.CRYSTAL_SOUL_SHARD.get()).build()))
+                .save(pWriter);
+
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.IMPURE_ROSE_QUARTZ.get(), RecipeCategory.MISC, ModBlocks.IMPURE_ROSE_QUARTZ_BLOCK.get(),
                 "twosidesmod:impure_rose_quartz", "pure_rose_quartz", "twosidesmod:impure_rose_quartz_block", "pure_rose_quartz");
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get(), RecipeCategory.MISC, ModBlocks.IMPURE_STRENGTH_BLOCK.get(),

@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableMap;
 import net.maxitheslime.twosidesmod.item.ModArmorMaterials;
 import net.maxitheslime.twosidesmod.effect.ModEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
@@ -13,7 +14,7 @@ import net.minecraft.world.level.Level;
 import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
-    private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
+    private static final Map<ArmorMaterial, MobEffectInstance> ROSE_QUARTZ_ARMOR_EFFECT =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(ModArmorMaterials.ROSE_QUARTZ, new MobEffectInstance(ModEffects.SUCTION_EFFECT.get(), 200, 0))
                     .build();
@@ -30,7 +31,7 @@ public class ModArmorItem extends ArmorItem {
     }
 
     private void evaluateArmorEffects(Player player) {
-        for(Map.Entry<ArmorMaterial, MobEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
+        for(Map.Entry<ArmorMaterial, MobEffectInstance> entry : ROSE_QUARTZ_ARMOR_EFFECT.entrySet()) {
             ArmorMaterial mapArmorMaterial = entry.getKey();
             MobEffectInstance mapEffect = entry.getValue();
 

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:leather"
+    },
+    "R": {
+      "item": "twosidesmod:crystal_soul_shard"
+    }
+  },
+  "pattern": [
+    " RB",
+    "R B",
+    " RB"
+  ],
+  "result": {
+    "item": "twosidesmod:soul_bow"
+  },
+  "show_notification": true
+}

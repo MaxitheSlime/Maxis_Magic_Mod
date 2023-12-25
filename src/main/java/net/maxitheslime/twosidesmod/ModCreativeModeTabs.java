@@ -45,6 +45,7 @@ public class ModCreativeModeTabs {
                     {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.DATA_TABLET.get());
+                        
                         pOutput.accept(ModItems.ROSE_QUARTZ_SWORD.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_PICKAXE.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_SHOVEL.get());
@@ -53,13 +54,27 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ROSE_QUARTZ_PAXEL.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_HAMMER.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_BOW.get());
-
                         pOutput.accept(ModItems.ROSE_QUARTZ_HELMET.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_CHESTPLATE.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_LEGGINGS.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_BOOTS.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_SHIELD.get());
                         pOutput.accept(ModItems.ROSE_QUARTZ_HORSE_ARMOR.get());
+
+                        pOutput.accept(ModItems.SOUL_SWORD.get());
+                        pOutput.accept(ModItems.SOUL_PICKAXE.get());
+                        pOutput.accept(ModItems.SOUL_SHOVEL.get());
+                        pOutput.accept(ModItems.SOUL_AXE.get());
+                        pOutput.accept(ModItems.SOUL_HOE.get());
+                        pOutput.accept(ModItems.SOUL_PAXEL.get());
+                        pOutput.accept(ModItems.SOUL_HAMMER.get());
+                        pOutput.accept(ModItems.SOUL_BOW.get());
+                        pOutput.accept(ModItems.SOUL_HELMET.get());
+                        pOutput.accept(ModItems.SOUL_CHESTPLATE.get());
+                        pOutput.accept(ModItems.SOUL_LEGGINGS.get());
+                        pOutput.accept(ModItems.SOUL_BOOTS.get());
+                        pOutput.accept(ModItems.SOUL_SHIELD.get());
+                        pOutput.accept(ModItems.SOUL_HORSE_ARMOR.get());
 
                         pOutput.accept(ModItems.REMOTE_CONTROL.get());
 

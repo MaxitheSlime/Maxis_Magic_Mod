@@ -14,8 +14,12 @@ public class ModItemProperties {
         ItemProperties.register(ModItems.ROSE_QUARTZ_SHIELD.get(), new ResourceLocation("blocking"), (p_174575_, p_174576_, p_174577_, p_174578_) -> {
             return p_174577_ != null && p_174577_.isUsingItem() && p_174577_.getUseItem() == p_174575_ ? 1.0F : 0.0F;
         });
+        ItemProperties.register(ModItems.SOUL_SHIELD.get(), new ResourceLocation("blocking"), (p_174575_, p_174576_, p_174577_, p_174578_) -> {
+            return p_174577_ != null && p_174577_.isUsingItem() && p_174577_.getUseItem() == p_174575_ ? 1.0F : 0.0F;
+        });
 
         makeBow(ModItems.ROSE_QUARTZ_BOW.get());
+        makeBow(ModItems.SOUL_BOW.get());
     }
 
     private static void makeBow (Item item){
