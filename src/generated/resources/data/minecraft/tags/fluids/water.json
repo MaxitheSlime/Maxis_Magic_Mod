@@ -1,6 +1,8 @@
 {
   "values": [
     "twosidesmod:lemon_juice_fluid",
-    "twosidesmod:flowing_lemon_juice_fluid"
+    "twosidesmod:flowing_lemon_juice_fluid",
+    "twosidesmod:rose_quartz_fluid",
+    "twosidesmod:flowing_rose_quartz_fluid"
   ]
 }

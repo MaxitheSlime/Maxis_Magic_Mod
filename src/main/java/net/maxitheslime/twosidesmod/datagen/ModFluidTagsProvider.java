@@ -20,6 +20,9 @@ public class ModFluidTagsProvider extends FluidTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         tag(FluidTags.WATER)
                 .add(ModFluids.SOURCE_LEMON_JUICE.get())
-                .add(ModFluids.FLOWING_LEMON_JUICE.get());
+                .add(ModFluids.FLOWING_LEMON_JUICE.get())
+                .add(ModFluids.SOURCE_ROSE_QUARTZ.get())
+                .add(ModFluids.FLOWING_ROSE_QUARTZ.get())
+        ;
     }
 }
