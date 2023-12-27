@@ -47,13 +47,6 @@ import java.util.Optional;
 
 public class PurificationTableEntity extends BlockEntity implements MenuProvider {
 
-    private final int DEFAULT_MAX_PROGRESS = 78;
-
-    private int energyAmount = 0;
-    private final int DEFAULT_ENERGY_AMOUNT = 100;
-
-    private FluidStack neededFluidStack = FluidStack.EMPTY;
-
     private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
         @Override
         protected void onContentsChanged(int slot) {
@@ -97,6 +90,10 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
     protected final ContainerData data;
     private int progress = 0;
     private int maxProgress = 78;
+    private final int DEFAULT_MAX_PROGRESS = 78;
+    private int energyAmount = 0;
+    private final int DEFAULT_ENERGY_AMOUNT = 100;
+    private FluidStack neededFluidStack = FluidStack.EMPTY;
 
     private final ModEnergyStorage ENERGY_STORAGE = createEnergyStorage();
     private final FluidTank FLUID_TANK = createFluidTank();
@@ -276,16 +273,23 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
 
         if (isOutputSlotEmptyOrReceivable() && hasRecipe()) {
             increaseCraftingProcess();
+            System.out.println("DJHKEGFLUISGEOFHIEHIEGFOGOWFLI");
             setChanged(level, pPos, pState);
+            System.out.println("SETchanged");
 
             if (hasProgressFinished()) {
                 craftItem();
+                System.out.println("craft!");
                 extractEnergy();
+                System.out.println("ZAP");
                 extractFluid();
+                System.out.println("slurp");
                 resetProgress();
+                System.out.println("DONE!");
             }
         } else {
             resetProgress();
+            System.out.println("GAAAAAAAAH");
         }
     }
 
