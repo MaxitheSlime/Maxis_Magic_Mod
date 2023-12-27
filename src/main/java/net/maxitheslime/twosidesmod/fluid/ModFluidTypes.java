@@ -21,15 +21,7 @@ public class ModFluidTypes {
     public static final RegistryObject<FluidType> LEMON_JUICE_FLUID_TYPE = registerFluidType("lemon_juice_fluid",
             new BaseFluidType(WATER_STILL_RL, WATER_FLOWING_RL, WATER_OVERLAY_RL, 0xA1fff400,
                     new Vector3f(255f / 255f, 244f / 255f, 0f / 255f),
-                    FluidType.Properties.create().lightLevel(2).viscosity(5).density(15).supportsBoating(true)
-                            .canConvertToSource(true).canPushEntity(true).canSwim(true).canExtinguish(true)
-                            .canDrown(true).rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<FluidType> ROSE_QUARTZ_FLUID_TYPE = registerFluidType("rose_quartz_fluid",
-            new BaseFluidType(WATER_STILL_RL, WATER_FLOWING_RL, WATER_OVERLAY_RL, 0xA0d63a3a,
-                    new Vector3f(214f / 255f, 58f / 255f, 58f / 255f),
-                    FluidType.Properties.create().lightLevel(12).viscosity(18).density(40).supportsBoating(true)
-                            .rarity(Rarity.RARE).canDrown(true).canSwim(false).canExtinguish(false)
-                            .canConvertToSource(false).canPushEntity(false)));
+                    FluidType.Properties.create().lightLevel(2).viscosity(5).density(15)));
 
 
     private static RegistryObject<FluidType> registerFluidType(String name, FluidType fluidType) {

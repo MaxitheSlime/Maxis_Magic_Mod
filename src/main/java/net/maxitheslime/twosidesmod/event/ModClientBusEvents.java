@@ -30,10 +30,11 @@ public class ModClientBusEvents {
     @SubscribeEvent
     public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(ModBlockEntities.PURIFICATION_TABLE_BE.get(),
-               PurificationTableRenderer::new);
+                PurificationTableRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.MOD_SIGN.get(), SignRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.MOD_HANGING_SIGN.get(), HangingSignRenderer::new);
     }
+
     @SubscribeEvent
     public static void registerColoredBlocks(RegisterColorHandlersEvent.Block event) {
         event.register((pState, pLevel, pPos, pTintIndex) -> pLevel != null &&
@@ -43,15 +44,8 @@ public class ModClientBusEvents {
     @SubscribeEvent
     public static void registerColoredItems(RegisterColorHandlersEvent.Item event) {
         event.register((pStack, pTintIndex) -> {
-            BlockState state = ((BlockItem)pStack.getItem()).getBlock().defaultBlockState();
+            BlockState state = ((BlockItem) pStack.getItem()).getBlock().defaultBlockState();
             return event.getBlockColors().getColor(state, null, null, pTintIndex);
         }, ModBlocks.ENERGY_LEAVES_ALT.get());
     }
-
-    //Use this for other keybinds, couldn't get custom bar to work
-    /*
-    @SubscribeEvent
-    public static void onKeyRegister(RegisterKeyMappingsEvent event) {
-        event.register(KeyBinding.MANA_REFUEL_KEY);
-    }*/
 }

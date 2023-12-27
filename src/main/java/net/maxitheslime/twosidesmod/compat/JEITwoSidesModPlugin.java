@@ -44,7 +44,7 @@ public class JEITwoSidesModPlugin implements IModPlugin {
     public void registerGuiHandlers(IGuiHandlerRegistration registration) {
         registration.addRecipeClickArea(PurificationTableScreen.class, 60, 30, 20, 30,
                 PurificationRecipeCategory.PURIFICATION_TYPE);
-        registration.addRecipeClickArea(ConductiveFurnaceScreen.class, 60, 30, 20, 30,
+        registration.addRecipeClickArea(ConductiveFurnaceScreen.class, 60, 28, 20, 30,
                 ConductiveFurnaceRecipeCategory.CONDUCTIVE_FURNACE_TYPE);
     }
 }

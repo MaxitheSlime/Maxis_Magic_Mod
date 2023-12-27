@@ -359,8 +359,6 @@ public class ModBlocks {
 
     public static final RegistryObject<LiquidBlock> LEMON_JUICE_BLOCK = BLOCKS.register("lemon_juice_block",
             () -> new LiquidBlock(ModFluids.SOURCE_LEMON_JUICE, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));
-    public static final RegistryObject<LiquidBlock> ROSE_QUARTZ_FLUID_BLOCK = BLOCKS.register("rose_quartz_block",
-            () -> new LiquidBlock(ModFluids.SOURCE_ROSE_QUARTZ, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)

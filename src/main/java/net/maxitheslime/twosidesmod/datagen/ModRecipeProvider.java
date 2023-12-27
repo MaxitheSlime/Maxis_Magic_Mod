@@ -58,25 +58,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 new FluidStack(ModFluids.SOURCE_LEMON_JUICE.get(), 500))
                 .unlockedBy("has_impure_rose_quartz", has(ModItems.IMPURE_ROSE_QUARTZ.get())).save(pWriter);
         new PurificationRecipeProvider(ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get(), ModItems.CRYSTAL_STRENGTH_SHARD.get(), 3, 160, 1500,
-                new FluidStack(ModFluids.SOURCE_ROSE_QUARTZ.get(), 500))
+                new FluidStack(ModFluids.SOURCE_LEMON_JUICE.get(), 500))
                 .unlockedBy("has_impure_crystal_strength_shard", has(ModItems.IMPURE_CRYSTAL_STRENGTH_SHARD.get())).save(pWriter);
         new PurificationRecipeProvider(ModItems.IMPURE_CRYSTAL_INFLUENCE_SHARD.get(), ModItems.CRYSTAL_INFLUENCE_SHARD.get(), 3, 160, 1500,
-                new FluidStack(ModFluids.SOURCE_ROSE_QUARTZ.get(), 500))
+                new FluidStack(ModFluids.SOURCE_LEMON_JUICE.get(), 500))
                 .unlockedBy("has_impure_crystal_influence_shard", has(ModItems.IMPURE_CRYSTAL_INFLUENCE_SHARD.get())).save(pWriter);
         new PurificationRecipeProvider(ModItems.IMPURE_CRYSTAL_GREED_SHARD.get(), ModItems.CRYSTAL_GREED_SHARD.get(), 3, 160, 1500,
-                new FluidStack(ModFluids.SOURCE_ROSE_QUARTZ.get(), 500))
+                new FluidStack(ModFluids.SOURCE_LEMON_JUICE.get(), 500))
                 .unlockedBy("has_impure_crystal_greed_shard", has(ModItems.IMPURE_CRYSTAL_GREED_SHARD.get())).save(pWriter);
         new PurificationRecipeProvider(ModItems.IMPURE_CRYSTAL_CONTROL_SHARD.get(), ModItems.CRYSTAL_CONTROL_SHARD.get(), 3, 160, 1500,
-                new FluidStack(ModFluids.SOURCE_ROSE_QUARTZ.get(), 500))
+                new FluidStack(ModFluids.SOURCE_LEMON_JUICE.get(), 500))
                 .unlockedBy("has_impure_crystal_control_shard", has(ModItems.IMPURE_CRYSTAL_CONTROL_SHARD.get())).save(pWriter);
         new PurificationRecipeProvider(ModItems.IMPURE_CRYSTAL_POWER_SHARD.get(), ModItems.CRYSTAL_POWER_SHARD.get(), 3, 160, 1500,
-                new FluidStack(ModFluids.SOURCE_ROSE_QUARTZ.get(), 500))
+                new FluidStack(ModFluids.SOURCE_LEMON_JUICE.get(), 500))
                 .unlockedBy("has_impure_crystal_power_shard", has(ModItems.IMPURE_CRYSTAL_POWER_SHARD.get())).save(pWriter);
         new PurificationRecipeProvider(ModItems.IMPURE_CRYSTAL_LIFE_SHARD.get(), ModItems.CRYSTAL_LIFE_SHARD.get(), 3, 160, 1500,
-                new FluidStack(ModFluids.SOURCE_ROSE_QUARTZ.get(), 500))
+                new FluidStack(ModFluids.SOURCE_LEMON_JUICE.get(), 500))
                 .unlockedBy("has_impure_crystal_life_shard", has(ModItems.IMPURE_CRYSTAL_LIFE_SHARD.get())).save(pWriter);
         new PurificationRecipeProvider(ModItems.IMPURE_CRYSTAL_SOUL_SHARD.get(), ModItems.CRYSTAL_SOUL_SHARD.get(), 3, 160, 1500,
-                new FluidStack(ModFluids.SOURCE_ROSE_QUARTZ.get(), 500))
+                new FluidStack(ModFluids.SOURCE_LEMON_JUICE.get(), 500))
                 .unlockedBy("has_impure_crystal_soul_shard", has(ModItems.IMPURE_CRYSTAL_SOUL_SHARD.get())).save(pWriter);
         new PurificationRecipeProvider(Items.COAL, Items.DIAMOND, 7,40, 4000,
                 new FluidStack(Fluids.LAVA, 500))

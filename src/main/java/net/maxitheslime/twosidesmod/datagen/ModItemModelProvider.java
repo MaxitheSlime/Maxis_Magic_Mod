@@ -53,7 +53,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         complexBlock(ModBlocks.PURIFICATION_TABLE.get());
 
         simpleItem(ModItems.LEMON_JUICE_BUCKET);
-        simpleItem(ModItems.ROSE_QUARTZ_FLUID_BUCKET);
 
         buttonItem(ModBlocks.ENERGY_BUTTON, ModBlocks.ENERGY_PLANKS);
         fenceItem(ModBlocks.ENERGY_FENCE, ModBlocks.ENERGY_PLANKS);

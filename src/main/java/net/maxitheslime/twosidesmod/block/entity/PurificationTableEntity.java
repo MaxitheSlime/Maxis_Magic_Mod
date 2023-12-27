@@ -248,8 +248,8 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
     protected void saveAdditional(CompoundTag pTag) {
         pTag.put("inventory", itemHandler.serializeNBT());
         pTag.putInt("purification_table.progress", progress);
-        pTag.putInt("gem_empowering_station.max_progress", maxProgress);
-        pTag.putInt("gem_empowering_station.energy_amount", energyAmount);
+        pTag.putInt("purification_table.max_progress", maxProgress);
+        pTag.putInt("purification_table.energy_amount", energyAmount);
         neededFluidStack.writeToNBT(pTag);
 
         pTag.putInt("hanging", ENERGY_STORAGE.getEnergyStored());
@@ -263,8 +263,8 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
         super.load(pTag);
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
         progress = pTag.getInt("purification_table.progress");
-        maxProgress = pTag.getInt("gem_empowering_station.max_progress");
-        energyAmount = pTag.getInt("gem_empowering_station.energy_amount");
+        maxProgress = pTag.getInt("purification_table.max_progress");
+        energyAmount = pTag.getInt("purification_table.energy_amount");
         neededFluidStack = FluidStack.loadFluidStackFromNBT(pTag);
         ENERGY_STORAGE.setEnergy(pTag.getInt("hanging"));
         FLUID_TANK.readFromNBT(pTag);
@@ -327,7 +327,7 @@ public class PurificationTableEntity extends BlockEntity implements MenuProvider
 
     private void fillUpOnEnergy() {
         if(hasEnergyItemInSlot(ENERGY_SLOT)) {
-            this.ENERGY_STORAGE.receiveEnergy(3200, false);
+            this.ENERGY_STORAGE.receiveEnergy(500, false);
         }
     }
 

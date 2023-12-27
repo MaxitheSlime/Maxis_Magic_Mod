@@ -23,15 +23,6 @@ public class ModFluids {
             ModFluidTypes.LEMON_JUICE_FLUID_TYPE, SOURCE_LEMON_JUICE, FLOWING_LEMON_JUICE)
             .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.LEMON_JUICE_BLOCK)
             .bucket(ModItems.LEMON_JUICE_BUCKET);
-    public static final RegistryObject<FlowingFluid> SOURCE_ROSE_QUARTZ = FLUIDS.register("rose_quartz_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.ROSE_QUARTZ_FLUID_PROPERTIES));
-    public static final RegistryObject<FlowingFluid> FLOWING_ROSE_QUARTZ = FLUIDS.register("flowing_rose_quartz_fluid",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.ROSE_QUARTZ_FLUID_PROPERTIES));
-    public static final ForgeFlowingFluid.Properties ROSE_QUARTZ_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
-            ModFluidTypes.ROSE_QUARTZ_FLUID_TYPE, SOURCE_ROSE_QUARTZ, FLOWING_ROSE_QUARTZ)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.ROSE_QUARTZ_FLUID_BLOCK)
-            .bucket(ModItems.ROSE_QUARTZ_FLUID_BUCKET);
-
     
 
     public static void register(IEventBus eventBus) {

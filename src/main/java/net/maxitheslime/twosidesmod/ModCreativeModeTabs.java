@@ -107,7 +107,6 @@ public class ModCreativeModeTabs {
                     title(Component.translatable("creativetab.two_sides_fluids")).displayItems((pParameters, pOutput) ->
                     {
                         pOutput.accept(ModItems.LEMON_JUICE_BUCKET.get());
-                        pOutput.accept(ModItems.ROSE_QUARTZ_FLUID_BUCKET.get());
                     }).build());
     public static final RegistryObject<CreativeModeTab> TWO_SIDES_BLOCKS = CREATIVE_MODE_TABS.register("two_sides_blocks",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ROSE_QUARTZ_BLOCK.get())).

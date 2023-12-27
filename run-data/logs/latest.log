@@ -1,51 +1,51 @@
-[26Dec2023 01:53:53.268] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Michael\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.6, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, twosidesmod, --all, --output, C:\Users\Michael\Documents\Maxi's Mod\src\generated\resources, --existing, C:\Users\Michael\Documents\Maxi's Mod\src\main\resources]
-[26Dec2023 01:53:53.319] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.9 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[26Dec2023 01:53:54.012] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[26Dec2023 01:53:54.290] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Michael/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[26Dec2023 01:53:55.532] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Michael\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.6\56551ed4a181a00930b0365996e1d9f3ca851459\javafmllanguage-1.20.1-47.2.6.jar is missing mods.toml file
-[26Dec2023 01:53:55.547] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Michael\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.6\f27bd133cd78227e8d6def633b83c881a30cc243\lowcodelanguage-1.20.1-47.2.6.jar is missing mods.toml file
-[26Dec2023 01:53:55.556] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Michael\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.6\6e1641ac5a046737d7c3209901ca0a829d636873\mclanguage-1.20.1-47.2.6.jar is missing mods.toml file
-[26Dec2023 01:53:55.570] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Michael\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.6\2d5f5aff839b7d2825c6968049399633d1c4d0b8\fmlcore-1.20.1-47.2.6.jar is missing mods.toml file
-[26Dec2023 01:53:56.111] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[26Dec2023 01:54:11.701] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[26Dec2023 01:54:11.728] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Michael\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, twosidesmod, --all, --output, C:\Users\Michael\Documents\Maxi's Mod\src\generated\resources, --existing, C:\Users\Michael\Documents\Maxi's Mod\src\main\resources]
-[26Dec2023 01:54:17.328] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Users\Michael\Documents\Maxi's Mod\build\createSrgToMcp\output.srg
-[26Dec2023 01:54:17.417] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Users\Michael\Documents\Maxi's Mod\build\createSrgToMcp\output.srg
-[26Dec2023 01:54:17.425] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\Michael\Documents\Maxi's Mod\build\createSrgToMcp\output.srg
-[26Dec2023 01:54:19.843] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [twosidesmod]
-[26Dec2023 01:54:41.438] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.6, for MC 1.20.1 with MCP 20230612.114412
-[26Dec2023 01:54:41.441] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.6 Initialized
-[26Dec2023 01:54:41.742] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
-[26Dec2023 01:54:42.218] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
-[26Dec2023 01:54:42.220] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
-[26Dec2023 01:54:42.221] [modloading-worker-0/INFO] [terrablender/]: Registered region twosidesmod:overworld to index 1 for type OVERWORLD
-[26Dec2023 01:54:42.828] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[26Dec2023 01:54:42.861] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 20.94 ms
-[26Dec2023 01:54:44.567] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Michael/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.6_mapped_parchment_2023.10.08-1.20.2/forge-1.20.1-47.2.6_mapped_parchment_2023.10.08-1.20.2-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[26Dec2023 01:54:44.569] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Michael/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.6_mapped_parchment_2023.10.08-1.20.2/forge-1.20.1-47.2.6_mapped_parchment_2023.10.08-1.20.2-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[26Dec2023 01:54:45.471] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[26Dec2023 01:54:46.944] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 1471 ms
-[26Dec2023 01:54:46.945] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[26Dec2023 01:54:47.454] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 504 ms
-[26Dec2023 01:54:47.457] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block Tags
-[26Dec2023 01:54:47.586] [main/INFO] [net.minecraft.data.DataGenerator/]: Block Tags finished after 127 ms
-[26Dec2023 01:54:47.586] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Tags
-[26Dec2023 01:54:47.608] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Tags finished after 19 ms
-[26Dec2023 01:54:47.609] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: twosidesmod
-[26Dec2023 01:54:48.075] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: twosidesmod finished after 464 ms
-[26Dec2023 01:54:48.076] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: twosidesmod
-[26Dec2023 01:54:49.586] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: twosidesmod finished after 1509 ms
-[26Dec2023 01:54:49.587] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : twosidesmod
-[26Dec2023 01:54:49.630] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : twosidesmod finished after 42 ms
-[26Dec2023 01:54:49.630] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:painting_variant mod id twosidesmod
-[26Dec2023 01:54:49.637] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:painting_variant mod id twosidesmod finished after 5 ms
-[26Dec2023 01:54:49.637] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:point_of_interest_type mod id twosidesmod
-[26Dec2023 01:54:49.662] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:point_of_interest_type mod id twosidesmod finished after 23 ms
-[26Dec2023 01:54:49.662] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Advancements
-[26Dec2023 01:54:49.964] [main/INFO] [net.minecraft.data.DataGenerator/]: Advancements finished after 301 ms
-[26Dec2023 01:54:49.965] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:fluid mod id twosidesmod
-[26Dec2023 01:54:49.974] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:fluid mod id twosidesmod finished after 8 ms
-[26Dec2023 01:54:49.975] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[26Dec2023 01:54:50.362] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 385 ms
-[26Dec2023 01:54:50.363] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 4893 ms
-[26Dec2023 01:54:50.777] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 1017, old count: 1017, new count: 1018, removed stale: 0, written: 1
+[27Dec2023 00:13:00.536] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Michael\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.6, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, twosidesmod, --all, --output, C:\Users\Michael\Documents\Maxi's Mod\src\generated\resources, --existing, C:\Users\Michael\Documents\Maxi's Mod\src\main\resources]
+[27Dec2023 00:13:00.570] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.9 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[27Dec2023 00:13:00.935] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[27Dec2023 00:13:01.037] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Michael/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[27Dec2023 00:13:01.572] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Michael\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.6\56551ed4a181a00930b0365996e1d9f3ca851459\javafmllanguage-1.20.1-47.2.6.jar is missing mods.toml file
+[27Dec2023 00:13:01.576] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Michael\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.6\f27bd133cd78227e8d6def633b83c881a30cc243\lowcodelanguage-1.20.1-47.2.6.jar is missing mods.toml file
+[27Dec2023 00:13:01.581] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Michael\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.6\6e1641ac5a046737d7c3209901ca0a829d636873\mclanguage-1.20.1-47.2.6.jar is missing mods.toml file
+[27Dec2023 00:13:01.586] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Michael\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.6\2d5f5aff839b7d2825c6968049399633d1c4d0b8\fmlcore-1.20.1-47.2.6.jar is missing mods.toml file
+[27Dec2023 00:13:01.765] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[27Dec2023 00:13:05.018] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[27Dec2023 00:13:05.031] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Michael\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, twosidesmod, --all, --output, C:\Users\Michael\Documents\Maxi's Mod\src\generated\resources, --existing, C:\Users\Michael\Documents\Maxi's Mod\src\main\resources]
+[27Dec2023 00:13:05.614] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Users\Michael\Documents\Maxi's Mod\build\createSrgToMcp\output.srg
+[27Dec2023 00:13:05.618] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Users\Michael\Documents\Maxi's Mod\build\createSrgToMcp\output.srg
+[27Dec2023 00:13:05.622] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\Michael\Documents\Maxi's Mod\build\createSrgToMcp\output.srg
+[27Dec2023 00:13:06.529] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [twosidesmod]
+[27Dec2023 00:13:15.849] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.6, for MC 1.20.1 with MCP 20230612.114412
+[27Dec2023 00:13:15.851] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.6 Initialized
+[27Dec2023 00:13:15.974] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
+[27Dec2023 00:13:16.103] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[27Dec2023 00:13:16.104] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[27Dec2023 00:13:16.104] [modloading-worker-0/INFO] [terrablender/]: Registered region twosidesmod:overworld to index 1 for type OVERWORLD
+[27Dec2023 00:13:16.302] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[27Dec2023 00:13:16.320] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 12.26 ms
+[27Dec2023 00:13:17.240] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Michael/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.6_mapped_parchment_2023.10.08-1.20.2/forge-1.20.1-47.2.6_mapped_parchment_2023.10.08-1.20.2-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[27Dec2023 00:13:17.240] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Michael/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.6_mapped_parchment_2023.10.08-1.20.2/forge-1.20.1-47.2.6_mapped_parchment_2023.10.08-1.20.2-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[27Dec2023 00:13:17.752] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[27Dec2023 00:13:17.931] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 178 ms
+[27Dec2023 00:13:17.931] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[27Dec2023 00:13:18.067] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 136 ms
+[27Dec2023 00:13:18.068] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block Tags
+[27Dec2023 00:13:18.110] [main/INFO] [net.minecraft.data.DataGenerator/]: Block Tags finished after 41 ms
+[27Dec2023 00:13:18.110] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Tags
+[27Dec2023 00:13:18.113] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Tags finished after 2 ms
+[27Dec2023 00:13:18.113] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: twosidesmod
+[27Dec2023 00:13:18.160] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: twosidesmod finished after 46 ms
+[27Dec2023 00:13:18.160] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: twosidesmod
+[27Dec2023 00:13:18.569] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: twosidesmod finished after 408 ms
+[27Dec2023 00:13:18.570] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : twosidesmod
+[27Dec2023 00:13:18.587] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : twosidesmod finished after 17 ms
+[27Dec2023 00:13:18.587] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:painting_variant mod id twosidesmod
+[27Dec2023 00:13:18.590] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:painting_variant mod id twosidesmod finished after 3 ms
+[27Dec2023 00:13:18.591] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:point_of_interest_type mod id twosidesmod
+[27Dec2023 00:13:18.594] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:point_of_interest_type mod id twosidesmod finished after 2 ms
+[27Dec2023 00:13:18.594] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Advancements
+[27Dec2023 00:13:18.650] [main/INFO] [net.minecraft.data.DataGenerator/]: Advancements finished after 54 ms
+[27Dec2023 00:13:18.650] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:fluid mod id twosidesmod
+[27Dec2023 00:13:18.655] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:fluid mod id twosidesmod finished after 3 ms
+[27Dec2023 00:13:18.655] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[27Dec2023 00:13:18.760] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 105 ms
+[27Dec2023 00:13:18.761] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 1009 ms
+[27Dec2023 00:13:18.856] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 1017, old count: 1017, new count: 1017, removed stale: 1, written: 8
